@@ -1422,7 +1422,7 @@
     <section class="home-hero">
 
         <span class="hero-eyebrow">
-            SELAMAT DATANG DI WEBSITE RESMI
+            SELAMAT DATANG DI WEBSITE SAYA
         </span>
 
         <span class="hero-accreditation">
