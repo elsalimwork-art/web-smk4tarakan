@@ -42,7 +42,7 @@
                       sm:text-sm lg:text-[15px]">
 
                 Silakan hubungi kami untuk informasi kurikulum,
-                pendaftaran, atau kunjungan sekolah.
+                pendaftaran, atau kunjungan sekolah Kami.
 
             </p>
 
