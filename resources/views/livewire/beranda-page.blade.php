@@ -1,10 +1,10 @@
 
 @php
     $programs = [
-        ['nama' => 'PPLG', 'gambar' => 'logo-pplg.png', 'alt' => 'Logo Pengembangan Perangkat Lunak dan Gim'],
-        ['nama' => 'DKV', 'gambar' => 'logo-dkv.png', 'alt' => 'Logo Desain Komunikasi Visual'],
+        ['nama' => 'PPLG', 'gambar' => 'logo-pplg.png', 'alt' => 'Logo PPLG'],
+        ['nama' => 'DKV', 'gambar' => 'logo-dkv.png', 'alt' => 'Logo DKV'],
         ['nama' => 'ANIMASI', 'gambar' => 'logo-animasi.png', 'alt' => 'Logo Animasi'],
-        ['nama' => 'TKJ', 'gambar' => 'logo-tkj.png', 'alt' => 'Logo Teknik Komputer dan Jaringan'],
+        ['nama' => 'TKJ', 'gambar' => 'logo-tkj.png', 'alt' => 'Logo TKJ'],
     ];
 
     $berita = [
@@ -86,11 +86,11 @@
 @endphp
 
 <style>
-    /* =========================================================
-       BERANDA SMKN 4 TARAKAN
-       Acuan ukuran: frame PDF Figma 1341 x 3995 px.
-       Navbar dan footer tidak ditampilkan sesuai permintaan.
-    ========================================================= */
+    /* ======================================================
+       BERANDA SMK NEGERI 4 TARAKAN
+       Font: Plus Jakarta Sans
+       Navbar dan footer tidak ditampilkan.
+    ====================================================== */
 
     .home-page {
         --home-purple: #7E30E1;
@@ -98,7 +98,6 @@
         --home-ink: #20132F;
         --home-muted: #64748B;
         --home-gold: #FDC003;
-        --home-line: #E2E8F0;
 
         width: 100%;
         max-width: 1341px;
@@ -109,7 +108,6 @@
         font-family: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', Arial, sans-serif;
     }
 
-    .home-page,
     .home-page *,
     .home-page *::before,
     .home-page *::after {
@@ -132,118 +130,145 @@
         margin-left: auto;
     }
 
-    /* 01. HERO */
+    /* ======================================================
+       01. HERO / BAGIAN ATAS
+    ====================================================== */
 
     .home-hero {
         position: relative;
         width: 100%;
-        height: 410px;
+        height: 464px;
         overflow: hidden;
+        isolation: isolate;
         color: #FFFFFF;
         background-color: #49108B;
         background-image:
-            linear-gradient(90deg,
-                rgba(31, 8, 54, .88) 0%,
-                rgba(82, 28, 139, .73) 54%,
-                rgba(126, 34, 206, .61) 100%),
+            linear-gradient(
+                105deg,
+                rgba(42, 9, 62, .91) 0%,
+                rgba(79, 35, 145, .76) 52%,
+                rgba(139, 70, 214, .71) 100%
+            ),
             url('/images/beranda/hero-sekolah.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100% 100%;
+        background-size: cover;
     }
 
     .home-hero::before {
         position: absolute;
-        top: -260px;
-        right: -125px;
-        width: 690px;
-        height: 690px;
-        border: 2px solid rgba(226, 190, 255, .22);
+        z-index: -1;
+        top: -180px;
+        right: -130px;
+        width: 650px;
+        height: 650px;
+        border: 2px solid rgba(226,190,255,.15);
         border-radius: 50%;
         box-shadow:
-            0 0 0 42px rgba(226, 190, 255, .075),
-            0 0 0 91px rgba(226, 190, 255, .055);
+            0 0 0 45px rgba(226,190,255,.045),
+            0 0 0 90px rgba(226,190,255,.03);
         content: '';
         pointer-events: none;
     }
 
     .home-hero::after {
         position: absolute;
+        z-index: -1;
         inset: 0;
-        background: linear-gradient(0deg, rgba(32, 7, 53, .22), transparent 52%);
+        background: linear-gradient(
+            90deg,
+            rgba(46,10,68,.22),
+            transparent 75%
+        );
         content: '';
         pointer-events: none;
     }
 
+    .hero-inner {
+        position: relative;
+        width: min(1240px, calc(100% - 48px));
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* LABEL KECIL KIRI ATAS */
+
     .hero-eyebrow {
         position: absolute;
         z-index: 2;
-        top: 15px;
-        left: 21px;
-        display: inline-flex;
-        min-height: 26px;
-        align-items: center;
-        padding: 5px 11px;
-        border: 1px solid rgba(255,255,255,.23);
-        border-radius: 20px;
-        background: rgba(255,255,255,.13);
-        color: #FFFFFF;
-        font-size: 12px;
-        font-weight: 750;
-        letter-spacing: .035em;
-        backdrop-filter: blur(8px);
-    }
-
-    .hero-accreditation {
-        position: absolute;
-        z-index: 2;
-        top: 15px;
-        right: 65px;
+        top: 19px;
+        left: 0;
         display: inline-flex;
         min-height: 28px;
         align-items: center;
-        gap: 7px;
-        padding: 5px 12px;
-        border: 1px solid rgba(253,224,71,.52);
-        border-radius: 18px;
-        background: #FFF9E8;
-        color: #854D0E;
-        font-size: 16px;
-        font-weight: 800;
+        padding: 5px 13px;
+        border: 1px solid rgba(255,255,255,.25);
+        border-radius: 20px;
+        background: rgba(255,255,255,.10);
+        color: #F6EFFF;
+        font-size: 11px;
+        font-weight: 650;
         line-height: 1;
+        letter-spacing: .035em;
+        backdrop-filter: blur(7px);
+    }
+
+    /* AKREDITASI KANAN ATAS */
+
+    .hero-accreditation {
+        position: absolute;
+        z-index: 3;
+        top: 19px;
+        right: 18px;
+        display: inline-flex;
+        min-height: 36px;
+        align-items: center;
+        gap: 9px;
+        padding: 7px 15px;
+        border: 1px solid #FDC003;
+        border-radius: 22px;
+        background: #FFF9E8;
+        color: #FDC003;
+        font-size: 17px;
+        font-weight: 750;
+        line-height: 1.2;
         white-space: nowrap;
+        box-shadow: 0 3px 9px rgba(0,0,0,.08);
     }
 
     .hero-accreditation svg {
-        width: 15px;
-        height: 15px;
-        flex: 0 0 15px;
-        color: #D99B00;
+        display: block;
+        width: 22px;
+        height: 22px;
+        flex: 0 0 22px;
+        color: #FDC003;
     }
+
+    /* LOGO SEKOLAH DAN JUDUL */
 
     .hero-main {
         position: absolute;
         z-index: 2;
-        top: 48px;
-        left: 33px;
+        top: 60px;
+        left: 48px;
         display: flex;
         align-items: flex-start;
-        gap: 0;
+        gap: 30px;
     }
 
     .hero-school-logo {
         display: block;
-        width: 224px;
-        height: 224px;
-        flex: 0 0 224px;
-        margin-top: 6px;
+        width: 250px;
+        height: 250px;
+        flex: 0 0 250px;
+        margin-top: -10px;
         object-fit: contain;
         filter: drop-shadow(0 7px 12px rgba(0,0,0,.2));
     }
 
     .hero-copy {
-        min-width: 0;
-        max-width: 790px;
+        min-width: 830px;
+        max-width: 830px;
     }
 
     .hero-title {
@@ -251,73 +276,93 @@
         color: #FFFFFF;
         font-size: 60px;
         font-weight: 900;
-        line-height: 1;
+        line-height: .99;
         letter-spacing: -1.8px;
         text-transform: uppercase;
     }
 
     .hero-title span {
         display: block;
-        color: #ffcc00;
+        margin-top: 2px;
+        color: #FDC003;
     }
 
+    /* MOTTO SEKARANG DI BAWAH TARAKAN */
+
     .hero-motto {
-        border-left: 5px solid #FFD000;
-        padding-left: 20px;
-        margin-left: 15px;
-        max-width: 660px;
-        margin: 24px 0 0 3px;
+        display: block;
+        max-width: 780px;
+        margin: 13px 0 0;
         padding: 0;
         border: 0;
         color: #FFFFFF;
-        font-size: 18px;
-        font-style:italic;
-        font-weight: 600;
-        line-height: 13;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 650;
+        line-height: 1.45;
+        text-align: left;
     }
+
+    /* DESKRIPSI BAGIAN BAWAH HERO */
 
     .hero-description {
         position: absolute;
         z-index: 2;
-        top: 281px;
-        left: 33px;
-        width: 570px;
-        max-width: calc(100% - 66px);
+        left: 16px;
+        bottom: 32px;
+        width: 680px;
+        max-width: calc(100% - 32px);
         margin: 0;
         color: rgba(255,255,255,.94);
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.34;
+        line-height: 1.55;
     }
 
-    /* 02. TOMBOL DAN LOGO PROGRAM */
+    /* ======================================================
+       02. TOMBOL DAN PROGRAM KEAHLIAN
+    ====================================================== */
 
     .program-band {
         position: relative;
         z-index: 3;
         height: 371px;
-        margin-top: -39px;
-        padding: 24px 31px 14px;
-        background: linear-gradient(105deg, #32104F 0%, #7425A7 51%, #CE25D3 100%);
+        margin-top: 0;
+        padding: 28px 37px 14px;
+        background: linear-gradient(
+            105deg,
+            #32104F 0%,
+            #7425A7 51%,
+            #CE25D3 100%
+        );
     }
 
     .program-action-row {
         display: flex;
-        height: 76px;
+        min-height: 84px;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
     }
+
+    /* KEDUA TOMBOL UKURANNYA SAMA */
 
     .home-button {
         display: inline-flex;
-        flex: 0 0 auto;
+        width: 226px;
+        height: 56px;
+        min-height: 56px;
+        flex: 0 0 226px;
         align-items: center;
         justify-content: center;
         gap: 9px;
+        padding: 0 14px;
         border-radius: 10px;
+        font-family: inherit;
         font-size: 16px;
-        font-weight: 800;
-        line-height: 1.2;
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
         transition: transform .2s ease, box-shadow .2s ease;
     }
 
@@ -326,28 +371,27 @@
     }
 
     .home-button svg {
+        display: block;
         width: 17px;
         height: 17px;
         flex: 0 0 17px;
     }
 
     .button-ppdb {
-        width: 206px;
-        height: 56px;
         border: 1px solid #EAB308;
         color: #351A43;
-        background: linear-gradient(180deg, #FFD64A 0%, #FBBF24 100%);
-        box-shadow: 0 7px 14px rgba(21,8,34,.17);
+        background: #FDC003;
+        box-shadow: 0 4px 11px rgba(21,8,34,.15);
     }
 
     .button-profil {
-        width: 206px;
-        height: 56px;
-        border: 1px solid rgba(255,255,255,.23);
+        border: 1px solid rgba(255,255,255,.28);
         color: #FFFFFF;
         background: rgba(255,255,255,.14);
         box-shadow: 0 4px 11px rgba(21,8,34,.09);
     }
+
+    /* LOGO EMPAT PROGRAM */
 
     .program-logos {
         display: flex;
@@ -355,7 +399,7 @@
         align-items: center;
         justify-content: center;
         gap: 27px;
-        margin-top: 34px;
+        margin-top: 22px;
     }
 
     .program-item {
@@ -383,7 +427,9 @@
         transform: translateY(-3px);
     }
 
-    /* 03. SEJARAH SINGKAT */
+    /* ======================================================
+       03. SEJARAH SINGKAT
+    ====================================================== */
 
     .history-section {
         position: relative;
@@ -396,7 +442,7 @@
 
     .history-grid {
         display: grid;
-        grid-template-columns: 487px minmax(0, 692px);
+        grid-template-columns: 487px minmax(0,692px);
         align-items: center;
         gap: 46px;
     }
@@ -406,7 +452,6 @@
         width: 487px;
         height: 360px;
         min-width: 0;
-        padding: 0;
     }
 
     .history-image-wrap::before {
@@ -497,7 +542,9 @@
         color: #F59E0B;
     }
 
-    /* 04. KEPALA SEKOLAH */
+    /* ======================================================
+       04. KEPALA SEKOLAH
+    ====================================================== */
 
     .principal-section {
         position: relative;
@@ -566,7 +613,12 @@
         left: 0;
         padding: 28px 17px 12px;
         color: #FFFFFF;
-        background: linear-gradient(0deg, rgba(55,9,90,.96) 0%, rgba(126,34,206,.78) 58%, transparent 100%);
+        background: linear-gradient(
+            0deg,
+            rgba(55,9,90,.96) 0%,
+            rgba(126,34,206,.78) 58%,
+            transparent 100%
+        );
     }
 
     .principal-caption strong {
@@ -612,7 +664,9 @@
         line-height: 22px;
     }
 
-    /* 05. BERITA TERKINI */
+    /* ======================================================
+       05. BERITA TERKINI
+    ====================================================== */
 
     .news-section {
         min-height: 812px;
@@ -640,7 +694,7 @@
     .news-grid {
         display: grid;
         width: 1220px;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3,minmax(0,1fr));
         align-items: stretch;
         gap: 20px;
         margin-top: 48px;
@@ -740,7 +794,9 @@
         transform: translateX(4px);
     }
 
-    /* 06. PIALA DAN PENGHARGAAN */
+    /* ======================================================
+       06. PIALA DAN PENGHARGAAN
+    ====================================================== */
 
     .achievement-section {
         position: relative;
@@ -774,7 +830,7 @@
     .achievement-grid {
         display: grid;
         width: 1220px;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(3,minmax(0,1fr));
         align-items: stretch;
         gap: 20px;
         margin-top: 52px;
@@ -833,18 +889,20 @@
         line-height: 19px;
     }
 
-    /* 07. STATISTIK PENGUNJUNG */
+    /* ======================================================
+       07. STATISTIK PENGUNJUNG
+    ====================================================== */
 
     .statistics-section {
         min-height: 251px;
-        padding: 63px 0 0;
+        padding: 63px 0 45px;
         background: #F7F9FC;
     }
 
     .statistics-grid {
         display: grid;
         width: 1223px;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(5,minmax(0,1fr));
         align-items: stretch;
         gap: 12px;
         margin: 0 auto;
@@ -875,6 +933,10 @@
         font-weight: 950;
         line-height: 29px;
         letter-spacing: -.6px;
+    }
+
+    .stat-card:nth-child(4) .stat-number {
+        color: #2160BD;
     }
 
     .stat-change {
@@ -925,7 +987,12 @@
         padding: 16px 18px;
         border-color: transparent;
         color: #FFFFFF;
-        background: linear-gradient(145deg, #32104D 0%, #604C85 52%, #1F61B9 100%);
+        background: linear-gradient(
+            145deg,
+            #32104D 0%,
+            #604C85 52%,
+            #1F61B9 100%
+        );
         box-shadow: 0 5px 13px rgba(49,16,77,.2);
     }
 
@@ -948,15 +1015,32 @@
         line-height: 16px;
     }
 
-    /* RESPONSIVE */
+    /* ======================================================
+       RESPONSIVE TABLET
+    ====================================================== */
 
     @media (max-width: 1339px) and (min-width: 1101px) {
         .home-page {
             max-width: 100%;
         }
 
+        .hero-main {
+            left: 35px;
+            gap: 22px;
+        }
+
+        .hero-school-logo {
+            width: 190px;
+            height: 190px;
+            flex-basis: 190px;
+        }
+
         .hero-title {
-            font-size: clamp(46px, 4.5vw, 60px);
+            font-size: clamp(46px,4.5vw,60px);
+        }
+
+        .hero-motto {
+            font-size: 16px;
         }
 
         .program-band {
@@ -965,15 +1049,15 @@
         }
 
         .program-logos {
-            gap: clamp(12px, 1.8vw, 27px);
+            gap: clamp(12px,1.8vw,27px);
         }
 
         .program-item img {
-            height: min(223px, 17vw);
+            height: min(223px,17vw);
         }
 
         .history-grid {
-            grid-template-columns: minmax(360px, .7fr) minmax(0, 1fr);
+            grid-template-columns: minmax(360px,.7fr) minmax(0,1fr);
             gap: 38px;
         }
 
@@ -983,7 +1067,7 @@
         }
 
         .principal-grid {
-            grid-template-columns: minmax(420px, 495px) minmax(340px, 404px);
+            grid-template-columns: minmax(420px,495px) minmax(340px,404px);
             width: calc(100% - 40px);
         }
 
@@ -1009,26 +1093,32 @@
         }
 
         .hero-main {
-            left: 24px;
+            left: 20px;
+            gap: 15px;
         }
 
         .hero-school-logo {
-            width: 185px;
-            height: 185px;
-            flex-basis: 185px;
+            width: 165px;
+            height: 165px;
+            flex-basis: 165px;
         }
 
         .hero-title {
-            font-size: clamp(42px, 5.2vw, 56px);
+            font-size: clamp(42px,5.2vw,56px);
         }
 
         .hero-motto {
-            font-size: 17px;
+            max-width: 620px;
+            font-size: 15px;
         }
 
         .hero-description {
-            left: 24px;
             width: 560px;
+        }
+
+        .hero-accreditation {
+            right: 10px;
+            font-size: 13px;
         }
 
         .program-logos {
@@ -1041,7 +1131,7 @@
         }
 
         .history-grid {
-            grid-template-columns: minmax(300px, .8fr) minmax(0, 1.2fr);
+            grid-template-columns: minmax(300px,.8fr) minmax(0,1.2fr);
             gap: 30px;
         }
 
@@ -1061,7 +1151,7 @@
 
         .principal-grid {
             width: calc(100% - 48px);
-            grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+            grid-template-columns: minmax(0,1.1fr) minmax(0,.9fr);
             gap: 22px;
             margin: 0 auto;
         }
@@ -1079,7 +1169,7 @@
 
         .news-grid,
         .achievement-grid {
-            grid-template-columns: repeat(3, minmax(0,1fr));
+            grid-template-columns: repeat(3,minmax(0,1fr));
             gap: 15px;
         }
 
@@ -1107,9 +1197,13 @@
         }
 
         .statistics-grid {
-            grid-template-columns: repeat(3, minmax(0,1fr));
+            grid-template-columns: repeat(3,minmax(0,1fr));
         }
     }
+
+    /* ======================================================
+       RESPONSIVE MOBILE
+    ====================================================== */
 
     @media (max-width: 760px) {
         .home-container,
@@ -1120,80 +1214,108 @@
         }
 
         .home-hero {
-            height: 470px;
+            height: 240px;
             background-size: cover;
-            background-position: center;
+            background-position: center center;
+        }
+
+        .home-hero::before {
+            top: -105px;
+            right: -175px;
+            width: 350px;
+            height: 350px;
+            opacity: .35;
+        }
+
+        .hero-inner {
+            width: calc(100% - 32px);
         }
 
         .hero-eyebrow {
-            top: 18px;
-            left: 16px;
-            max-width: 62%;
+            top: 10px;
+            left: 0;
+            min-height: 21px;
+            padding: 3px 9px;
             font-size: 9px;
         }
 
         .hero-accreditation {
-            top: 15px;
-            right: 14px;
-            max-width: 130px;
-            font-size: 10px;
-            white-space: normal;
+            top: 9px;
+            right: 0;
+            min-height: 25px;
+            gap: 4px;
+            padding: 4px 7px;
+            font-size: 9px;
+        }
+
+        .hero-accreditation svg {
+            width: 14px;
+            height: 14px;
+            flex-basis: 14px;
         }
 
         .hero-main {
-            top: 83px;
-            left: 16px;
-            gap: 12px;
+            top: 48px;
+            left: 0;
+            gap: 10px;
         }
 
         .hero-school-logo {
-            width: 76px;
-            height: 76px;
-            flex-basis: 76px;
-            margin-top: 3px;
+            width: 65px;
+            height: 65px;
+            flex-basis: 65px;
+            margin-top: 7px;
         }
 
         .hero-title {
-            font-size: clamp(27px, 7.5vw, 42px);
-            line-height: 1.03;
-            letter-spacing: -1.1px;
+            font-size: clamp(25px,7vw,40px);
+            line-height: 1.02;
+            letter-spacing: -1.2px;
         }
 
         .hero-motto {
-            margin: 13px 0 0;
-            font-size: 11px;
-            line-height: 1.5;
+            max-width: 100%;
+            margin-top: 8px;
+            font-size: 10px;
+            line-height: 1.4;
         }
 
         .hero-description {
-            top: 270px;
-            left: 17px;
-            width: calc(100% - 34px);
-            max-width: none;
-            font-size: 12px;
-            line-height: 1.7;
+            bottom: 15px;
+            left: 16px;
+            width: calc(100% - 32px);
+            font-size: 10px;
+            line-height: 1.5;
         }
 
         .program-band {
             height: auto;
             min-height: 0;
-            margin-top: -25px;
             padding: 20px 16px 22px;
         }
 
         .program-action-row {
             height: auto;
+            min-height: 0;
+            display: flex;
             flex-wrap: wrap;
             gap: 9px;
         }
 
-        .button-ppdb,
-        .button-profil {
-            width: auto;
-            min-width: 145px;
-            height: 45px;
-            padding: 10px 14px;
-            font-size: 11px;
+        .home-button {
+            width: calc(50% - 5px);
+            height: 46px;
+            min-height: 46px;
+            flex: 0 0 calc(50% - 5px);
+            gap: 6px;
+            padding: 0 7px;
+            font-size: 10px;
+        }
+
+        .home-button svg {
+            width: 14px;
+            height: 14px;
+            flex-basis: 14px;
         }
 
         .program-logos {
@@ -1414,110 +1536,189 @@
             font-size: 42px;
         }
     }
+
+    @media (max-width: 420px) {
+        .hero-title {
+            font-size: 28px;
+        }
+
+        .hero-motto {
+            font-size: 9px;
+        }
+
+        .hero-school-logo {
+            width: 57px;
+            height: 57px;
+            flex-basis: 57px;
+        }
+    }
 </style>
 
 <div class="home-page">
 
-    {{-- 01. HERO BERANDA --}}
+    {{-- ======================================================
+         01. HERO BERANDA
+    ======================================================= --}}
     <section class="home-hero">
 
-        <span class="hero-eyebrow">
-            SELAMAT DATANG DI WEBSITE SAYA
-        </span>
+        <div class="hero-inner">
 
-        <span class="hero-accreditation">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.3-6.1 3.3 1.2-6.8L2.2 9.2l6.8-1L12 2Z"/>
-            </svg>
-            Akreditasi Baik Sekali
-        </span>
+            {{-- LABEL KIRI ATAS --}}
+            <span class="hero-eyebrow">
+                SELAMAT DATANG DI WEBSITE RESMI
+            </span>
 
-        <div class="hero-main">
+            {{-- AKREDITASI KANAN ATAS + IKON MEDALI --}}
+            <span class="hero-accreditation">
 
-            <img
-                src="{{ asset('images/logo-smkn4.png') }}"
-                alt="Logo SMK Negeri 4 Tarakan"
-                class="hero-school-logo"
-                onerror="this.onerror=null;this.src='{{ asset('images/beranda/logo-smkn4.png') }}';"
-            >
+                <svg viewBox="0 0 32 32"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
 
-            <div class="hero-copy">
-                <h1 class="hero-title">
-                    SMK NEGERI 4
-                    <span>TARAKAN</span>
-                </h1>
+                    {{-- PITA MEDALI --}}
+                    <path
+                        d="M9 18.5V29L16 25.4L23 29V18.5"
+                        fill="#FDC003"
+                    />
+
+                    {{-- LINGKARAN MEDALI --}}
+                    <path
+                        d="M16 2.5L18.5 4.7L21.9 4.3L23.2 7.5L26.4 9.1L25.8 12.5L27.6 15.5L25.3 18.1L25 21.6L21.6 22.5L18.9 24.8L16 23.1L13.1 24.8L10.4 22.5L7 21.6L6.7 18.1L4.4 15.5L6.2 12.5L5.6 9.1L8.8 7.5L10.1 4.3L13.5 4.7L16 2.5Z"
+                        fill="#FDC003"
+                    />
+
+                    {{-- BINTANG DI TENGAH --}}
+                    <path
+                        d="M16 7.1L18.1 11.3L22.7 12L19.4 15.2L20.2 19.8L16 17.6L11.8 19.8L12.6 15.2L9.3 12L13.9 11.3L16 7.1Z"
+                        fill="#854D0E"
+                    />
+
+                </svg>
+
+                Akreditasi Baik Sekali
+            </span>
+
+            {{-- LOGO DAN JUDUL SEKOLAH --}}
+            <div class="hero-main">
+
+                <img
+                    src="{{ asset('images/logo-smkn4.png') }}"
+                    alt="Logo SMK Negeri 4 Tarakan"
+                    class="hero-school-logo"
+                    onerror="this.onerror=null;this.src='{{ asset('images/beranda/logo-smkn4.png') }}';"
+                >
+
+                <div class="hero-copy">
+
+                    <h1 class="hero-title">
+                        SMK NEGERI 4
+                        <span>TARAKAN</span>
+                    </h1>
+
+                    {{-- MOTTO DI BAWAH TARAKAN --}}
+                    <p class="hero-motto">
+                        “Unggul dalam Mutu, Tinggi dalam Prestasi, Taklukkan Dunia dengan IT”
+                    </p>
+
+                </div>
             </div>
-            <div
-                <p class="hero-motto">
-                    “Unggul dalam Mutu, Tinggi dalam Prestasi, Taklukkan Dunia dengan IT”
-                </p>
-            </div>
+
+            {{-- DESKRIPSI --}}
+            <p class="hero-description">
+                Mempersiapkan generasi emas vokasi di Kalimantan Utara dengan kurikulum
+                industri teknologi mutakhir, karakter tangguh, serta dedikasi nyata bagi
+                kemajuan bangsa.
+            </p>
+
         </div>
-
-        <p class="hero-description">
-            Mempersiapkan generasi emas vokasi di Kalimantan Utara dengan kurikulum
-            industri teknologi mutakhir, karakter tangguh, serta dedikasi nyata bagi
-            kemajuan bangsa.
-        </p>
     </section>
 
-    {{-- 02. TOMBOL DAN LOGO PROGRAM KEAHLIAN --}}
+    {{-- ======================================================
+         02. TOMBOL DAN LOGO PROGRAM KEAHLIAN
+    ======================================================= --}}
     <section class="program-band">
 
         <div class="program-action-row">
 
             <a href="{{ url('/spmb') }}" class="home-button button-ppdb">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
                      aria-hidden="true">
                     <path d="M4 5h11v14H4z"/>
                     <path d="M8 9h3M8 13h3M18 8h2v11h-6"/>
                     <path d="m17 4 3 3-3 3"/>
                 </svg>
+
                 Informasi SPMB
             </a>
 
             <a href="{{ url('/visi-misi') }}" class="home-button button-profil">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+
+                <svg viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
                      aria-hidden="true">
                     <circle cx="12" cy="12" r="9"/>
                     <path d="m10 8 6 4-6 4V8Z"/>
                 </svg>
+
                 Profil Sekolah
             </a>
+
         </div>
 
+        {{-- LOGO PROGRAM KEAHLIAN --}}
         <div class="program-logos">
+
             @foreach ($programs as $program)
                 <div class="program-item">
+
                     <img
                         src="{{ asset('images/beranda/' . $program['gambar']) }}"
                         alt="{{ $program['alt'] }}"
                         loading="eager"
                     >
+
                 </div>
             @endforeach
+
         </div>
 
     </section>
 
-    {{-- 03. SEJARAH SINGKAT KAMI --}}
+    {{-- ======================================================
+         03. SEJARAH SINGKAT KAMI
+    ======================================================= --}}
     <section class="history-section" id="sejarah">
         <div class="home-container">
+
             <div class="history-grid">
 
                 <div class="history-image-wrap">
+
                     <img
                         src="{{ asset('images/beranda/sejarah-sekolah.png') }}"
                         alt="Kegiatan murid SMK Negeri 4 Tarakan"
                         class="history-image"
                         loading="lazy"
                     >
+
                 </div>
 
                 <div class="history-copy">
-                    <h2 class="section-title">Sejarah Singkat Kami!</h2>
+
+                    <h2 class="section-title">
+                        Sejarah Singkat Kami!
+                    </h2>
 
                     <p>
                         SMK Negeri 4 Tarakan merupakan sekolah kejuruan negeri yang resmi
@@ -1543,28 +1744,31 @@
                     <div class="history-features">
 
                         <div class="history-feature">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
                                 <circle cx="12" cy="12" r="11"/>
-                                <path d="m7 12 3 3 7-7" fill="none" stroke="#FFFFFF"
-                                      stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="m7 12 3 3 7-7" fill="none"
+                                      stroke="#FFFFFF" stroke-width="2.2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             Kurikulum Berbasis Proyek (PBL)
                         </div>
 
                         <div class="history-feature">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
                                 <circle cx="12" cy="12" r="11"/>
-                                <path d="m7 12 3 3 7-7" fill="none" stroke="#FFFFFF"
-                                      stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="m7 12 3 3 7-7" fill="none"
+                                      stroke="#FFFFFF" stroke-width="2.2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             Kerjasama Magang Industri BUMN &amp; Swasta
                         </div>
 
                         <div class="history-feature">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
                                 <circle cx="12" cy="12" r="11"/>
-                                <path d="m7 12 3 3 7-7" fill="none" stroke="#FFFFFF"
-                                      stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="m7 12 3 3 7-7" fill="none"
+                                      stroke="#FFFFFF" stroke-width="2.2"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             Fasilitas Lab Multimedia &amp; Jaringan Terkini
                         </div>
@@ -1576,18 +1780,23 @@
         </div>
     </section>
 
-    {{-- 04. KEPALA SEKOLAH --}}
+    {{-- ======================================================
+         04. KEPALA SEKOLAH
+    ======================================================= --}}
     <section class="principal-section" id="kepala-sekolah">
         <div class="home-container">
 
-            <h2 class="principal-heading">Kepala Sekolah</h2>
+            <h2 class="principal-heading">
+                Kepala Sekolah
+            </h2>
 
             <div class="principal-grid">
 
                 <div class="principal-photo">
+
                     <img
                         src="{{ asset('images/beranda/kepala-sekolah.png') }}"
-                        alt="Kepala SMK Negeri 4 Tarakan, Aliyas Imran, S.Pd."
+                        alt="Kepala SMK Negeri 4 Tarakan"
                         loading="lazy"
                     >
 
@@ -1596,6 +1805,7 @@
                         <span>NIP. 198012182005021002</span>
                         <span>Dinas Pendidikan dan Kebudayaan Prov. Kalimantan Utara</span>
                     </div>
+
                 </div>
 
                 <div class="principal-message">
@@ -1620,19 +1830,26 @@
         </div>
     </section>
 
-    {{-- 05. BERITA TERKINI --}}
+    {{-- ======================================================
+         05. BERITA TERKINI
+    ======================================================= --}}
     <section class="news-section" id="berita">
         <div class="home-container">
 
             <div class="news-heading">
-                <h2 class="section-title">Berita Terkini</h2>
+
+                <h2 class="section-title">
+                    Berita Terkini
+                </h2>
 
                 <p class="section-subtitle">
                     Informasi agenda dan kegiatan edukatif seputar SMKN 4 Tarakan
                 </p>
+
             </div>
 
             <div class="news-grid">
+
                 @foreach ($berita as $item)
                     <article class="news-card">
 
@@ -1646,14 +1863,19 @@
                         <div class="news-body">
 
                             <div class="news-date">
-                                <svg viewBox="0 0 24 24" fill="none"
-                                     stroke="currentColor" stroke-width="1.8"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
+
+                                <svg viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.8"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
                                     <circle cx="12" cy="12" r="9"/>
                                     <path d="M12 7v5l3 2"/>
                                 </svg>
+
                                 {{ $item['tanggal'] }}
+
                             </div>
 
                             <h3 class="news-title">
@@ -1665,36 +1887,49 @@
                             </p>
 
                             <a href="#berita" class="news-link">
+
                                 Baca Selengkapnya
-                                <svg viewBox="0 0 24 24" fill="none"
-                                     stroke="currentColor" stroke-width="2"
-                                     stroke-linecap="round" stroke-linejoin="round"
-                                     aria-hidden="true">
+
+                                <svg viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
                                     <path d="M5 12h14M13 6l6 6-6 6"/>
                                 </svg>
+
                             </a>
                         </div>
                     </article>
                 @endforeach
+
             </div>
 
         </div>
     </section>
 
-    {{-- 06. PIALA DAN PENGHARGAAN --}}
+    {{-- ======================================================
+         06. PIALA DAN PENGHARGAAN
+    ======================================================= --}}
     <section class="achievement-section" id="prestasi">
         <div class="home-container">
 
             <div class="achievement-heading">
-                <h2 class="section-title">Piala &amp; Penghargaan</h2>
+
+                <h2 class="section-title">
+                    Piala &amp; Penghargaan
+                </h2>
 
                 <p class="section-subtitle">
-                    Bukti nyata dedikasi dan keterampilan siswa SMKN 4 Tarakan di berbagai ajang kompetisi
-                    kejuruan.
+                    Bukti nyata dedikasi dan keterampilan siswa SMKN 4 Tarakan
+                    di berbagai ajang kompetisi kejuruan.
                 </p>
+
             </div>
 
             <div class="achievement-grid">
+
                 @foreach ($prestasi as $item)
                     <article class="achievement-card">
 
@@ -1712,12 +1947,15 @@
 
                     </article>
                 @endforeach
+
             </div>
 
         </div>
     </section>
 
-    {{-- 07. STATISTIK PENGUNJUNG --}}
+    {{-- ======================================================
+         07. STATISTIK PENGUNJUNG
+    ======================================================= --}}
     <section class="statistics-section" id="statistik">
         <div class="statistics-grid">
 
@@ -1733,11 +1971,17 @@
                     </div>
 
                     <div class="stat-change">
+
                         @if ($item['perubahan'])
-                            <strong>{{ $item['perubahan'] }}</strong>
+                            <strong>
+                                {{ $item['perubahan'] }}
+                            </strong>
                         @endif
 
-                        <span>{{ $item['catatan'] }}</span>
+                        <span>
+                            {{ $item['catatan'] }}
+                        </span>
+
                     </div>
 
                     <div class="stat-detail">
@@ -1749,13 +1993,20 @@
             @endforeach
 
             <article class="stat-card online-card">
-                <div class="stat-label">ONLINE SEKARANG</div>
-                <div class="online-number">47</div>
+
+                <div class="stat-label">
+                    ONLINE SEKARANG
+                </div>
+
+                <div class="online-number">
+                    47
+                </div>
 
                 <div class="online-caption">
                     User Aktif<br>
                     Berada di 14 laman berbeda saat ini.
                 </div>
+
             </article>
 
         </div>
