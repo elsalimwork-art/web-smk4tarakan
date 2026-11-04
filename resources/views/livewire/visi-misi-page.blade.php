@@ -162,7 +162,7 @@
             {{-- ORNAMEN DAYAK KANAN --}}
             {{-- ORNAMEN DAYAK KANAN --}}
             <img src="{{ asset('images/ornamen_dayak_kop_bersih.png') }}" alt="" aria-hidden="true"
-                class="pointer-events-none absolute right-[100px] top-1/2
+                class="pointer-events-none absolute right-[200px] top-1/2
            hidden h-[250px] w-auto
            -translate-y-1/2 object-contain
            opacity-[0.32] sm:block" />
