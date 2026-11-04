@@ -33,6 +33,42 @@
                             stroke-linejoin="round"
                             aria-hidden="true">
 
+                            <circle cx="12" cy="12" r="9.5" />
+                            <path d="M12 7v5l3.5 2" />
+                        </svg>
+                    </div>
+
+                    <div class="min-w-0 flex-1">
+                        <h2 class="text-base font-extrabold leading-6 text-[#20132F] sm:text-lg">
+                            Jam Operasional Pelayanan
+                        </h2>
+
+                        <div class="mt-[5px] space-y-[3px]">
+                            <p class="text-sm leading-[1.75] text-slate-600 sm:text-base">
+                                Senin - Kamis : 07.15 - 15.30 WITA
+                            </p>
+
+                            <p class="text-sm leading-[1.75] text-slate-600 sm:text-base">
+                                Jumat : 07.15 - 11.30 WITA
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex min-w-0 items-start gap-3.5 rounded-2xl border border-[#E7E0EF] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-[#CDB8E8] hover:shadow-[0_8px_24px_rgba(73,16,139,0.08)] sm:gap-4 sm:p-5">
+                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-[#EDE3F8] bg-[#49108B] text-[#EDE3F8] sm:h-12 sm:w-12">
+
+                        <svg
+                            class="h-[22px] w-[22px] sm:h-[25px] sm:w-[25px]"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true">
+
                             <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
                             <circle cx="12" cy="10" r="2.5" />
                         </svg>
@@ -92,7 +128,7 @@
                             </a>
                         </p>
 
-                        <p class="mt-2 text-sm font-semibold leading-[1.6] text-[#07845F] sm:text-[15px]">
+                        <p class="mt-2 text-sm font-semibold leading-[1.6] text-[#7E30E1] sm:text-[15px]">
                             Senin - Jumat: 07.30 - 16.00 WITA
                         </p>
                     </div>
@@ -132,42 +168,6 @@
                                 class="block break-all text-sm leading-[1.75] text-slate-600 transition-colors duration-200 hover:text-[#7E30E1] sm:text-[15px]">
                                 smkn4tarakan.kaltara@gmail.com
                             </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="flex min-w-0 items-start gap-3.5 rounded-2xl border border-[#E7E0EF] bg-white p-4 shadow-sm transition duration-200 hover:-translate-y-0.5 hover:border-[#CDB8E8] hover:shadow-[0_8px_24px_rgba(73,16,139,0.08)] sm:gap-4 sm:p-5">
-                    <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border-2 border-[#EDE3F8] bg-[#49108B] text-[#EDE3F8] sm:h-12 sm:w-12">
-
-                        <svg
-                            class="h-[22px] w-[22px] sm:h-[25px] sm:w-[25px]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true">
-
-                            <circle cx="12" cy="12" r="9.5" />
-                            <path d="M12 7v5l3.5 2" />
-                        </svg>
-                    </div>
-
-                    <div class="min-w-0 flex-1">
-                        <h2 class="text-base font-extrabold leading-6 text-[#20132F] sm:text-lg">
-                            Jam Operasional Pelayanan
-                        </h2>
-
-                        <div class="mt-[5px] space-y-[3px]">
-                            <p class="text-sm leading-[1.75] text-slate-600 sm:text-base">
-                                Senin - Kamis : 07.15 - 15.30 WITA
-                            </p>
-
-                            <p class="text-sm leading-[1.75] text-slate-600 sm:text-base">
-                                Jumat : 07.15 - 11.30 WITA
-                            </p>
                         </div>
                     </div>
                 </article>
