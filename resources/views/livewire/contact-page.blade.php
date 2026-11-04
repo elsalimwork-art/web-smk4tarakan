@@ -155,7 +155,7 @@
 
                     <div class="min-w-0 flex-1">
                         <h2 class="text-base font-extrabold leading-6 text-[#20132F] sm:text-lg">
-                            Surat Elektronik (Email)
+                            Email
                         </h2>
 
                         <div class="mt-[5px] space-y-[3px]">
