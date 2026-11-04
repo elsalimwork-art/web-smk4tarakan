@@ -1,105 +1,49 @@
 @php
-// Calculate the current academic year using the July school-year boundary.
-$currentDate = now('Asia/Makassar');
-$academicYearStart = $currentDate->month >= 7
-? $currentDate->year
-: $currentDate->year - 1;
-$academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
+    // Calculate the current academic year using the July school-year boundary.
+    $currentDate = now('Asia/Makassar');
+    $academicYearStart = $currentDate->month >= 7
+        ? $currentDate->year
+        : $currentDate->year - 1;
+    $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
 @endphp
 
 <div class="min-h-screen w-full bg-[#F7F3FC] font-[Plus_Jakarta_Sans,Arial,sans-serif] text-[#20132F] antialiased">
     <main class="mx-auto w-full max-w-[1600px] px-[clamp(16px,4vw,64px)] py-6 sm:py-8 lg:py-10">
 
-        {{-- =====================================================
-        MAIN SPMB PANEL
-====================================================== --}}
+        {{-- MAIN SPMB PANEL --}}
         <section
             class="relative isolate overflow-hidden rounded-[24px] bg-gradient-to-br from-[#2B1745] via-[#49108B] to-[#7E30E1] text-white shadow-[0_14px_36px_rgba(73,16,139,0.20)]">
 
-            <div class="pointer-events-none absolute -right-20 -top-24 z-0 h-80 w-80 rounded-full bg-[#FDC003]/10 blur-3xl">
-            </div>
+            {{-- Background decoration --}}
+            <div class="pointer-events-none absolute -right-20 -top-24 z-0 h-80 w-80 rounded-full bg-[#FDC003]/10 blur-3xl"></div>
 
-            <div class="pointer-events-none absolute -bottom-24 left-[28%] z-0 h-72 w-72 rounded-full bg-white/10 blur-3xl">
-            </div>
+            <div class="pointer-events-none absolute -bottom-24 left-[28%] z-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
 
-            <svg
-                class="pointer-events-none absolute right-5 top-28 hidden h-[280px] w-[220px] opacity-20 xl:block"
-                viewBox="0 0 240 310"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
+            {{-- ORNAMEN TAMENG DAYAK --}}
+            <img
+                src="{{ asset('images/ornamen_dayak_kop_bersih.png') }}"
+                alt=""
+                aria-hidden="true"
+                class="pointer-events-none absolute right-5 top-28 z-0 hidden h-[520px] w-[320px] object-contain opacity-20 xl:block"
+            >
 
-                <path
-                    d="M120 7 L223 66 L223 190 L120 249 L17 190 L17 66 Z"
-                    stroke="#F0DE55"
-                    stroke-width="3" />
-
-                <path
-                    d="M120 25 L205 74 L205 182 L120 231 L35 182 L35 74 Z"
-                    stroke="#E5DE00"
-                    stroke-width="2.5" />
-
-                <path
-                    d="M120 44 L187 82 L187 171 L120 209 L53 171 L53 82 Z"
-                    stroke="#F1E85B"
-                    stroke-width="2.5" />
-
-                <path
-                    d="M60 108 C83 124 101 132 120 140
-                       C139 132 157 124 180 108"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linecap="round" />
-
-                <path
-                    d="M60 184 C87 161 102 148 120 140
-                       C138 148 153 161 180 184"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linecap="round" />
-
-                <path
-                    d="M120 140
-                       C95 158 98 181 110 203
-                       C116 214 120 223 120 238
-                       C120 223 124 214 130 203
-                       C142 181 145 158 120 140Z"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linejoin="round" />
-
-                <circle cx="60" cy="108" r="10" fill="#E5DE00" />
-                <circle cx="180" cy="108" r="10" fill="#E5DE00" />
-                <circle cx="60" cy="184" r="10" fill="#E5DE00" />
-                <circle cx="180" cy="184" r="10" fill="#E5DE00" />
-
-                <circle cx="120" cy="140" r="5"
-                    fill="#E5DE00" />
-            </svg>
-
-            {{-- =================================================
-        MAIN CONTENT
-================================================== --}}
+            {{-- MAIN CONTENT --}}
             <div class="relative z-10 w-full px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-14 xl:px-16">
-                <div
-                    class="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-bold tracking-wide text-[#FDC003] sm:px-4 sm:text-sm">
+
+                <div class="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-bold tracking-wide text-[#FDC003] sm:px-4 sm:text-sm">
                     SISTEM PENERIMAAN MURID BARU (SPMB) T.A {{ $academicYear }}
                 </div>
 
-                <h1
-                    class="mt-5 w-full max-w-none text-[clamp(2rem,4.2vw,3.75rem)] font-black leading-[1.12] tracking-tight text-white">
+                <h1 class="mt-5 w-full max-w-none text-[clamp(2rem,4.2vw,3.75rem)] font-black leading-[1.12] tracking-tight text-white">
                     Sistem Penerimaan Murid Baru
-
                     <span class="block">
                         SMK Negeri 4 Tarakan
                     </span>
                 </h1>
 
-                <div class="mt-5 h-1.5 w-20 rounded-full bg-[#FDC003] sm:w-[88px]">
-                </div>
+                <div class="mt-5 h-1.5 w-20 rounded-full bg-[#FDC003] sm:w-[88px]"></div>
 
-                <p
-                    class="mt-5 w-full max-w-none text-justify text-base leading-[1.8] text-white/90 sm:text-[17px] lg:text-lg">
+                <p class="mt-5 w-full max-w-none text-justify text-base leading-[1.8] text-white/90 sm:text-[17px] lg:text-lg">
                     Setiap tahun, SMKN 4 Tarakan menjadi saksi dari
                     antusiasme yang luar biasa saat penerimaan peserta
                     didik baru dimulai. Ribuan siswa bersemangat mengikuti
@@ -113,10 +57,9 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                     di dunia kerja.
                 </p>
 
-                {{-- =================================================
-        INFORMATION BADGES
-================================================== --}}
+                {{-- INFORMATION BADGES --}}
                 <div class="mt-6 flex w-full max-w-none flex-wrap items-center gap-2.5">
+
                     <div class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-2 text-sm font-semibold leading-5 text-white sm:text-[15px]">
                         <svg
                             class="h-4 w-4 shrink-0 text-[#FDC003]"
@@ -158,11 +101,9 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                     </div>
                 </div>
 
-                {{-- =================================================
-        PRIMARY ACTION BUTTONS
-================================================== --}}
-                <div
-                    class="mt-7 grid w-full max-w-none grid-cols-1 gap-3 sm:gap-4 md:grid-cols-[1.2fr_1fr]">
+                {{-- PRIMARY ACTION BUTTONS --}}
+                <div class="mt-7 grid w-full max-w-none grid-cols-1 gap-3 sm:gap-4 md:grid-cols-[1.2fr_1fr]">
+
                     <a
                         href="https://ppdb.kaltaraprov.go.id"
                         target="_blank"
@@ -182,7 +123,6 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                             <path d="M14 4h6v6" />
                             <path d="m20 4-10 10" />
                             <path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" />
-
                         </svg>
 
                         <span class="min-w-0 break-words">
@@ -211,23 +151,18 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                             <path d="M14 3v6h6" />
                             <rect x="8" y="12" width="8" height="6" rx="1" />
                             <path d="M12 14v3m-1-1 1 1 1-1" />
-
                         </svg>
 
                         <span class="min-w-0 break-words">
                             Unduh Juknis SPMB (Google Drive)
                         </span>
                     </a>
-
                 </div>
 
-                {{-- =================================================
-        SPMB COMMITTEE CONTACT PERSON
-================================================== --}}
+                {{-- SPMB COMMITTEE CONTACT PERSON --}}
                 <section class="mt-8 w-full max-w-none">
-                    <h2
-                        class="flex items-center gap-2.5 text-sm font-extrabold tracking-wide text-white sm:text-base">
 
+                    <h2 class="flex items-center gap-2.5 text-sm font-extrabold tracking-wide text-white sm:text-base">
                         <svg
                             class="h-6 w-6 shrink-0 text-[#FDC003]"
                             viewBox="0 0 24 24"
@@ -241,17 +176,17 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                             <rect x="3" y="5" width="18" height="14" rx="2" />
                             <circle cx="9" cy="10" r="2" />
                             <path d="M5.5 16c.5-2 2-3 3.5-3s3 1 3.5 3M15 9h3M15 13h3" />
-
                         </svg>
+
                         SPMB COMMITTEE CONTACT PERSON
                     </h2>
 
                     <div class="mt-4 grid grid-cols-1 gap-3.5 sm:grid-cols-2">
-                        <div
-                            class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-xl border border-[#E7E0EF] bg-[#F7F3FC] px-3.5 py-3.5 text-[#49108B] shadow-sm sm:px-4">
-                            <div
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
 
+                        {{-- KONTAK ELIS UTAMI --}}
+                        <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-xl border border-[#E7E0EF] bg-[#F7F3FC] px-3.5 py-3.5 text-[#49108B] shadow-sm sm:px-4">
+
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
                                 <svg
                                     class="h-5 w-5"
                                     viewBox="0 0 24 24"
@@ -307,11 +242,10 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                             </a>
                         </div>
 
-                        <div
-                            class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-xl border border-[#E7E0EF] bg-[#F7F3FC] px-3.5 py-3.5 text-[#49108B] shadow-sm sm:px-4">
-                            <div
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
+                        {{-- KONTAK RAIHAN LANGGENG --}}
+                        <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-xl border border-[#E7E0EF] bg-[#F7F3FC] px-3.5 py-3.5 text-[#49108B] shadow-sm sm:px-4">
 
+                            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
                                 <svg
                                     class="h-5 w-5"
                                     viewBox="0 0 24 24"
@@ -366,6 +300,7 @@ $academicYear = $academicYearStart . '/' . ($academicYearStart + 1);
                                 </svg>
                             </a>
                         </div>
+
                     </div>
                 </section>
             </div>

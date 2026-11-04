@@ -6,10 +6,10 @@
     <meta name="theme-color" content="#35164f">
     <title>SMK Negeri 4 Tarakan</title>
 
-    {{-- Font Inter sesuai karakter tipografi pada referensi desain. --}}
+    {{-- Font Plus Jakarta Sans Variable --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -40,7 +40,7 @@
             margin: 0;
             background: #ffffff;
             color: var(--b4-ink);
-            font-family: 'Inter', 'Plus Jakarta Sans', Arial, sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             -webkit-font-smoothing: antialiased;
             text-rendering: optimizeLegibility;
         }
@@ -67,7 +67,7 @@
             margin: 0 24px;
         }
 
-        /* HERO: foto sekolah dengan lapisan gradasi ungu ke magenta. */
+        /* HERO */
         .b4-hero-cover {
             position: relative;
             height: 370px;
@@ -184,7 +184,7 @@
             line-height: 1.58;
         }
 
-        /* Panel gradasi dan empat identitas program keahlian. */
+        /* PANEL PROGRAM KEAHLIAN */
         .b4-program-panel {
             display: flex;
             min-height: 370px;
@@ -715,7 +715,7 @@
             line-height: 1.58;
         }
 
-        /* STATISTIK KUNJUNGAN - angka mengikuti desain PDF, masih berupa konten statis. */
+        /* STATISTIK KUNJUNGAN */
         .b4-statistics {
             margin: 0 24px;
             padding: 60px 30px 70px;
@@ -854,7 +854,7 @@
             line-height: 1.45;
         }
 
-        /* RESPONSIVE - susunan desktop diubah menjadi kolom pada layar lebih kecil. */
+        /* RESPONSIVE */
         @media (max-width: 1050px) {
             .b4-page {
                 padding-top: 34px;
@@ -914,7 +914,9 @@
         }
 
         @media (max-width: 760px) {
-            .b4-desktop-break { display: none; }
+            .b4-desktop-break {
+                display: none;
+            }
 
             .b4-page {
                 padding-top: 18px;
@@ -1164,8 +1166,13 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            *, *::before, *::after {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
                 transition-duration: .01ms !important;
                 animation-duration: .01ms !important;
                 animation-iteration-count: 1 !important;
@@ -1173,8 +1180,10 @@
         }
     </style>
 </head>
+
 <body>
     <main class="b4-page">
+
         {{-- HERO --}}
         <section class="b4-hero" aria-label="Sambutan SMK Negeri 4 Tarakan">
             <div class="b4-hero-cover">
@@ -1190,6 +1199,7 @@
 
                 <div class="b4-hero-brand">
                     <img class="b4-school-mark" src="{{ asset('images/beranda/logo-sekolah.png') }}" alt="Logo SMK Negeri 4 Tarakan">
+
                     <div class="b4-hero-copy">
                         <h1 class="b4-hero-title">SMK NEGERI 4<br><span>TARAKAN</span></h1>
                         <p class="b4-hero-motto">“Unggul dalam Mutu, Tinggi dalam Prestasi, Taklukkan Dunia dengan IT”</p>
@@ -1213,6 +1223,7 @@
                         </svg>
                         <span>Informasi SPMB</span>
                     </a>
+
                     <a class="b4-action b4-action-secondary" href="#sejarah">
                         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
@@ -1226,12 +1237,15 @@
                     <div class="b4-program-logo">
                         <img src="{{ asset('images/beranda/logo-rpl.png') }}" alt="Logo Rekayasa Perangkat Lunak">
                     </div>
+
                     <div class="b4-program-logo">
                         <img src="{{ asset('images/beranda/logo-dkv.png') }}" alt="Logo Desain Komunikasi Visual">
                     </div>
+
                     <div class="b4-program-logo">
                         <img src="{{ asset('images/beranda/logo-animasi.png') }}" alt="Logo Animasi">
                     </div>
+
                     <div class="b4-program-logo b4-program-logo--tkj">
                         <img src="{{ asset('images/beranda/logo-tkj.png') }}" alt="Logo Teknik Komputer dan Jaringan">
                     </div>
@@ -1249,15 +1263,18 @@
 
             <div class="b4-history-copy">
                 <h2>Sejarah Singkat Kami!</h2>
+
                 <p>
                     SMK Negeri 4 Tarakan merupakan sekolah kejuruan negeri yang resmi didirikan pada tahun 2020
                     berdasarkan Surat Keputusan Pendirian dan Izin Operasional dari Pemerintah Daerah Setempat.
                 </p>
+
                 <p>
                     Pendirian sekolah ini dilandasi komitmen mulia untuk mengantisipasi lonjakan lulusan SMP di
                     Kota Tarakan sekaligus mewujudkan visi besar sebagai pengembangan talenta teknologi informasi
                     di provinsi Kalimantan Utara.
                 </p>
+
                 <p>
                     Dengan mengintegrasikan sarana laboratorium komputer modern, kurikulum adaptif industri 4.0,
                     dan tenaga pendidik bersertifikasi profesional, SMK Negeri 4 Tarakan bertransformasi menjadi
@@ -1267,15 +1284,29 @@
 
                 <ul class="b4-features">
                     <li>
-                        <span class="b4-feature-check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="b4-feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 12 12" fill="none">
+                                <path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
                         <span>Kurikulum Berbasis Proyek (PBL)</span>
                     </li>
+
                     <li>
-                        <span class="b4-feature-check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="b4-feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 12 12" fill="none">
+                                <path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
                         <span>Kerjasama Magang Industri BUMN &amp; Swasta</span>
                     </li>
+
                     <li>
-                        <span class="b4-feature-check" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                        <span class="b4-feature-check" aria-hidden="true">
+                            <svg viewBox="0 0 12 12" fill="none">
+                                <path d="m2.2 6.1 2.1 2.1 5-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
                         <span>Fasilitas Lab Multimedia &amp; Jaringan Terkini</span>
                     </li>
                 </ul>
@@ -1289,6 +1320,7 @@
             <div class="b4-principal-grid">
                 <div class="b4-principal-photo">
                     <img src="{{ asset('images/beranda/foto-kepala-sekolah.png') }}" alt="Foto Kepala SMK Negeri 4 Tarakan, Aliyas Imran">
+
                     <div class="b4-principal-nameplate">
                         <strong>Aliyas Imran, S.Pd.</strong>
                         <span>NIP. 198012182005021002</span>
@@ -1301,6 +1333,7 @@
                         “Setiap anak memiliki potensi untuk bersinar, tugas kami adalah membimbingnya tumbuh
                         menjadi generasi berkarakter, berprestasi, dan mampu mengukir masa depan yang membanggakan.”
                     </blockquote>
+
                     <p>
                         Kami menyambut seluruh murid, orang tua, alumni, dan masyarakat untuk mengenal lebih dekat
                         SMK Negeri 4 Tarakan. Dengan komitmen menghadirkan pendidikan berkualitas melalui bidang
@@ -1323,20 +1356,28 @@
                     <div class="b4-news-image">
                         <img src="{{ asset('images/beranda/berita-workshop.png') }}" alt="Workshop penguatan kelembagaan BKK SMK 4 Tarakan">
                     </div>
+
                     <div class="b4-news-body">
                         <p class="b4-news-date">
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
                             <time datetime="2024-07-22">22 Juli 2024</time>
                         </p>
+
                         <h3>WORKSHOP PENGUATAN KELEMBAGAAN BKK SMK 4 TARAKAN</h3>
+
                         <p class="b4-news-description">
                             SMK 4 Tarakan mengadakan workshop penguatan kelembagaan BKK, mengundang narasumber
                             dari dinas tenaga kerja dan perindustrian oleh Bapak M. Taufik, S.Hut., M.A.P.
                         </p>
-                        {{-- Ganti URL /berita dengan route detail berita jika halaman tersebut sudah tersedia. --}}
+
                         <a class="b4-news-link" href="{{ url('/berita') }}">
                             <span>Baca Selengkapnya</span>
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -1345,21 +1386,30 @@
                     <div class="b4-news-image">
                         <img src="{{ asset('images/beranda/berita-hut.png') }}" alt="Perayaan HUT ke-4 SMK Negeri 4 Tarakan">
                     </div>
+
                     <div class="b4-news-body">
                         <p class="b4-news-date">
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
                             <time datetime="2024-05-18">18 Mei 2024</time>
                         </p>
+
                         <h3>HUT SMK NEGERI 4 TARAKAN YANG KE - 4 TAHUN</h3>
+
                         <p class="b4-news-description">
                             Perayaan ulang tahun ke-4 SMK Negeri 4 Tarakan pada 18 Mei 2024 berlangsung meriah
                             dengan berbagai lomba antarguru, staf tata usaha, dan siswa. Acara ditutup dengan
                             pemotongan tumpeng sebagai simbol rasa syukur dan harapan untuk kemajuan sekolah
                             di masa depan.
                         </p>
+
                         <a class="b4-news-link" href="{{ url('/berita') }}">
                             <span>Baca Selengkapnya</span>
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -1368,20 +1418,29 @@
                     <div class="b4-news-image">
                         <img src="{{ asset('images/beranda/berita-kelulusan.png') }}" alt="Pengumuman kelulusan siswa kelas XII SMKN 4 Tarakan">
                     </div>
+
                     <div class="b4-news-body">
                         <p class="b4-news-date">
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
                             <time datetime="2024-05-05">5 Mei 2024</time>
                         </p>
+
                         <h3>PENGUMUMAN KELULUSAN SISWA KELAS XII SMKN 4 TARAKAN TAHUN PELAJARAN 2023/2024</h3>
+
                         <p class="b4-news-description">
                             Dengan bangga dan rahmat Tuhan Yang Maha Kuasa, pihak SMK NEGERI 4 TARAKAN
                             menyampaikan hasil rapat pleno dewan guru terkait kelulusan kelas 12 angkatan ke II
                             tahun pelajaran 2023/2024.
                         </p>
+
                         <a class="b4-news-link" href="{{ url('/berita') }}">
                             <span>Baca Selengkapnya</span>
-                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </a>
                     </div>
                 </article>
@@ -1431,29 +1490,45 @@
                 <article class="b4-stat-card">
                     <span class="b4-stat-label">HARI INI (DAILY)</span>
                     <strong class="b4-stat-value">1,842</strong>
-                    <p class="b4-stat-note"><span class="b4-stat-positive">↗ +14.2%</span> vs kemarin</p>
-                    <div class="b4-stat-footer"><span>Tayangan Halaman:</span><strong>4,920</strong></div>
+                    <p class="b4-stat-note">
+                        <span class="b4-stat-positive">↗ +14.2%</span> vs kemarin
+                    </p>
+                    <div class="b4-stat-footer">
+                        <span>Tayangan Halaman:</span>
+                        <strong>4,920</strong>
+                    </div>
                 </article>
 
                 <article class="b4-stat-card">
                     <span class="b4-stat-label">MINGGU INI</span>
                     <strong class="b4-stat-value">12,580</strong>
-                    <p class="b4-stat-note"><span class="b4-stat-positive">↗ +8.7%</span> pertumbuhan</p>
-                    <div class="b4-stat-footer"><span>Rata-rata/Hari:</span><strong>1,797</strong></div>
+                    <p class="b4-stat-note">
+                        <span class="b4-stat-positive">↗ +8.7%</span> pertumbuhan
+                    </p>
+                    <div class="b4-stat-footer">
+                        <span>Rata-rata/Hari:</span>
+                        <strong>1,797</strong>
+                    </div>
                 </article>
 
                 <article class="b4-stat-card">
                     <span class="b4-stat-label">BULAN INI</span>
                     <strong class="b4-stat-value">48,230</strong>
                     <p class="b4-stat-note">Puncak: Gelombang PPDB &amp; UKK</p>
-                    <div class="b4-stat-footer"><span>Target Bulanan:</span><strong class="b4-green">107% Tercapai</strong></div>
+                    <div class="b4-stat-footer">
+                        <span>Target Bulanan:</span>
+                        <strong class="b4-green">107% Tercapai</strong>
+                    </div>
                 </article>
 
                 <article class="b4-stat-card">
                     <span class="b4-stat-label">TOTAL KUMULATIF</span>
                     <strong class="b4-stat-value b4-stat-value--blue">348,720</strong>
                     <p class="b4-stat-note">Sejak Revitalisasi Portal IT</p>
-                    <div class="b4-stat-footer"><span>Status Server:</span><strong class="b4-blue">99.98% Uptime</strong></div>
+                    <div class="b4-stat-footer">
+                        <span>Status Server:</span>
+                        <strong class="b4-blue">99.98% Uptime</strong>
+                    </div>
                 </article>
 
                 <article class="b4-stat-card b4-stat-card--online">
@@ -1466,6 +1541,7 @@
                 </article>
             </div>
         </section>
+
     </main>
 </body>
 </html>
