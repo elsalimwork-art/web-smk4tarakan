@@ -1,6 +1,4 @@
-
-<div class="min-h-screen w-full bg-[#FCF8FF] text-[#34223F]"
-     style="font-family:'Inter Variable','Inter',sans-serif;">
+<div class="min-h-screen w-full bg-[#FCF8FF] text-[#34223F]" style="font-family:'Inter Variable','Inter',sans-serif;">
 
     <main class="mx-auto w-full max-w-[1500px]
                  px-[clamp(16px,3.4vw,55px)] py-6 sm:py-7">
@@ -17,12 +15,14 @@
 
 
             {{-- DEKORASI CAHAYA --}}
-            <div class="pointer-events-none absolute -right-20 -top-24
+            <div
+                class="pointer-events-none absolute -right-20 -top-24
                         -z-10 h-80 w-80 rounded-full
                         bg-fuchsia-400/20 blur-3xl">
             </div>
 
-            <div class="pointer-events-none absolute bottom-[-100px]
+            <div
+                class="pointer-events-none absolute bottom-[-100px]
                         left-[28%] -z-10 h-72 w-72 rounded-full
                         bg-purple-400/15 blur-3xl">
             </div>
@@ -31,75 +31,18 @@
             {{-- =================================================
                  ORNAMEN TEKNOLOGI KANAN
             ================================================== --}}
-            <svg
-                class="pointer-events-none absolute right-[22px]
-                       top-[140px] hidden h-[320px] w-[245px]
-                       opacity-[0.27] lg:block"
-                viewBox="0 0 240 310"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-hidden="true">
-
-                {{-- Hexagon luar --}}
-                <path
-                    d="M120 7 L223 66 L223 190 L120 249 L17 190 L17 66 Z"
-                    stroke="#F0DE55"
-                    stroke-width="3"/>
-
-                {{-- Hexagon tengah --}}
-                <path
-                    d="M120 25 L205 74 L205 182 L120 231 L35 182 L35 74 Z"
-                    stroke="#E5DE00"
-                    stroke-width="2.5"/>
-
-                {{-- Hexagon dalam --}}
-                <path
-                    d="M120 44 L187 82 L187 171 L120 209 L53 171 L53 82 Z"
-                    stroke="#F1E85B"
-                    stroke-width="2.5"/>
-
-                {{-- Pola jaringan --}}
-                <path
-                    d="M60 108 C83 124 101 132 120 140
-                       C139 132 157 124 180 108"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linecap="round"/>
-
-                <path
-                    d="M60 184 C87 161 102 148 120 140
-                       C138 148 153 161 180 184"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linecap="round"/>
-
-                {{-- Simbol tengah --}}
-                <path
-                    d="M120 140
-                       C95 158 98 181 110 203
-                       C116 214 120 223 120 238
-                       C120 223 124 214 130 203
-                       C142 181 145 158 120 140Z"
-                    stroke="#E5DE00"
-                    stroke-width="3"
-                    stroke-linejoin="round"/>
-
-                {{-- Titik jaringan --}}
-                <circle cx="60" cy="108" r="10" fill="#E5DE00"/>
-                <circle cx="180" cy="108" r="10" fill="#E5DE00"/>
-                <circle cx="60" cy="184" r="10" fill="#E5DE00"/>
-                <circle cx="180" cy="184" r="10" fill="#E5DE00"/>
-
-                <circle cx="120" cy="140" r="5"
-                        fill="#E5DE00"/>
-
-            </svg>
+            <img src="{{ asset('images/ornamen-spmb.png') }}" alt="" aria-hidden="true"
+                class="pointer-events-none absolute right-[20px] top-1/2
+           z-0 hidden h-[600px] w-[500px]
+           -translate-y-1/2 object-contain
+           opacity-[0.20] select-none lg:block" />
 
 
             {{-- =================================================
                  KONTEN UTAMA
             ================================================== --}}
-            <div class="relative z-10 w-full
+            <div
+                class="relative z-10 w-full
                         px-5 pb-9 pt-9
                         sm:px-8 sm:pb-10 sm:pt-11
                         lg:px-[48px] lg:pb-[55px] lg:pt-[57px]">
@@ -114,19 +57,13 @@
                            tracking-[0.04em] text-[#F1E85B]
                            sm:text-[11px]">
 
-                    <svg
-                        class="h-[15px] w-[15px] shrink-0"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        aria-hidden="true">
+                    <svg class="h-[15px] w-[15px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 
-                        <path d="M12 3 14.5 5l3.2-.1.8 3.1 2.5 2-1.1 3 .4 3.2-3 1.2-1.6 2.8-3.3-.7-3.1 1-1.8-2.7-3-1-.1-3.3-1.8-2.6 1.8-2.6.1-3.3 3-1 1.8-2.7 3.1 1Z"/>
+                        <path
+                            d="M12 3 14.5 5l3.2-.1.8 3.1 2.5 2-1.1 3 .4 3.2-3 1.2-1.6 2.8-3.3-.7-3.1 1-1.8-2.7-3-1-.1-3.3-1.8-2.6 1.8-2.6.1-3.3 3-1 1.8-2.7 3.1 1Z" />
 
-                        <path d="m9 12 2 2 4-4"/>
+                        <path d="m9 12 2 2 4-4" />
 
                     </svg>
 
@@ -189,25 +126,20 @@
                             flex-wrap items-center gap-2">
 
                     {{-- BADGE 1 --}}
-                    <div class="inline-flex items-center gap-[7px]
+                    <div
+                        class="inline-flex items-center gap-[7px]
                                 rounded-full border border-white/10
                                 bg-white/15 px-3 py-1.5
                                 text-[10px] font-semibold text-white
                                 sm:text-[11px]">
 
-                        <svg
-                            class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <svg class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
 
-                            <rect x="3" y="4" width="15" height="12" rx="2"/>
-                            <path d="M7 20h7M10 16v4"/>
-                            <path d="M18 8h3v11h-8"/>
+                            <rect x="3" y="4" width="15" height="12" rx="2" />
+                            <path d="M7 20h7M10 16v4" />
+                            <path d="M18 8h3v11h-8" />
 
                         </svg>
 
@@ -217,25 +149,20 @@
 
 
                     {{-- BADGE 2 --}}
-                    <div class="inline-flex items-center gap-[7px]
+                    <div
+                        class="inline-flex items-center gap-[7px]
                                 rounded-full border border-white/10
                                 bg-white/15 px-3 py-1.5
                                 text-[10px] font-semibold text-white
                                 sm:text-[11px]">
 
-                        <svg
-                            class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <svg class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
 
-                            <circle cx="12" cy="8" r="6"/>
-                            <path d="m8.5 13-1 8 4.5-2.5 4.5 2.5-1-8"/>
-                            <path d="m9.5 8 1.6 1.6 3.4-3.4"/>
+                            <circle cx="12" cy="8" r="6" />
+                            <path d="m8.5 13-1 8 4.5-2.5 4.5 2.5-1-8" />
+                            <path d="m9.5 8 1.6 1.6 3.4-3.4" />
 
                         </svg>
 
@@ -245,29 +172,24 @@
 
 
                     {{-- BADGE 3 --}}
-                    <div class="inline-flex items-center gap-[7px]
+                    <div
+                        class="inline-flex items-center gap-[7px]
                                 rounded-full border border-white/10
                                 bg-white/15 px-3 py-1.5
                                 text-[10px] font-semibold text-white
                                 sm:text-[11px]">
 
-                        <svg
-                            class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <svg class="h-[14px] w-[14px] shrink-0 text-[#E5DE00]" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
 
-                            <circle cx="12" cy="5" r="2"/>
-                            <circle cx="6" cy="12" r="2"/>
-                            <circle cx="18" cy="12" r="2"/>
-                            <circle cx="9" cy="19" r="2"/>
-                            <circle cx="15" cy="19" r="2"/>
+                            <circle cx="12" cy="5" r="2" />
+                            <circle cx="6" cy="12" r="2" />
+                            <circle cx="18" cy="12" r="2" />
+                            <circle cx="9" cy="19" r="2" />
+                            <circle cx="15" cy="19" r="2" />
 
-                            <path d="m11 7-4 3M13 7l4 3M7 14l2 3M17 14l-2 3M8 12h8"/>
+                            <path d="m11 7-4 3M13 7l4 3M7 14l2 3M17 14l-2 3M8 12h8" />
 
                         </svg>
 
@@ -288,10 +210,7 @@
 
 
                     {{-- PORTAL SPMB --}}
-                    <a
-                        href="https://ppdb.kaltaraprov.go.id"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://ppdb.kaltaraprov.go.id" target="_blank" rel="noopener noreferrer"
                         class="flex min-h-[52px] min-w-0
                                items-center justify-center gap-2.5
                                rounded-xl bg-[#E5DE00]
@@ -304,19 +223,12 @@
                                sm:text-[14px] lg:whitespace-nowrap
                                lg:text-[16px]">
 
-                        <svg
-                            class="h-[19px] w-[19px] shrink-0"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true">
+                        <svg class="h-[19px] w-[19px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 
-                            <path d="M14 4h6v6"/>
-                            <path d="m20 4-10 10"/>
-                            <path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"/>
+                            <path d="M14 4h6v6" />
+                            <path d="m20 4-10 10" />
+                            <path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6" />
 
                         </svg>
 
@@ -328,10 +240,7 @@
 
 
                     {{-- UNDUH JUKNIS --}}
-                    <a
-                        href="#"
-                        onclick="return false;"
-                        aria-label="Unduh Juknis SPMB"
+                    <a href="#" onclick="return false;" aria-label="Unduh Juknis SPMB"
                         title="Tambahkan tautan Google Drive resmi di sini"
                         class="flex min-h-[52px] min-w-0
                                items-center justify-center gap-2.5
@@ -344,20 +253,13 @@
                                sm:text-[14px] lg:whitespace-nowrap
                                lg:text-[16px]">
 
-                        <svg
-                            class="h-[19px] w-[19px] shrink-0"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            aria-hidden="true">
+                        <svg class="h-[19px] w-[19px] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 
-                            <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z"/>
-                            <path d="M14 3v6h6"/>
-                            <rect x="8" y="12" width="8" height="6" rx="1"/>
-                            <path d="M12 14v3m-1-1 1 1 1-1"/>
+                            <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z" />
+                            <path d="M14 3v6h6" />
+                            <rect x="8" y="12" width="8" height="6" rx="1" />
+                            <path d="M12 14v3m-1-1 1 1 1-1" />
 
                         </svg>
 
@@ -382,19 +284,13 @@
                                tracking-[0.045em] text-white
                                sm:text-[12px]">
 
-                        <svg
-                            class="h-[21px] w-[21px] shrink-0 text-[#E5DE00]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <svg class="h-[21px] w-[21px] shrink-0 text-[#E5DE00]" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             aria-hidden="true">
 
-                            <rect x="3" y="5" width="18" height="14" rx="2"/>
-                            <circle cx="9" cy="10" r="2"/>
-                            <path d="M5.5 16c.5-2 2-3 3.5-3s3 1 3.5 3M15 9h3M15 13h3"/>
+                            <rect x="3" y="5" width="18" height="14" rx="2" />
+                            <circle cx="9" cy="10" r="2" />
+                            <path d="M5.5 16c.5-2 2-3 3.5-3s3 1 3.5 3M15 9h3M15 13h3" />
 
                         </svg>
 
@@ -422,18 +318,12 @@
                                        items-center justify-center
                                        rounded-full bg-[#9135E8] text-white">
 
-                                <svg
-                                    class="h-5 w-5"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
 
-                                    <circle cx="12" cy="8" r="3"/>
-                                    <path d="M5.5 19c.5-3.5 2.8-5.5 6.5-5.5s6 2 6.5 5.5Z"/>
+                                    <circle cx="12" cy="8" r="3" />
+                                    <path d="M5.5 19c.5-3.5 2.8-5.5 6.5-5.5s6 2 6.5 5.5Z" />
 
                                 </svg>
 
@@ -443,14 +333,16 @@
                             {{-- INFORMASI KONTAK --}}
                             <div class="min-w-0 flex-1">
 
-                                <p class="text-[11px] font-bold text-[#49108B]
+                                <p
+                                    class="text-[11px] font-bold text-[#49108B]
                                           sm:text-[12px]">
 
                                     Elis Utami, S. Kom
 
                                 </p>
 
-                                <p class="mt-[2px] text-[12px]
+                                <p
+                                    class="mt-[2px] text-[12px]
                                           font-semibold tracking-[0.01em]
                                           text-[#7E30E1]">
 
@@ -462,25 +354,16 @@
 
 
                             {{-- WHATSAPP --}}
-                            <a
-                                href="https://wa.me/6282351705890"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <a href="https://wa.me/6282351705890" target="_blank" rel="noopener noreferrer"
                                 aria-label="Hubungi Elis Utami melalui WhatsApp"
                                 class="flex h-[34px] w-[34px] shrink-0
                                        items-center justify-center
                                        rounded-lg bg-[#07966F] text-white
                                        transition hover:bg-[#047857]">
 
-                                <svg
-                                    class="h-[19px] w-[19px]"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    aria-hidden="true">
+                                <svg class="h-[19px] w-[19px]" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
 
                                     <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8
                                              8.5 8.5 0 0 1-7.6 4.7
@@ -488,9 +371,9 @@
                                              l1.9-5.7a8.4 8.4 0 0 1-.9-3.8
                                              A8.5 8.5 0 0 1 8.7 4
                                              a8.4 8.4 0 0 1 3.8-.9h.5
-                                             a8.5 8.5 0 0 1 8 8v.4Z"/>
+                                             a8.5 8.5 0 0 1 8 8v.4Z" />
 
-                                    <path d="M9 9c.3 1.8 1.8 3.3 3.6 3.6"/>
+                                    <path d="M9 9c.3 1.8 1.8 3.3 3.6 3.6" />
 
                                 </svg>
 
@@ -514,18 +397,12 @@
                                        items-center justify-center
                                        rounded-full bg-[#9135E8] text-white">
 
-                                <svg
-                                    class="h-5 w-5"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.7"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
 
-                                    <circle cx="12" cy="8" r="3"/>
-                                    <path d="M5.5 19c.5-3.5 2.8-5.5 6.5-5.5s6 2 6.5 5.5Z"/>
+                                    <circle cx="12" cy="8" r="3" />
+                                    <path d="M5.5 19c.5-3.5 2.8-5.5 6.5-5.5s6 2 6.5 5.5Z" />
 
                                 </svg>
 
@@ -535,14 +412,16 @@
                             {{-- INFORMASI KONTAK --}}
                             <div class="min-w-0 flex-1">
 
-                                <p class="text-[11px] font-bold text-[#49108B]
+                                <p
+                                    class="text-[11px] font-bold text-[#49108B]
                                           sm:text-[12px]">
 
                                     Raihan Langgeng, S. Pd
 
                                 </p>
 
-                                <p class="mt-[2px] text-[12px]
+                                <p
+                                    class="mt-[2px] text-[12px]
                                           font-semibold tracking-[0.01em]
                                           text-[#7E30E1]">
 
@@ -554,25 +433,16 @@
 
 
                             {{-- WHATSAPP --}}
-                            <a
-                                href="https://wa.me/6282251380253"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <a href="https://wa.me/6282251380253" target="_blank" rel="noopener noreferrer"
                                 aria-label="Hubungi Raihan Langgeng melalui WhatsApp"
                                 class="flex h-[34px] w-[34px] shrink-0
                                        items-center justify-center
                                        rounded-lg bg-[#07966F] text-white
                                        transition hover:bg-[#047857]">
 
-                                <svg
-                                    class="h-[19px] w-[19px]"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.8"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    aria-hidden="true">
+                                <svg class="h-[19px] w-[19px]" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
 
                                     <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8
                                              8.5 8.5 0 0 1-7.6 4.7
@@ -580,9 +450,9 @@
                                              l1.9-5.7a8.4 8.4 0 0 1-.9-3.8
                                              A8.5 8.5 0 0 1 8.7 4
                                              a8.4 8.4 0 0 1 3.8-.9h.5
-                                             a8.5 8.5 0 0 1 8 8v.4Z"/>
+                                             a8.5 8.5 0 0 1 8 8v.4Z" />
 
-                                    <path d="M9 9c.3 1.8 1.8 3.3 3.6 3.6"/>
+                                    <path d="M9 9c.3 1.8 1.8 3.3 3.6 3.6" />
 
                                 </svg>
 
