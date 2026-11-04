@@ -8,6 +8,7 @@ class KontakPage extends Component
 {
     public function render()
     {
-        return view('livewire.kontak-page');
+        return view('livewire.kontak-page')
+                ->layout('layouts.app');
     }
 }

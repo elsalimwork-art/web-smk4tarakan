@@ -8,6 +8,7 @@ class SpmbPage extends Component
 {
     public function render()
     {
-        return view('livewire.spmb-page');
+        return view('livewire.spmb-page')
+                ->layout('layouts.app');
     }
 }
