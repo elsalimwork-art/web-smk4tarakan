@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class KontakPage extends Component
+class Footer extends Component
 {
     public function render()
     {
-        return view('livewire.kontak-page');
+        return view('livewire.footer');
     }
 }

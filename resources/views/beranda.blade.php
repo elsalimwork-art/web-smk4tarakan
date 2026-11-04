@@ -1211,7 +1211,7 @@
                             <path d="m13 11 6.8-6.8 2 2L15 13l-3 1 1-3Z" fill="currentColor"/>
                             <path d="M8 16h8M8 12h2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
                         </svg>
-                        <span>Informasi PPDB</span>
+                        <span>Informasi SPMB</span>
                     </a>
                     <a class="b4-action b4-action-secondary" href="#sejarah">
                         <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">

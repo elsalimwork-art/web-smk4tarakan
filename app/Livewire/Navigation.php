@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class BerandaPage extends Component
+class Navigation extends Component
 {
     public function render()
     {
-        return view('livewire.beranda-page');
+        return view('livewire.navigation');
     }
 }
