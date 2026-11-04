@@ -80,7 +80,7 @@
                         </h2>
 
                         <p class="mt-2 text-sm leading-[1.75] text-slate-600 sm:text-base">
-                            Jl. Kusuma Bangsa, RT.01 No.41,
+                            Jl. Kusuma Bangsa, RT.31 No.41,
                             Kelurahan Gunung Lingkas, Kecamatan
                             Tarakan Timur, Kota Tarakan,
                             Kalimantan Utara 77113
