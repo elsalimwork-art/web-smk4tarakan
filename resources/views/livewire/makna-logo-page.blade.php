@@ -9,8 +9,7 @@
             'nomor' => '01',
             'judul' => 'Bintang Berwarna Emas',
             'tema' => 'KEIMANAN, CITA-CITA LUHUR, DAN PRESTASI.',
-            'deskripsi' =>
-                'Bintang emas melambangkan Ketuhanan Yang Maha Esa, cita-cita tinggi, dan prestasi puncak. Elemen ini menggambarkan pendidikan yang berlandaskan nilai keagamaan untuk menghasilkan lulusan berprestasi dan berakhlak terpuji.',
+            'deskripsi' => 'Bintang emas melambangkan Ketuhanan Yang Maha Esa, cita-cita tinggi, dan prestasi puncak. Elemen ini menggambarkan pendidikan yang berlandaskan nilai keagamaan untuk menghasilkan lulusan berprestasi dan berakhlak terpuji.',
             'warna' => '#FDC003',
             'soft' => '#FFFBEB',
             'border' => '#FDE68A',
@@ -20,8 +19,7 @@
             'nomor' => '02',
             'judul' => 'Bola Dunia',
             'tema' => 'WAWASAN GLOBAL DAN DAYA SAING INTERNASIONAL.',
-            'deskripsi' =>
-                'Bola dunia melambangkan wawasan global, keterbukaan, dan daya saing internasional. Filosofinya adalah mempersiapkan lulusan agar mampu bersaing di tingkat lokal, nasional, maupun global.',
+            'deskripsi' => 'Bola dunia melambangkan wawasan global, keterbukaan, dan daya saing internasional. Filosofinya adalah mempersiapkan lulusan agar mampu bersaing di tingkat lokal, nasional, maupun global.',
             'warna' => '#0284C7',
             'soft' => '#F0F9FF',
             'border' => '#BAE6FD',
@@ -31,8 +29,7 @@
             'nomor' => '03',
             'judul' => 'Panah Merah Melingkar ke Atas',
             'tema' => 'SEMANGAT KEMAJUAN, KEBERANIAN, DAN INOVASI.',
-            'deskripsi' =>
-                'Panah merah melambangkan dinamika, kemajuan, keberanian, dan pertumbuhan berkelanjutan. Elemen ini mencerminkan semangat untuk terus berkembang, melakukan inovasi, dan menghadapi tantangan masa depan.',
+            'deskripsi' => 'Panah merah melambangkan dinamika, kemajuan, keberanian, dan pertumbuhan berkelanjutan. Elemen ini mencerminkan semangat untuk terus berkembang, melakukan inovasi, dan menghadapi tantangan masa depan.',
             'warna' => '#BA1A1A',
             'soft' => '#FEF2F2',
             'border' => '#FECACA',
@@ -42,8 +39,7 @@
             'nomor' => '04',
             'judul' => 'Ikon Tangan atau Cursor Digital',
             'tema' => 'PENGUASAAN TEKNOLOGI DIGITAL DAN KETERAMPILAN PRAKTIS.',
-            'deskripsi' =>
-                'Ikon tangan yang menunjuk atau menekan tombol melambangkan penguasaan teknologi digital, keterampilan praktis, dan aksi nyata. Elemen ini menggambarkan fokus pendidikan kejuruan pada keterampilan teknis yang sesuai dengan perkembangan teknologi modern.',
+            'deskripsi' => 'Ikon tangan yang menunjuk atau menekan tombol melambangkan penguasaan teknologi digital, keterampilan praktis, dan aksi nyata. Elemen ini menggambarkan fokus pendidikan kejuruan pada keterampilan teknis yang sesuai dengan perkembangan teknologi modern.',
             'warna' => '#D97706',
             'soft' => '#FFFBEB',
             'border' => '#FDE68A',
@@ -53,8 +49,7 @@
             'nomor' => '05',
             'judul' => 'Buku Terbuka',
             'tema' => 'ILMU PENGETAHUAN DAN PEMBELAJARAN SEPANJANG HAYAT.',
-            'deskripsi' =>
-                'Buku terbuka melambangkan sumber ilmu pengetahuan, pendidikan, dan pembelajaran sepanjang hayat. Filosofinya adalah ilmu pengetahuan menjadi dasar bagi pengembangan keterampilan dan keahlian murid.',
+            'deskripsi' => 'Buku terbuka melambangkan sumber ilmu pengetahuan, pendidikan, dan pembelajaran sepanjang hayat. Filosofinya adalah ilmu pengetahuan menjadi dasar bagi pengembangan keterampilan dan keahlian murid.',
             'warna' => '#00A896',
             'soft' => '#F0FDFA',
             'border' => '#99F6E4',
@@ -64,8 +59,7 @@
             'nomor' => '06',
             'judul' => 'Perisai dan Pita Almamater',
             'tema' => 'PERLINDUNGAN, KETEGUHAN, DAN IDENTITAS SEKOLAH.',
-            'deskripsi' =>
-                'Perisai melambangkan perlindungan, ketahanan, keteguhan sikap, dan kepercayaan diri, sedangkan pita bertuliskan “SMK Negeri 4 Tarakan” melambangkan identitas, persatuan, dan kebanggaan terhadap almamater.',
+            'deskripsi' => 'Perisai melambangkan perlindungan, ketahanan, keteguhan sikap, dan kepercayaan diri, sedangkan pita bertuliskan “SMK Negeri 4 Tarakan” melambangkan identitas, persatuan, dan kebanggaan terhadap almamater.',
             'warna' => '#7E30E1',
             'soft' => '#F7F3FC',
             'border' => '#E7E0EF',
@@ -304,7 +298,9 @@
                    xl:grid-cols-[343px_minmax(0,840px)] xl:gap-8"
         >
 
-            {{-- SIDEBAR KIRI --}}
+            {{-- ==================================================
+                 SIDEBAR KIRI
+            =================================================== --}}
             <aside class="min-w-0 space-y-4">
 
                 {{-- A. NAVIGASI TENTANG SEKOLAH --}}
@@ -329,6 +325,7 @@
                                 stroke-width="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
+                                aria-hidden="true"
                             >
                                 <path d="M3 10h18L12 4 3 10Z" />
                                 <path d="M5 10v9M9 10v9M15 10v9M19 10v9" />
@@ -375,8 +372,13 @@
                                 Profil Sekolah
                             </span>
 
-                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]" viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                            <svg
+                                class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]"
+                                viewBox="0 0 5 8"
+                                fill="none"
+                            >
+                                <path d="m1 1 3 3-3 3" stroke="currentColor"
+                                      stroke-width="1.3" stroke-linecap="round" />
                             </svg>
                         </a>
 
@@ -404,8 +406,13 @@
                                 Visi &amp; Misi
                             </span>
 
-                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]" viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                            <svg
+                                class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]"
+                                viewBox="0 0 5 8"
+                                fill="none"
+                            >
+                                <path d="m1 1 3 3-3 3" stroke="currentColor"
+                                      stroke-width="1.3" stroke-linecap="round" />
                             </svg>
                         </a>
 
@@ -459,8 +466,13 @@
                                 Program Keahlian
                             </span>
 
-                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]" viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                            <svg
+                                class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]"
+                                viewBox="0 0 5 8"
+                                fill="none"
+                            >
+                                <path d="m1 1 3 3-3 3" stroke="currentColor"
+                                      stroke-width="1.3" stroke-linecap="round" />
                             </svg>
                         </a>
 
@@ -490,8 +502,13 @@
                                 Prestasi Siswa
                             </span>
 
-                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]" viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+                            <svg
+                                class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]"
+                                viewBox="0 0 5 8"
+                                fill="none"
+                            >
+                                <path d="m1 1 3 3-3 3" stroke="currentColor"
+                                      stroke-width="1.3" stroke-linecap="round" />
                             </svg>
                         </a>
 
@@ -501,6 +518,7 @@
 
                 {{-- B. PILAR BUDAYA DAN POTENSI LOKAL --}}
                 <section
+                    id="profil-sekolah"
                     class="relative isolate min-h-[256.5px] w-full overflow-hidden
                            rounded-[20px] border border-[#E7E0EF]
                            bg-white px-4 pb-4 pt-6
@@ -515,7 +533,12 @@
                                        justify-center rounded-[14px]"
                                 style="background:linear-gradient(135deg,#FDC003,#EAB308);"
                             >
-                                <svg class="h-[19px] w-[19px]" viewBox="0 0 24 24" fill="#49108B">
+                                <svg
+                                    class="h-[19px] w-[19px]"
+                                    viewBox="0 0 24 24"
+                                    fill="#49108B"
+                                    aria-hidden="true"
+                                >
                                     <circle cx="12" cy="5" r="3.1" />
                                     <circle cx="18.2" cy="9.5" r="3.1" />
                                     <circle cx="15.8" cy="16.2" r="3.1" />
@@ -610,6 +633,7 @@
                             Identitas Satuan
                         </h2>
 
+                        {{-- AKREDITASI --}}
                         <span
                             class="inline-flex h-[22.5px] shrink-0 items-center
                                    justify-center gap-[6px] rounded-[10px]
