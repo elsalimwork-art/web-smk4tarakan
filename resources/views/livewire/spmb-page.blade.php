@@ -24,7 +24,7 @@
                     class="pointer-events-none absolute right-5 top-28 z-0 hidden h-[520px] w-[320px] object-contain opacity-20 xl:block">
 
                 {{-- MAIN CONTENT --}}
-                <div class="relative z-10 w-full px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12 xl:py-14">
+                <div class="relative z-10 w-full px-5 py-8 sm:px-7 sm:py-10 lg:px-9 lg:py-12 xl:px-10 xl:py-14">
 
                     <div class="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-2 text-xs font-extrabold tracking-wide text-[#FDC003] sm:px-4 sm:text-sm">
                         SISTEM PENERIMAAN MURID BARU (SPMB) T.A {{ $academicYear }}
@@ -55,7 +55,6 @@
 
                     {{-- INFORMATION BADGES --}}
                     <div class="mt-5 flex w-full max-w-none flex-wrap items-center gap-2.5">
-
                         <div class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3.5 py-2 text-sm font-semibold leading-6 text-white sm:text-base">
                             <svg
                                 class="h-4 w-4 shrink-0 text-[#FDC003]"
@@ -97,9 +96,7 @@
                         </div>
                     </div>
 
-                    {{-- PRIMARY ACTION BUTTONS --}}
                     <div class="mt-6 grid w-full max-w-none grid-cols-1 gap-3 sm:mt-7 sm:gap-4 md:grid-cols-[1.2fr_1fr]">
-
                         <a
                             href="https://ppdb.kaltaraprov.go.id"
                             target="_blank"
@@ -155,9 +152,7 @@
                         </a>
                     </div>
 
-                    {{-- SPMB COMMITTEE CONTACT PERSON --}}
                     <section class="mt-7 w-full max-w-none sm:mt-8">
-
                         <h2 class="flex items-center gap-2.5 text-lg font-extrabold tracking-tight text-white sm:text-xl">
                             <svg
                                 class="h-6 w-6 shrink-0 text-[#FDC003]"
@@ -177,7 +172,7 @@
                         </h2>
 
                         <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
-                            <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-2xl border border-[#E7E0EF] bg-[#F7F3FC] p-4 text-[#49108B] shadow-sm sm:p-5">
+                            <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-2xl border border-[#E7E0EF] bg-[#F7F3FC] p-5 text-[#49108B] shadow-sm sm:p-7">
                                 <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
                                     <svg
                                         class="h-5 w-5"
@@ -233,7 +228,7 @@
                                 </a>
                             </div>
 
-                            <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-2xl border border-[#E7E0EF] bg-[#F7F3FC] p-4 text-[#49108B] shadow-sm sm:p-5">
+                            <div class="flex min-h-[76px] min-w-0 items-center gap-3 rounded-2xl border border-[#E7E0EF] bg-[#F7F3FC] p-5 text-[#49108B] shadow-sm sm:p-7">
                                 <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#7E30E1] text-white">
                                     <svg
                                         class="h-5 w-5"
