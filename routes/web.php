@@ -15,3 +15,7 @@ Route::view('/makna-logo', 'makna-logo')->name('makna-logo');
 
 Route::view('/program-keahlian', 'program-keahlian')
     ->name('program-keahlian');
+
+Route::get('/berita', function () {
+    return view('berita');
+})->name('berita');
