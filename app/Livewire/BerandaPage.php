@@ -8,6 +8,7 @@ class BerandaPage extends Component
 {
     public function render()
     {
-        return view('livewire.beranda-page');
+        return view('livewire.beranda-page')
+                    ->layout('layouts.app');
     }
 }
