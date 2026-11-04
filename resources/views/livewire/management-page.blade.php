@@ -115,7 +115,6 @@
                             href="{{ route('employee-detail', $person['id']) }}"
                             class="group flex min-w-0 cursor-pointer flex-col overflow-hidden rounded-2xl border border-[#E7E0EF] bg-white shadow-sm outline-none transition duration-300 hover:-translate-y-1 hover:border-[#B99AD9] hover:shadow-[0_14px_32px_rgba(73,16,139,0.14)] focus-visible:ring-4 focus-visible:ring-[#7E30E1]/30">
 
-                            {{-- EMPLOYEE PHOTO --}}
                             <div class="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-[#EDE3F8] to-[#DCCAF0]">
                                 <img
                                     src="{{ asset('images/pegawai/' . str_pad($person['id'], 2, '0', STR_PAD_LEFT) . '.jpg') }}"
@@ -161,7 +160,7 @@
                                     @if ($hasEmployeeIdentifier)
                                     <p class="mt-1.5 flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-0.5">
                                         <span class="shrink-0 text-xs font-extrabold uppercase tracking-[0.1em] text-[#806D91] sm:text-sm">{{ $identifierLabel }}</span>
-                                        <span class="min-w-0 break-all text-base font-bold leading-7 text-[#352647] sm:text-lg">{{ $employeeNip }}</span>
+                                        <span class="min-w-0 break-all text-base font-bold leading-7 text-[#6B2DB3] sm:text-lg">{{ $employeeNip }}</span>
                                     </p>
                                     @endif
 
@@ -169,13 +168,13 @@
                                     @if ($hasEmploymentStatus || $hasEmployeeGol || $hasEmployeePangkat)
                                     <div class="mt-2.5 flex min-w-0 flex-wrap items-center gap-2">
                                         @if ($hasEmploymentStatus)
-                                        <span class="inline-flex max-w-full items-center rounded-full border border-[#DCCAF0] bg-[#F0E8F8] px-3.5 py-1.5 text-sm font-extrabold text-[#49108B] sm:text-base">
+                                        <span class="inline-flex max-w-full items-center rounded-full border border-[#E7DDF1] bg-[#F8F5FB] px-3.5 py-1.5 text-sm font-extrabold text-[#6B2DB3] sm:text-base">
                                             {{ $employmentStatus }}
                                         </span>
                                         @endif
 
                                         @if ($hasEmployeeGol || $hasEmployeePangkat)
-                                        <span class="inline-flex min-w-0 max-w-full flex-wrap items-baseline gap-x-1.5 rounded-lg border border-[#E7DDF1] bg-[#F8F5FB] px-3 py-2 text-base leading-6 text-[#352647] sm:text-lg">
+                                        <span class="inline-flex min-w-0 max-w-full flex-wrap items-baseline gap-x-1.5 rounded-lg border border-[#E7DDF1] bg-[#F8F5FB] px-3 py-2 text-base leading-6 text-[#6B2DB3] sm:text-lg">
                                             @if ($hasEmployeeGol)
                                             <span class="font-bold">{{ $employeeGol }}</span>
                                             @endif
@@ -303,7 +302,7 @@
                                     @if ($hasEmployeeIdentifier)
                                     <p class="mt-1.5 flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-0.5">
                                         <span class="shrink-0 text-xs font-extrabold uppercase tracking-[0.1em] text-[#806D91] sm:text-sm">{{ $identifierLabel }}</span>
-                                        <span class="min-w-0 break-all text-base font-bold leading-7 text-[#352647] sm:text-lg">{{ $employeeNip }}</span>
+                                        <span class="min-w-0 break-all text-base font-bold leading-7 text-[#6B2DB3] sm:text-lg">{{ $employeeNip }}</span>
                                     </p>
                                     @endif
 
@@ -311,13 +310,13 @@
                                     @if ($hasEmploymentStatus || $hasEmployeeGol || $hasEmployeePangkat)
                                     <div class="mt-2.5 flex min-w-0 flex-wrap items-center gap-2">
                                         @if ($hasEmploymentStatus)
-                                        <span class="inline-flex max-w-full items-center rounded-full border border-[#DCCAF0] bg-[#F0E8F8] px-3.5 py-1.5 text-sm font-extrabold text-[#49108B] sm:text-base">
+                                        <span class="inline-flex max-w-full items-center rounded-full border border-[#E7DDF1] bg-[#F8F5FB] px-3.5 py-1.5 text-sm font-extrabold text-[#6B2DB3] sm:text-base">
                                             {{ $employmentStatus }}
                                         </span>
                                         @endif
 
                                         @if ($hasEmployeeGol || $hasEmployeePangkat)
-                                        <span class="inline-flex min-w-0 max-w-full flex-wrap items-baseline gap-x-1.5 rounded-lg border border-[#E7DDF1] bg-[#F8F5FB] px-3 py-2 text-base leading-6 text-[#352647] sm:text-lg">
+                                        <span class="inline-flex min-w-0 max-w-full flex-wrap items-baseline gap-x-1.5 rounded-lg border border-[#E7DDF1] bg-[#F8F5FB] px-3 py-2 text-base leading-6 text-[#6B2DB3] sm:text-lg">
                                             @if ($hasEmployeeGol)
                                             <span class="font-bold">{{ $employeeGol }}</span>
                                             @endif
