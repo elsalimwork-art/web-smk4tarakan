@@ -2,17 +2,36 @@
 
 use App\Livewire\ContactPage;
 use App\Livewire\HomePage;
+use App\Livewire\ManagementPage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
 
+// HALAMAN UTAMA
 Route::get('/', HomePage::class)->name('home');
+
+// SPMB
 Route::get('/spmb', SpmbPage::class)->name('spmb');
+
+// KONTAK
 Route::get('/kontak', ContactPage::class)->name('contact');
 
+// MANAJEMEN
+Route::get('/manajemen', ManagementPage::class)->name('management');
+
+// VISI & MISI
 Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
+// MAKNA LOGO
 Route::view('/makna-logo', 'makna-logo')->name('makna-logo');
 
-Route::view('/program-keahlian', 'program-keahlian')->name('program-keahlian');
+// PROGRAM KEAHLIAN
+Route::view('/program-keahlian', 'program-keahlian')
+    ->name('program-keahlian');
 
-Route::view('/profil-sekolah', 'profil-sekolah')->name('profil-sekolah');
+// PROFIL SEKOLAH
+Route::view('/profil-sekolah', 'profil-sekolah')
+    ->name('profil-sekolah');
+
+// BERITA
+Route::view('/berita', 'berita')
+    ->name('berita');
