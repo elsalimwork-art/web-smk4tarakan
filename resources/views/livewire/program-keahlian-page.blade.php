@@ -54,7 +54,7 @@
 @endphp
 
 <div
-    class="min-h-screen w-full overflow-x-hidden bg-[#FCF7FF] text-[#3B0764]"
+    class="min-h-screen w-full overflow-x-hidden bg-[#F7F3FC] text-[#20132F]"
     style="font-family:'Plus Jakarta Sans Variable','Plus Jakarta Sans',sans-serif;"
 >
     <main class="mx-auto w-full max-w-[1240px] px-3 py-4 sm:px-5 sm:py-5 xl:px-0">
@@ -64,12 +64,12 @@
         ====================================================== --}}
         <header
             class="relative isolate min-h-[220px] w-full overflow-hidden
-                   rounded-[18px] border border-[#D8B4FE]/30
+                   rounded-[18px] border border-white/20
                    px-6 pb-8 pt-9 text-white
-                   shadow-[0_12px_22px_rgba(74,14,78,0.18)]
+                   shadow-[0_12px_22px_rgba(73,16,139,0.20)]
                    sm:px-8 xl:h-[258px] xl:min-h-[258px]
                    xl:px-[40px] xl:pt-[42px] xl:pb-0"
-            style="background:linear-gradient(90deg,#4A0E4E 0%,#7E22CE 50%,#C026D3 100%);"
+            style="background:linear-gradient(90deg,#2B1745 0%,#49108B 50%,#7E30E1 100%);"
         >
 
             {{-- ORNAMEN KIRI --}}
@@ -80,45 +80,30 @@
                 fill="none"
                 aria-hidden="true"
             >
-                <circle cx="53" cy="61" r="91" stroke="#D8B4FE" stroke-width="3" />
-                <circle cx="53" cy="61" r="67" stroke="#D8B4FE" stroke-width="3" />
-                <circle cx="53" cy="61" r="8.5" fill="#D8B4FE" />
-                <path d="M-12 79C30 79 69 101 87 151" stroke="#D8B4FE" stroke-width="3" />
+                <circle cx="53" cy="61" r="91" stroke="#FDC003" stroke-width="3" />
+                <circle cx="53" cy="61" r="67" stroke="#FDC003" stroke-width="3" />
+                <circle cx="53" cy="61" r="8.5" fill="#FDC003" />
+                <path d="M-12 79C30 79 69 101 87 151" stroke="#FDC003" stroke-width="3" />
             </svg>
 
             {{-- CAHAYA KANAN --}}
             <div
-                class="absolute -right-16 -top-16 -z-10 h-64 w-64
-                       rounded-full bg-white/[0.07] blur-3xl"
+                class="pointer-events-none absolute -right-16 -top-16 -z-10
+                       h-64 w-64 rounded-full bg-[#FDC003]/10 blur-3xl"
             ></div>
 
-            {{-- ORNAMEN GEOMETRIS KANAN --}}
-            <svg
-                class="pointer-events-none absolute right-[25px] top-1/2
-                       hidden h-[255px] w-[250px]
-                       -translate-y-1/2 opacity-[0.32] sm:block"
-                viewBox="0 0 250 270"
-                fill="none"
+            {{-- ORNAMEN DAYAK KANAN --}}
+            <img
+                src="{{ asset('images/ornamen_dayak_kop_bersih.png') }}"
+                alt=""
                 aria-hidden="true"
-            >
-                <path d="M125 3 L235 69 V201 L125 267 L15 201 V69 Z" stroke="#D8B4FE" stroke-width="3.5" />
-                <path d="M125 22 L214 76 V193 L125 247 L36 193 V76 Z" stroke="#D8B4FE" stroke-width="3" />
-                <path d="M125 40 L193 82 V187 L125 228 L57 187 V82 Z" stroke="#D8B4FE" stroke-width="2" />
-                <path d="M65 91 C76 49 101 30 125 20 C149 30 174 49 185 91" stroke="#D8B4FE" stroke-width="3" />
-                <path d="M65 91 C85 108 103 114 125 119 C147 114 165 108 185 91" stroke="#D8B4FE" stroke-width="3" />
-                <path d="M65 91 C83 120 103 135 125 147 C147 135 167 120 185 91" stroke="#D8B4FE" stroke-width="2.5" />
-                <path
-                    d="M125 119 C96 119 83 146 95 168 C103 182 116 193 125 205 C134 193 147 182 155 168 C167 146 154 119 125 119Z"
-                    stroke="#D8B4FE"
-                    stroke-width="3"
-                />
-                <path d="M125 155 C99 188 103 219 125 235 C147 219 151 188 125 155Z" stroke="#D8B4FE" stroke-width="3" />
-                <circle cx="65" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
-                <circle cx="185" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
-                <circle cx="65" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
-                <circle cx="185" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
-            </svg>
+                class="pointer-events-none absolute right-[25px] top-1/2
+                       hidden h-[255px] w-auto
+                       -translate-y-1/2 object-contain
+                       opacity-[0.32] sm:block"
+            />
 
+            {{-- KONTEN KOP --}}
             <div class="relative z-10 max-w-[895px] sm:max-w-[calc(100%-170px)]">
 
                 <h1
@@ -132,7 +117,7 @@
 
                 <p
                     class="mt-[12px] max-w-[790px] text-[13px]
-                           font-normal leading-6 text-[#F3E8FF]
+                           font-normal leading-6 text-white/90
                            sm:text-[14px] xl:text-[15px]"
                 >
                     Kenali berbagai program keahlian yang berfokus pada penguasaan teknologi,
@@ -147,10 +132,10 @@
                     <div
                         class="inline-flex h-[30px] items-center gap-[7px]
                                rounded-full border border-white/20
-                               bg-white/[0.10] px-3 backdrop-blur-sm"
+                               bg-white/10 px-3 backdrop-blur-sm"
                     >
                         <svg
-                            class="block h-[14px] w-[14px] shrink-0 text-[#FACC15]"
+                            class="block h-[14px] w-[14px] shrink-0 text-[#FDC003]"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -172,10 +157,10 @@
                     <div
                         class="inline-flex h-[30px] items-center gap-[7px]
                                rounded-full border border-white/20
-                               bg-white/[0.10] px-3 backdrop-blur-sm"
+                               bg-white/10 px-3 backdrop-blur-sm"
                     >
                         <svg
-                            class="block h-[14px] w-[14px] shrink-0 text-[#FACC15]"
+                            class="block h-[14px] w-[14px] shrink-0 text-[#FDC003]"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -198,10 +183,10 @@
                     <div
                         class="inline-flex h-[30px] items-center gap-[7px]
                                rounded-full border border-white/20
-                               bg-white/[0.10] px-3 backdrop-blur-sm"
+                               bg-white/10 px-3 backdrop-blur-sm"
                     >
                         <svg
-                            class="block h-[14px] w-[14px] shrink-0 text-[#67D7F5]"
+                            class="block h-[14px] w-[14px] shrink-0 text-[#FDC003]"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -236,24 +221,22 @@
                    xl:grid-cols-[343px_840px] xl:gap-8"
         >
 
-            {{-- =================================================
-                 KOLOM KIRI
-            ================================================== --}}
+            {{-- KOLOM KIRI --}}
             <aside class="min-w-0 space-y-4">
 
                 {{-- A. NAVIGASI TENTANG SEKOLAH --}}
                 <nav
                     class="h-fit w-full overflow-hidden
-                           rounded-[12px] border border-[#E9D5FF]/75
+                           rounded-[12px] border border-[#E7E0EF]
                            bg-white py-5 pl-5 pr-0
-                           shadow-[0_5px_14px_rgba(59,7,100,0.075)]"
+                           shadow-[0_5px_14px_rgba(73,16,139,0.075)]"
                 >
                     <div class="flex items-center gap-3 pr-4">
 
                         <div
                             class="flex h-8 w-8 shrink-0 items-center
-                                   justify-center rounded-[14px] text-[#FACC15]"
-                            style="background:linear-gradient(135deg,#7E22CE,#C026D3);"
+                                   justify-center rounded-[14px] text-[#FDC003]"
+                            style="background:linear-gradient(135deg,#49108B,#7E30E1);"
                         >
                             <svg
                                 class="h-[18px] w-[18px]"
@@ -272,7 +255,7 @@
                         </div>
 
                         <div>
-                            <h2 class="text-[16px] font-extrabold leading-6 text-[#3B0764]">
+                            <h2 class="text-[16px] font-extrabold leading-6 text-[#49108B]">
                                 Tentang Sekolah
                             </h2>
                             <p class="text-[11px] font-normal leading-[16.5px] text-[#64748B]">
@@ -281,7 +264,7 @@
                         </div>
                     </div>
 
-                    <div class="mr-4 mt-[14px] h-px bg-[#F3E8FF]"></div>
+                    <div class="mr-4 mt-[14px] h-px bg-[#E7E0EF]"></div>
 
                     <div class="mt-3 flex flex-col gap-[2px]">
 
@@ -289,15 +272,19 @@
                             <a
                                 href="{{ url($item['url']) }}"
                                 @if ($item['icon'] === 'laptop') aria-current="page" @endif
-                                class="flex {{ $item['icon'] === 'laptop' ? 'h-[48px] rounded-[12px] px-3 text-white shadow-[0_4px_10px_rgba(126,34,206,0.25)]' : 'h-[44px] rounded-l-[8px] px-[14px] text-[#4B444F] hover:bg-[#F3E8FF]' }}
+                                class="flex {{ $item['icon'] === 'laptop'
+                                    ? 'h-[48px] rounded-[12px] px-3 text-white shadow-[0_4px_10px_rgba(73,16,139,0.25)]'
+                                    : 'h-[44px] rounded-l-[8px] px-[14px] text-[#20132F] hover:bg-[#F7F3FC]' }}
                                        w-full items-center gap-3 py-[10px] transition"
-                                @if ($item['icon'] === 'laptop') style="background:linear-gradient(100deg,#9333EA,#8B5CF6);" @endif
+                                @if ($item['icon'] === 'laptop')
+                                    style="background:linear-gradient(100deg,#49108B,#7E30E1);"
+                                @endif
                             >
 
                                 {{-- IKON PROFIL --}}
                                 @if ($item['icon'] === 'profile')
                                     <svg
-                                        class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                        class="h-[16px] w-[17px] shrink-0 text-[#7E30E1]"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -313,7 +300,7 @@
                                 {{-- IKON VISI MISI --}}
                                 @elseif ($item['icon'] === 'flag')
                                     <svg
-                                        class="h-[16px] w-[14px] shrink-0 text-[#7C7480]"
+                                        class="h-[16px] w-[14px] shrink-0 text-[#7E30E1]"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -328,7 +315,7 @@
                                 {{-- IKON MAKNA LOGO --}}
                                 @elseif ($item['icon'] === 'logo')
                                     <svg
-                                        class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                        class="h-[16px] w-[17px] shrink-0 text-[#7E30E1]"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -358,7 +345,7 @@
                                 {{-- IKON PRESTASI --}}
                                 @else
                                     <svg
-                                        class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                        class="h-[16px] w-[17px] shrink-0 text-[#7E30E1]"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         stroke="currentColor"
@@ -373,14 +360,16 @@
                                 @endif
 
                                 <span
-                                    class="flex-1 text-[14px] {{ $item['icon'] === 'laptop' ? 'font-bold' : 'font-semibold' }} leading-6"
+                                    class="flex-1 text-[14px]
+                                           {{ $item['icon'] === 'laptop' ? 'font-bold' : 'font-semibold' }}
+                                           leading-6"
                                 >
                                     {{ $item['label'] }}
                                 </span>
 
                                 @if ($item['icon'] !== 'laptop')
                                     <svg
-                                        class="mr-3 h-2 w-[5px] shrink-0 text-[#7C7480]"
+                                        class="mr-3 h-2 w-[5px] shrink-0 text-[#7E30E1]"
                                         viewBox="0 0 5 8"
                                         fill="none"
                                     >
@@ -403,9 +392,9 @@
                 {{-- B. PILAR BUDAYA DAN POTENSI LOKAL --}}
                 <section
                     class="relative isolate min-h-[256.5px] w-full overflow-hidden
-                           rounded-[20px] border border-[#E9D5FF]/90
+                           rounded-[20px] border border-[#E7E0EF]
                            bg-white px-4 pb-4 pt-6
-                           shadow-[0_5px_14px_rgba(59,7,100,0.055)]"
+                           shadow-[0_5px_14px_rgba(73,16,139,0.055)]"
                 >
 
                     {{-- KONTEN PILAR BUDAYA --}}
@@ -413,16 +402,15 @@
 
                         <div class="flex items-center gap-3">
 
-                            {{-- ORNAMEN KAPSUL KUNING DAN MOTIF BUNGA --}}
                             <div
-                                class="flex h-8 w-8 shrink-0 items-center justify-center
-                                       rounded-[14px]"
-                                style="background:linear-gradient(135deg,#FACC15,#EAB308);"
+                                class="flex h-8 w-8 shrink-0 items-center
+                                       justify-center rounded-[14px]"
+                                style="background:linear-gradient(135deg,#FDC003,#EAB308);"
                             >
                                 <svg
                                     class="h-[19px] w-[19px]"
                                     viewBox="0 0 24 24"
-                                    fill="#4A0E4E"
+                                    fill="#49108B"
                                     aria-hidden="true"
                                 >
                                     <circle cx="12" cy="5" r="3.1" />
@@ -430,15 +418,15 @@
                                     <circle cx="15.8" cy="16.2" r="3.1" />
                                     <circle cx="8.2" cy="16.2" r="3.1" />
                                     <circle cx="5.8" cy="9.5" r="3.1" />
-                                    <circle cx="12" cy="11" r="2.2" fill="#FACC15" />
+                                    <circle cx="12" cy="11" r="2.2" fill="#FDC003" />
                                 </svg>
                             </div>
 
                             <div class="min-w-0">
-                                <h2 class="text-[14px] font-extrabold leading-5 text-[#3B0764]">
+                                <h2 class="text-[14px] font-extrabold leading-5 text-[#49108B]">
                                     Pilar Budaya dan Potensi Lokal
                                 </h2>
-                                <p class="mt-0.5 text-[10px] font-bold leading-[15px] text-[#A855F7]">
+                                <p class="mt-0.5 text-[10px] font-bold leading-[15px] text-[#7E30E1]">
                                     BUDAYA NUSANTARA &amp; KREATIVITAS DIGITAL
                                 </p>
                             </div>
@@ -446,10 +434,10 @@
 
                         <div
                             class="my-3 h-[2px] w-full"
-                            style="background:linear-gradient(90deg,#9333EA 0%,#C026D3 32%,#FACC15 65%,rgba(250,204,21,0) 100%);"
+                            style="background:linear-gradient(90deg,#49108B 0%,#7E30E1 32%,#FDC003 65%,rgba(253,192,3,0) 100%);"
                         ></div>
 
-                        <p class="text-[12px] font-normal leading-[19.5px] text-[#475569]">
+                        <p class="text-[12px] font-normal leading-[19.5px] text-[#64748B]">
                             SMK Negeri 4 Tarakan tumbuh di tengah keberagaman
                             budaya masyarakat Tarakan, Kalimantan Utara.
                             Potensi budaya lokal yang dipadukan dengan kreativitas
@@ -460,7 +448,7 @@
 
                         <div class="relative mt-3 flex items-center gap-2">
                             <svg
-                                class="h-[14px] w-[12px] shrink-0 text-[#C026D3]"
+                                class="h-[14px] w-[12px] shrink-0 text-[#7E30E1]"
                                 viewBox="0 0 16 20"
                                 fill="none"
                                 stroke="currentColor"
@@ -471,15 +459,14 @@
                                 <path d="M8 1 14 3.5v6c0 4.5-2.5 7.2-6 9.5-3.5-2.3-6-5-6-9.5v-6L8 1Z" />
                             </svg>
 
-                            <span class="text-[11px] font-bold leading-[16.5px] text-[#7E22CE]">
+                            <span class="text-[11px] font-bold leading-[16.5px] text-[#49108B]">
                                 Berkarakter, Berbudaya, Unggul dalam IT
                             </span>
                         </div>
 
                     </div>
-                    {{-- PENUTUP KONTEN PILAR BUDAYA --}}
 
-                    {{-- WATERMARK ORNAMEN DAYAK KALTARA --}}
+                    {{-- WATERMARK ORNAMEN DAYAK --}}
                     <img
                         src="{{ asset('images/ornamen_dayak_vektor.svg') }}"
                         alt=""
@@ -490,25 +477,24 @@
                     />
 
                 </section>
-                {{-- PENUTUP PILAR BUDAYA --}}
 
 
                 {{-- C. IDENTITAS SATUAN --}}
                 <section
                     class="min-h-[470px] w-full rounded-[20px]
-                           border border-[#E9D5FF]/80 bg-white
+                           border border-[#E7E0EF] bg-white
                            px-4 pb-4 pt-7
-                           shadow-[0_5px_14px_rgba(59,7,100,0.055)]"
+                           shadow-[0_5px_14px_rgba(73,16,139,0.055)]"
                 >
 
                     <div class="flex items-center justify-between gap-2">
 
                         <h2
                             class="flex items-center gap-2 text-[14px]
-                                   font-extrabold leading-5 text-[#3B0764]"
+                                   font-extrabold leading-5 text-[#49108B]"
                         >
                             <svg
-                                class="h-[17px] w-[17px] shrink-0 text-[#9333EA]"
+                                class="h-[17px] w-[17px] shrink-0 text-[#7E30E1]"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -524,7 +510,7 @@
                         <span
                             class="inline-flex h-[22.5px] shrink-0 items-center
                                    justify-center gap-[6px] rounded-[10px]
-                                   border border-[#FACC15] bg-[#FACC15]/20 px-2"
+                                   border border-[#FDC003] bg-[#FDC003]/20 px-2"
                         >
                             <svg
                                 class="h-[11px] w-[11px] shrink-0 text-[#854D0E]"
@@ -549,8 +535,8 @@
                             <div
                                 class="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]
                                        items-center gap-2 rounded-[24px]
-                                       border border-[#F3E8FF]/70
-                                       bg-[#FAF5FF]/70 px-3 py-2.5"
+                                       border border-[#E7E0EF]
+                                       bg-[#F7F3FC] px-3 py-2.5"
                             >
 
                                 <span class="text-[12px] font-normal leading-[1.6] text-[#64748B]">
@@ -560,16 +546,16 @@
                                 <div class="flex min-w-0 justify-end">
 
                                     @if ($item['type'] === 'npsn')
-                                        <span class="text-right text-[13px] font-bold leading-[1.5] text-[#7E22CE]">
+                                        <span class="text-right text-[13px] font-bold leading-[1.5] text-[#7E30E1]">
                                             {{ $item['value'] }}
                                         </span>
 
                                     @elseif ($item['type'] === 'program')
                                         <span
                                             class="inline-flex max-w-full items-center justify-center
-                                                   rounded-[7px] border border-[#BAE6FD]
-                                                   bg-[#F0F9FF] px-2 py-[3px]
-                                                   text-center text-[11px] font-bold leading-4 text-[#7E22CE]"
+                                                   rounded-[7px] border border-[#E7E0EF]
+                                                   bg-white px-2 py-[3px]
+                                                   text-center text-[11px] font-bold leading-4 text-[#49108B]"
                                         >
                                             {{ $item['value'] }}
                                         </span>
@@ -577,7 +563,7 @@
                                     @else
                                         <span
                                             class="max-w-full break-words text-right
-                                                   text-[12px] font-bold leading-[1.5] text-[#3B0764]"
+                                                   text-[12px] font-bold leading-[1.5] text-[#49108B]"
                                         >
                                             {{ $item['value'] }}
                                         </span>
@@ -601,9 +587,9 @@
                 {{-- D. PILIHAN KONSENTRASI --}}
                 <section
                     class="h-auto min-h-0 w-full overflow-hidden
-                           rounded-[12px] border border-[#E9D5FF]/60
+                           rounded-[12px] border border-[#E7E0EF]
                            bg-white px-6 pb-3 pt-4
-                           shadow-[0_2px_7px_rgba(59,7,100,0.055)]
+                           shadow-[0_2px_7px_rgba(73,16,139,0.055)]
                            sm:px-7"
                 >
 
@@ -615,15 +601,15 @@
                             <span
                                 class="inline-flex h-[27px] w-fit items-center
                                        justify-center rounded-[7px]
-                                       bg-[#EFDBFF] px-3"
+                                       bg-[#7E30E1]/10 px-3"
                             >
-                                <span class="whitespace-nowrap text-[12px] font-bold leading-none text-[#2B034F]">
+                                <span class="whitespace-nowrap text-[12px] font-bold leading-none text-[#49108B]">
                                     VOKASI TERAPAN KALTARA
                                 </span>
                             </span>
 
                             {{-- JUDUL --}}
-                            <h2 class="mt-1.5 text-[15px] font-extrabold leading-5 text-[#25212A]">
+                            <h2 class="mt-1.5 text-[15px] font-extrabold leading-5 text-[#20132F]">
                                 4 Konsentrasi Keahlian Unggulan SMKN 4 Tarakan
                             </h2>
 
@@ -643,8 +629,8 @@
                                                transition-all duration-200
                                                disabled:opacity-60
                                                {{ $activeProgram === $key
-                                                   ? 'border-transparent bg-[#9333EA] text-white shadow-[0_4px_9px_rgba(126,34,206,0.27)]'
-                                                   : 'border-[#E9D5FF] bg-[#F1E7F6] text-[#302A35] hover:bg-[#E9D5FF]' }}"
+                                                   ? 'border-transparent bg-[#7E30E1] text-white shadow-[0_4px_9px_rgba(73,16,139,0.27)]'
+                                                   : 'border-[#E7E0EF] bg-[#F7F3FC] text-[#20132F] hover:bg-[#E7E0EF]' }}"
                                     >
                                         {{ $programs[$key]['singkatan'] ?? ($programs[$key]['tab'] ?? strtoupper($key)) }}
                                     </button>
@@ -657,7 +643,7 @@
                         <p
                             class="max-w-[245px] self-center text-left
                                    text-[12px] font-normal leading-[19px]
-                                   text-[#514B57] sm:text-right"
+                                   text-[#64748B] sm:text-right"
                         >
                             Dirancang untuk mencetak lulusan siap kerja,
                             berdaya saing global, dan berjiwa technopreneur.
@@ -671,8 +657,8 @@
                 <section
                     wire:key="detail-program-{{ $activeProgram }}"
                     class="mt-3 w-full overflow-hidden rounded-[12px]
-                           border border-[#F0EAF2] bg-white p-4
-                           shadow-[0_3px_8px_rgba(59,7,100,0.09)]
+                           border border-[#E7E0EF] bg-white p-4
+                           shadow-[0_3px_8px_rgba(73,16,139,0.09)]
                            sm:p-5"
                 >
 
@@ -685,8 +671,8 @@
                         {{-- FOTO PROGRAM --}}
                         <div
                             class="relative h-[175px] w-full overflow-hidden
-                                   rounded-[9px] bg-[#F3E8FF]
-                                   shadow-[0_3px_8px_rgba(59,7,100,0.16)]
+                                   rounded-[9px] bg-[#F7F3FC]
+                                   shadow-[0_3px_8px_rgba(73,16,139,0.16)]
                                    sm:h-[175px] sm:w-[190px]"
                         >
                             <img
@@ -701,12 +687,12 @@
                             <div
                                 class="absolute inset-0 hidden flex-col
                                        items-center justify-center gap-2
-                                       bg-gradient-to-br from-[#4A0E4E]
-                                       via-[#7E22CE] to-[#C026D3]
+                                       bg-gradient-to-br from-[#2B1745]
+                                       via-[#49108B] to-[#7E30E1]
                                        p-3 text-center"
                             >
                                 <svg
-                                    class="h-9 w-9 text-[#FACC15]"
+                                    class="h-9 w-9 text-[#FDC003]"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -733,14 +719,14 @@
                                 <span
                                     class="flex h-[34px] w-[34px] shrink-0
                                            items-center justify-center
-                                           rounded-[8px] bg-[#F0DDFB]"
+                                           rounded-[8px] bg-[#7E30E1]/10"
                                     aria-hidden="true"
                                 >
                                     <svg
                                         class="h-[21px] w-[21px]"
                                         viewBox="0 0 24 24"
                                         fill="none"
-                                        stroke="#211B2A"
+                                        stroke="#20132F"
                                         stroke-width="1.8"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
@@ -764,7 +750,7 @@
                                             <path d="M8 18 V21 M16 18 V21 M6 21 H18" />
                                             <path d="M14 3.5 A7 7 0 0 1 21 10.5" />
                                             <path d="M14.5 6.5 A4 4 0 0 1 18.5 10.5" />
-                                            <circle cx="15.8" cy="10.5" r="0.8" fill="#211B2A" stroke="none" />
+                                            <circle cx="15.8" cy="10.5" r="0.8" fill="#20132F" stroke="none" />
 
                                         {{-- DKV --}}
                                         @elseif ($activeProgram === 'dkv')
@@ -779,14 +765,14 @@
                                     </svg>
                                 </span>
 
-                                <h2 class="text-[16px] font-extrabold leading-[23px] text-[#211B2A]">
+                                <h2 class="text-[16px] font-extrabold leading-[23px] text-[#20132F]">
                                     {{ $program['nama'] }}
                                 </h2>
                             </div>
 
 
                             {{-- DESKRIPSI --}}
-                            <p class="mt-2.5 text-[13px] font-normal leading-[22px] text-[#514B57]">
+                            <p class="mt-2.5 text-[13px] font-normal leading-[22px] text-[#64748B]">
                                 {{ $program['deskripsi'] }}
                             </p>
 
@@ -795,7 +781,7 @@
                             <h3
                                 class="mt-4 text-[12px] font-extrabold
                                        leading-5 tracking-[0.4px]
-                                       text-[#77717D]"
+                                       text-[#64748B]"
                             >
                                 {{ $program['label'] }}
                             </h3>
@@ -806,10 +792,10 @@
                                     <span
                                         class="inline-flex min-h-[30px]
                                                items-center justify-center
-                                               rounded-[7px] bg-[#F3E8F8]
+                                               rounded-[7px] bg-[#F7F3FC]
                                                px-2.5 py-1.5 text-[12px]
                                                font-normal leading-4
-                                               text-[#443B49]"
+                                               text-[#20132F]"
                                     >
                                         {{ $kompetensi }}
                                     </span>
@@ -821,13 +807,13 @@
                             {{-- PROSPEK KARIER --}}
                             <div
                                 class="mt-3 rounded-[8px]
-                                       border border-[#F1E4F7]
-                                       bg-[#F9EEFC] px-3.5 py-2.5"
+                                       border border-[#E7E0EF]
+                                       bg-[#F7F3FC] px-3.5 py-2.5"
                             >
                                 <h3
                                     class="flex items-center gap-1.5
                                            text-[13px] font-extrabold
-                                           leading-5 text-[#3B0764]"
+                                           leading-5 text-[#49108B]"
                                 >
                                     <svg
                                         class="h-[15px] w-[15px] shrink-0"
@@ -848,7 +834,7 @@
                                     Prospek Karir Utama
                                 </h3>
 
-                                <p class="mt-1 text-[12px] font-normal leading-[20px] text-[#625C67]">
+                                <p class="mt-1 text-[12px] font-normal leading-[20px] text-[#64748B]">
                                     {{ $program['karier'] }}
                                 </p>
                             </div>
