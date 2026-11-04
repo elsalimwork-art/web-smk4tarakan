@@ -1,13 +1,13 @@
 <?php
 
-use App\Livewire\BerandaPage;
+use App\Livewire\ContactPage;
+use App\Livewire\HomePage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', BerandaPage::class)->name('beranda');
+Route::get('/', HomePage::class)->name('home');
 Route::get('/spmb', SpmbPage::class)->name('spmb');
-
-Route::view('/kontak', 'kontak')->name('kontak');
+Route::get('/kontak', ContactPage::class)->name('contact');
 
 Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 

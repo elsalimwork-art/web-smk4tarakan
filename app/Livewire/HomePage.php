@@ -4,11 +4,11 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class BerandaPage extends Component
+class HomePage extends Component
 {
     public function render()
     {
-        return view('livewire.beranda-page')
+        return view('livewire.home-page')
                     ->layout('layouts.app');
     }
 }
