@@ -13,5 +13,6 @@ Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
 Route::view('/makna-logo', 'makna-logo')->name('makna-logo');
 
-Route::view('/program-keahlian', 'program-keahlian')
-    ->name('program-keahlian');
+Route::view('/program-keahlian', 'program-keahlian')->name('program-keahlian');
+
+Route::view('/profil-sekolah', 'profil-sekolah')->name('profil-sekolah');

@@ -258,26 +258,17 @@
                     </div>
 
                     {{-- KONSENTRASI KEAHLIAN --}}
-                    <div
-                        class="inline-flex h-[30px] items-center gap-[7px]
-                               rounded-full border border-white/20
-                               bg-white/10 px-3 backdrop-blur-sm"
-                    >
-                        <svg
-                            class="h-[14px] w-[14px] shrink-0 text-[#FDC003]"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.8"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <rect x="2.5" y="4" width="13.5" height="11" rx="1.5" />
-                            <path d="M6.5 19.5h5.5m-2.75-4.5v4.5" />
-                            <rect x="17.5" y="7.5" width="4" height="9" rx="1" />
-                            <path d="M19 14.2h1" />
+                    <div class="inline-flex h-[30px] items-center gap-[7px]
+                                rounded-full border border-white/20
+                                bg-white/[0.10] px-3 backdrop-blur-sm">
+                        <svg class="block h-[14px] w-[14px] shrink-0 text-[#67D7F5]"
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2.5" y="4" width="13.5" height="11" rx="1.5"/>
+                            <path d="M6.5 19.5h5.5m-2.75-4.5v4.5"/>
+                            <rect x="17.5" y="7.5" width="4" height="9" rx="1"/>
+                            <path d="M19 14.2h1"/>
                         </svg>
-
                         <span class="whitespace-nowrap text-[11px] font-semibold leading-none text-white/95">
                             PPLG · TKJ · DKV · Animasi
                         </span>
@@ -674,12 +665,10 @@
                                         </span>
 
                                     @elseif ($item['type'] === 'program')
-                                        <span
-                                            class="inline-flex max-w-full items-center justify-center
-                                                   rounded-[7px] border border-[#E7E0EF]
-                                                   bg-white px-2 py-[3px]
-                                                   text-center text-[11px] font-bold leading-4 text-[#49108B]"
-                                        >
+                                        <span class="inline-flex max-w-full items-center justify-center
+                                                   rounded-[7px] border border-[#BAE6FD]
+                                                   bg-[#F0F9FF] px-2 py-[3px]
+                                                   text-center text-[11px] font-bold leading-4 text-[#7E22CE]">
                                             {{ $item['value'] }}
                                         </span>
 
