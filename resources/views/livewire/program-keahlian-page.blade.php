@@ -334,23 +334,17 @@
                     <div class="flex items-center gap-3">
 
                         {{-- ORNAMEN KAPSUL KUNING DAN MOTIF BUNGA --}}
-                        <div
-                            class="flex h-[43px] w-[34px] shrink-0 items-center
-                                    justify-center rounded-[13px] bg-[#FACC15]">
+                        <div class="flex h-8 w-8 shrink-0 items-center justify-center
+            rounded-[14px]"
+                            style="background:linear-gradient(135deg,#FACC15,#EAB308);">
 
-                            <svg class="h-[35px] w-[22px]" viewBox="0 0 24 42" fill="none" stroke="#4A0E4E"
-                                stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"
-                                aria-hidden="true">
-
-                                <path d="M12 2.5C9.5 4.5 9.5 7.5 12 9.5C14.5 7.5 14.5 4.5 12 2.5Z" />
-                                <path d="M6.5 7C4 7.5 3.5 10.5 5.5 12C8 12.5 9.5 10 8 8Z" />
-                                <path d="M17.5 7C20 7.5 20.5 10.5 18.5 12C16 12.5 14.5 10 16 8Z" />
-                                <path d="M12 12C9 12 7.5 15 9 17.5C10 19 14 19 15 17.5C16.5 15 15 12 12 12Z" />
-                                <path d="M6.5 18C4 18.5 3.5 21.5 5.5 23C8 23.5 9.5 21 8 19Z" />
-                                <path d="M17.5 18C20 18.5 20.5 21.5 18.5 23C16 23.5 14.5 21 16 19Z" />
-                                <path d="M12 24C9.5 26 9.5 29 12 31C14.5 29 14.5 26 12 24Z" />
-                                <circle cx="12" cy="14.7" r="1.2" fill="#4A0E4E" />
-                                <circle cx="12" cy="27.5" r="1.1" fill="#4A0E4E" />
+                            <svg class="h-[19px] w-[19px]" viewBox="0 0 24 24" fill="#4A0E4E" aria-hidden="true">
+                                <circle cx="12" cy="5" r="3.1" />
+                                <circle cx="18.2" cy="9.5" r="3.1" />
+                                <circle cx="15.8" cy="16.2" r="3.1" />
+                                <circle cx="8.2" cy="16.2" r="3.1" />
+                                <circle cx="5.8" cy="9.5" r="3.1" />
+                                <circle cx="12" cy="11" r="2.2" fill="#FACC15" />
                             </svg>
                         </div>
 

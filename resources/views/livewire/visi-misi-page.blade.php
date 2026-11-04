@@ -90,140 +90,233 @@
 
     <main class="mx-auto w-full max-w-[1240px] px-3 py-4 sm:px-5 sm:py-5 xl:px-0">
 
-        {{-- 01. BANNER VISI & MISI --}}
+        {{-- 01. KOP ATAS: MENGIKUTI DESAIN PROGRAM KEAHLIAN --}}
+{{-- =====================================================
+
+             01. KOP ATAS
+
+        ====================================================== --}}
+
         <header
-            class="relative isolate h-auto min-h-[220px] w-full
-                   overflow-hidden rounded-[18px]
-                   border border-[#D8B4FE]/30
+
+            class="relative isolate min-h-[220px] w-full overflow-hidden
+
+                   rounded-[18px] border border-[#D8B4FE]/30
+
                    px-6 pb-8 pt-9 text-white
+
                    shadow-[0_12px_22px_rgba(74,14,78,0.18)]
-                   sm:px-8
-                   xl:h-[258px] xl:min-h-[258px]
+
+                   sm:px-8 xl:h-[258px] xl:min-h-[258px]
+
                    xl:px-[40px] xl:pt-[42px] xl:pb-0"
+
             style="background:linear-gradient(90deg,#4A0E4E 0%,#7E22CE 50%,#C026D3 100%);">
 
             {{-- ORNAMEN KIRI --}}
-            <svg
-                class="pointer-events-none absolute -left-[49px] -top-[30px]
-                       -z-10 h-[220px] w-[155px] opacity-30"
-                viewBox="0 0 155 220"
-                fill="none">
-                <circle cx="53" cy="61" r="91" stroke="#D8B4FE" stroke-width="3"/>
-                <circle cx="53" cy="61" r="67" stroke="#D8B4FE" stroke-width="3"/>
-                <circle cx="53" cy="61" r="8.5" fill="#D8B4FE"/>
-                <path d="M-12 79C30 79 69 101 87 151" stroke="#D8B4FE" stroke-width="3"/>
+
+            <svg class="pointer-events-none absolute -left-[49px] -top-[30px]
+
+                        -z-10 h-[220px] w-[155px] opacity-30"
+
+                viewBox="0 0 155 220" fill="none" aria-hidden="true">
+
+                <circle cx="53" cy="61" r="91" stroke="#D8B4FE" stroke-width="3" />
+
+                <circle cx="53" cy="61" r="67" stroke="#D8B4FE" stroke-width="3" />
+
+                <circle cx="53" cy="61" r="8.5" fill="#D8B4FE" />
+
+                <path d="M-12 79C30 79 69 101 87 151" stroke="#D8B4FE" stroke-width="3" />
+
             </svg>
 
-            {{-- CAHAYA DEKORATIF --}}
-            <div class="absolute -right-16 -top-16 -z-10
-                        h-64 w-64 rounded-full bg-white/[0.07] blur-3xl"></div>
+            {{-- CAHAYA KANAN --}}
+
+            <div
+
+                class="absolute -right-16 -top-16 -z-10 h-64 w-64
+
+                        rounded-full bg-white/[0.07] blur-3xl">
+
+            </div>
 
             {{-- ORNAMEN GEOMETRIS KANAN --}}
-            <svg
-                class="pointer-events-none absolute right-[25px]
-                       top-1/2 hidden h-[255px] w-[250px]
-                       -translate-y-1/2 opacity-[0.32] sm:block"
-                viewBox="0 0 250 270"
-                fill="none">
-                <path d="M125 3 L235 69 V201 L125 267 L15 201 V69 Z"
-                      stroke="#D8B4FE" stroke-width="3.5"/>
-                <path d="M125 22 L214 76 V193 L125 247 L36 193 V76 Z"
-                      stroke="#D8B4FE" stroke-width="3"/>
-                <path d="M125 40 L193 82 V187 L125 228 L57 187 V82 Z"
-                      stroke="#D8B4FE" stroke-width="2"/>
-                <path d="M65 91 C76 49 101 30 125 20 C149 30 174 49 185 91"
-                      stroke="#D8B4FE" stroke-width="3"/>
-                <path d="M65 91 C85 108 103 114 125 119 C147 114 165 108 185 91"
-                      stroke="#D8B4FE" stroke-width="3"/>
-                <path d="M65 91 C83 120 103 135 125 147 C147 135 167 120 185 91"
-                      stroke="#D8B4FE" stroke-width="2.5"/>
-                <path d="M125 119 C96 119 83 146 95 168 C103 182 116 193 125 205 C134 193 147 182 155 168 C167 146 154 119 125 119Z"
-                      stroke="#D8B4FE" stroke-width="3"/>
-                <path d="M125 155 C99 188 103 219 125 235 C147 219 151 188 125 155Z"
-                      stroke="#D8B4FE" stroke-width="3"/>
-                <circle cx="65" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2"/>
-                <circle cx="185" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2"/>
-                <circle cx="65" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2"/>
-                <circle cx="185" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2"/>
+
+            <svg class="pointer-events-none absolute right-[25px] top-1/2
+
+                        hidden h-[255px] w-[250px]
+
+                        -translate-y-1/2 opacity-[0.32] sm:block"
+
+                viewBox="0 0 250 270" fill="none" aria-hidden="true">
+
+                <path d="M125 3 L235 69 V201 L125 267 L15 201 V69 Z" stroke="#D8B4FE" stroke-width="3.5" />
+
+                <path d="M125 22 L214 76 V193 L125 247 L36 193 V76 Z" stroke="#D8B4FE" stroke-width="3" />
+
+                <path d="M125 40 L193 82 V187 L125 228 L57 187 V82 Z" stroke="#D8B4FE" stroke-width="2" />
+
+                <path d="M65 91 C76 49 101 30 125 20 C149 30 174 49 185 91" stroke="#D8B4FE" stroke-width="3" />
+
+                <path d="M65 91 C85 108 103 114 125 119 C147 114 165 108 185 91" stroke="#D8B4FE" stroke-width="3" />
+
+                <path d="M65 91 C83 120 103 135 125 147 C147 135 167 120 185 91" stroke="#D8B4FE" stroke-width="2.5" />
+
+                <path
+
+                    d="M125 119 C96 119 83 146 95 168 C103 182 116 193 125 205 C134 193 147 182 155 168 C167 146 154 119 125 119Z"
+
+                    stroke="#D8B4FE" stroke-width="3" />
+
+                <path d="M125 155 C99 188 103 219 125 235 C147 219 151 188 125 155Z" stroke="#D8B4FE"
+
+                    stroke-width="3" />
+
+                <circle cx="65" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
+
+                <circle cx="185" cy="91" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
+
+                <circle cx="65" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
+
+                <circle cx="185" cy="185" r="11" fill="#C026D3" stroke="#D8B4FE" stroke-width="2" />
+
             </svg>
 
-            {{-- KONTEN BANNER --}}
             <div class="relative z-10 max-w-[895px] sm:max-w-[calc(100%-170px)]">
 
-                <h1 class="max-w-[895px] text-[30px]
-                           font-extrabold leading-[1.15]
-                           tracking-[-1.2px] text-white
-                           sm:text-[38px]
-                           xl:whitespace-nowrap xl:text-[48px]
-                           xl:leading-[48px]">
+                <h1
+
+                    class="max-w-[895px] text-[30px] font-extrabold
+
+                           leading-[1.15] tracking-[-1.2px] text-white
+
+                           sm:text-[38px] xl:whitespace-nowrap
+
+                           xl:text-[48px] xl:leading-[48px]">
+
                     Visi &amp; Misi SMK Negeri 4 Tarakan
+
                 </h1>
 
-                <p class="mt-[12px] max-w-[691px]
-                          text-[13px] font-normal leading-6
-                          tracking-normal text-[#F3E8FF]
-                          sm:text-[14px] xl:text-[16px]">
+                <p
+
+                    class="mt-[12px] max-w-[790px] text-[13px]
+
+                          font-normal leading-6 text-[#F3E8FF]
+
+                          sm:text-[14px] xl:text-[15px]">
                     Mengenal visi dan misi SMKN 4 Tarakan dalam membentuk
                     murid berkarakter, berprestasi, dan unggul dalam
                     teknologi informasi.
                 </p>
 
-                {{-- TIGA BADGE --}}
-                <div class="mt-[25px] flex flex-wrap items-center gap-3">
+                {{-- BADGE IDENTITAS --}}
+
+                <div class="mt-[25px] flex flex-wrap items-center gap-2.5">
 
                     {{-- NPSN --}}
-                    <div class="inline-flex h-[30px] items-center gap-[7px]
-                                rounded-[14px] border border-[#D8B4FE]/30
-                                bg-[#F3E8FF]/20 px-3 py-[6px] backdrop-blur-md">
-                        <svg class="h-[15px] w-[15px] shrink-0 text-[#FACC15]"
-                             viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 3 14.5 5l3.2-.1.8 3.1 2.5 2-1.1 3 .4 3.2-3 1.2-1.6 2.8-3.3-.7-3.1 1-1.8-2.7-3-1-.1-3.3-1.8-2.6 1.8-2.6.1-3.3 3-1 1.8-2.7 3.1 1Z"/>
-                            <path d="m9 12 2 2 4-4"/>
+
+                    <div
+
+                        class="inline-flex h-[30px] items-center gap-[7px]
+
+                                rounded-full border border-white/20
+
+                                bg-white/[0.10] px-3 backdrop-blur-sm">
+
+                        <svg class="block h-[14px] w-[14px] shrink-0 text-[#FACC15]" viewBox="0 0 24 24" fill="none"
+
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+
+                            aria-hidden="true">
+
+                            <path
+
+                                d="M12 2.8 14.2 4l2.5-.4 1.2 2.3 2.5 1-.2 2.6 1.4 2.2-1.4 2.2.2 2.6-2.5 1-1.2 2.3-2.5-.4-2.2 1.2-2.2-1.2-2.5.4-1.2-2.3-2.5-1 .2-2.6L2.4 12l1.4-2.2-.2-2.6 2.5-1 1.2-2.3 2.5.4L12 2.8Z" />
+
+                            <path d="m9 12 2 2 4-4" />
+
                         </svg>
-                        <span class="whitespace-nowrap text-[12px] font-bold leading-4 text-[#F3E8FF]">
+
+                        <span class="whitespace-nowrap text-[11px] font-semibold leading-none text-white/95">
+
                             NPSN: 70007255
+
                         </span>
+
                     </div>
 
-                    {{-- SEKOLAH --}}
-                    <div class="inline-flex h-[30px] items-center gap-[7px]
-                                rounded-[14px] border border-[#D8B4FE]/30
-                                bg-[#F3E8FF]/20 px-3 py-[6px] backdrop-blur-md">
-                        <svg class="h-[15px] w-[15px] shrink-0 text-[#FACC15]"
-                             viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round">
-                            <circle cx="12" cy="8" r="6"/>
-                            <path d="m8.5 13-1 8 4.5-2.5 4.5 2.5-1-8"/>
+                    {{-- STATUS SEKOLAH --}}
+
+                    <div
+
+                        class="inline-flex h-[30px] items-center gap-[7px]
+
+                                rounded-full border border-white/20
+
+                                bg-white/[0.10] px-3 backdrop-blur-sm">
+
+                        <svg class="block h-[14px] w-[14px] shrink-0 text-[#FACC15]" viewBox="0 0 24 24" fill="none"
+
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+
+                            aria-hidden="true">
+
+                            <circle cx="12" cy="8" r="5.5" />
+
+                            <path d="m9 7.7 2 2 4-4" />
+
+                            <path d="m8.5 12.5-1 8 4.5-2.5 4.5 2.5-1-8" />
+
                         </svg>
-                        <span class="whitespace-nowrap text-[12px] font-bold leading-4 text-[#F3E8FF]">
+
+                        <span class="whitespace-nowrap text-[11px] font-semibold leading-none text-white/95">
+
                             Sekolah Menengah Kejuruan
+
                         </span>
+
                     </div>
 
-                    {{-- KONSENTRASI --}}
-                    <div class="inline-flex h-[30px] items-center gap-[7px]
-                                rounded-[14px] border border-[#D8B4FE]/30
-                                bg-[#F3E8FF]/20 px-3 py-[6px] backdrop-blur-md">
-                        <svg class="h-[15px] w-[15px] shrink-0 text-[#38BDF8]"
-                             viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2"
-                             stroke-linecap="round">
-                            <rect x="3" y="5" width="13" height="10" rx="1.5"/>
-                            <path d="M7 19h5m-2.5-4v4"/>
-                            <circle cx="19" cy="8" r="2"/>
-                            <circle cx="19" cy="16" r="2"/>
-                            <path d="M16 8h1m-1 8h1"/>
+                    {{-- KONSENTRASI KEAHLIAN --}}
+
+                    <div
+
+                        class="inline-flex h-[30px] items-center gap-[7px]
+
+                                rounded-full border border-white/20
+
+                                bg-white/[0.10] px-3 backdrop-blur-sm">
+
+                        <svg class="block h-[14px] w-[14px] shrink-0 text-[#67D7F5]" viewBox="0 0 24 24" fill="none"
+
+                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+
+                            aria-hidden="true">
+
+                            <rect x="2.5" y="4" width="13.5" height="11" rx="1.5" />
+
+                            <path d="M6.5 19.5h5.5m-2.75-4.5v4.5" />
+
+                            <rect x="17.5" y="7.5" width="4" height="9" rx="1" />
+
+                            <path d="M19 14.2h1" />
+
                         </svg>
-                        <span class="whitespace-nowrap text-[12px] font-bold leading-4 text-[#F3E8FF]">
+
+                        <span class="whitespace-nowrap text-[11px] font-semibold leading-none text-white/95">
+
                             PPLG · TKJ · DKV · Animasi
+
                         </span>
+
                     </div>
 
                 </div>
+
             </div>
+
         </header>
 
         {{-- 02. LAYOUT UTAMA --}}
@@ -236,25 +329,22 @@
             <aside class="min-w-0 space-y-4">
 
                 {{-- A. NAVIGASI TENTANG SEKOLAH --}}
-                <nav class="min-h-[357px] w-full overflow-hidden
-                            rounded-[12px] border border-[#E9D5FF]/75
-                            bg-white py-5 pl-5 pr-0
+                <nav class="h-fit w-full overflow-hidden rounded-[12px]
+                            border border-[#E9D5FF]/75 bg-white py-5 pl-5 pr-0
                             shadow-[0_5px_14px_rgba(59,7,100,0.075)]">
 
                     <div class="flex items-center gap-3 pr-4">
                         <div class="flex h-8 w-8 shrink-0 items-center justify-center
                                     rounded-[14px] text-[#FACC15]"
                              style="background:linear-gradient(135deg,#7E22CE,#C026D3);">
-                            <svg class="h-[18px] w-[18px]"
-                                 viewBox="0 0 24 24" fill="none"
+                            <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none"
                                  stroke="currentColor" stroke-width="2"
-                                 stroke-linecap="round" stroke-linejoin="round">
+                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M3 10h18L12 4 3 10Z"/>
                                 <path d="M5 10v9M9 10v9M15 10v9M19 10v9"/>
                                 <path d="M3 19h18M2 22h20"/>
                             </svg>
                         </div>
-
                         <div>
                             <h2 class="text-[16px] font-extrabold leading-6 text-[#3B0764]">
                                 Tentang Sekolah
@@ -269,117 +359,98 @@
 
                     <div class="mt-3 flex flex-col gap-[2px]">
 
-                        {{-- PROFIL --}}
+                        {{-- PROFIL SEKOLAH --}}
                         <a href="#profil-sekolah"
-                           class="flex h-[44px] w-full items-center gap-3
-                                  rounded-l-[8px] px-[14px] py-[10px]
-                                  text-[#4B444F] transition hover:bg-[#F3E8FF]">
-                            <svg class="h-[13.5px] w-[16.5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="1.8"
-                                 stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m3 11 9-8 9 8"/>
-                                <path d="M5 10v10h14V10M9 20v-6h6v6"/>
+                           class="flex h-[44px] w-full items-center gap-3 rounded-l-[8px]
+                                  px-[14px] py-[10px] text-[#4B444F]
+                                  transition hover:bg-[#F3E8FF]">
+                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                                <circle cx="10" cy="10" r="2"/>
+                                <path d="M7.2 16c.6-2 1.8-3 3.3-3s2.7 1 3.3 3M16 9h2"/>
                             </svg>
-                            <span class="flex-1 text-[14px] font-semibold leading-6">
-                                Profil Sekolah
-                            </span>
-                            <svg class="h-2 w-[5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor"
-                                      stroke-width="1.3" stroke-linecap="round"/>
+                            <span class="flex-1 text-[14px] font-semibold leading-6">Profil Sekolah</span>
+                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7C7480]" viewBox="0 0 5 8" fill="none">
+                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
                             </svg>
                         </a>
 
-                        {{-- VISI MISI AKTIF --}}
-                        <a href="#visi"
-                           class="flex h-[48px] w-full items-center gap-3
-                                  rounded-[12px] px-3 py-3 text-white
+                        {{-- VISI & MISI AKTIF --}}
+                        <a href="#visi" aria-current="page"
+                           class="flex h-[48px] w-full items-center gap-3 rounded-[12px]
+                                  px-3 py-[10px] text-white
                                   shadow-[0_4px_10px_rgba(126,34,206,0.25)]"
                            style="background:linear-gradient(100deg,#9333EA,#8B5CF6);">
-                            <svg class="h-[13px] w-[12px] shrink-0 text-[#FDC003]"
-                                 viewBox="0 0 12 14" fill="currentColor">
-                                <path d="M2 1v12M2 2h8L7 5l3 3H2"/>
+                            <svg class="h-[16px] w-[14px] shrink-0 text-[#FDC003]"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 3v18"/>
+                                <path d="M5 4h14l-4 4 4 4H5"/>
                             </svg>
-                            <span class="flex-1 text-[16px] font-bold leading-6">
-                                Visi &amp; Misi
-                            </span>
+                            <span class="flex-1 text-[14px] font-bold leading-6">Visi &amp; Misi</span>
                         </a>
 
                         {{-- MAKNA LOGO --}}
                         <a href="#nilai"
-                           class="flex h-[44px] w-full items-center gap-3
-                                  rounded-l-[8px] px-[14px] py-[10px]
-                                  text-[#4B444F] transition hover:bg-[#F3E8FF]">
-                            <svg class="h-[13.5px] w-[16.5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="1.8">
+                           class="flex h-[44px] w-full items-center gap-3 rounded-l-[8px]
+                                  px-[14px] py-[10px] text-[#4B444F]
+                                  transition hover:bg-[#F3E8FF]">
+                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 3 21 8v8l-9 5-9-5V8l9-5Z"/>
                                 <circle cx="12" cy="12" r="3"/>
                             </svg>
-                            <span class="flex-1 text-[14px] font-semibold leading-6">
-                                Makna Logo
-                            </span>
-                            <svg class="h-2 w-[5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor"
-                                      stroke-width="1.3" stroke-linecap="round"/>
+                            <span class="flex-1 text-[14px] font-semibold leading-6">Makna Logo</span>
+                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7C7480]" viewBox="0 0 5 8" fill="none">
+                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
                             </svg>
                         </a>
 
                         {{-- PROGRAM KEAHLIAN --}}
                         <a href="#implementasi"
-                           class="flex h-[44px] w-full items-center gap-3
-                                  rounded-l-[8px] px-[14px] py-[10px]
-                                  text-[#4B444F] transition hover:bg-[#F3E8FF]">
-                            <svg class="h-[13.5px] w-[16.5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="1.8"
-                                 stroke-linecap="round" stroke-linejoin="round">
+                           class="flex h-[44px] w-full items-center gap-3 rounded-l-[8px]
+                                  px-[14px] py-[10px] text-[#4B444F]
+                                  transition hover:bg-[#F3E8FF]">
+                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="4" width="18" height="14" rx="2"/>
-                                <path d="M8 22h8m-4-4v4M7 9h10m-10 4h5"/>
+                                <path d="M2 21h20l-2-3H4l-2 3Z"/>
                             </svg>
-                            <span class="flex-1 text-[14px] font-semibold leading-6">
-                                Program Keahlian
-                            </span>
-                            <svg class="h-2 w-[5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor"
-                                      stroke-width="1.3" stroke-linecap="round"/>
+                            <span class="flex-1 text-[14px] font-semibold leading-6">Program Keahlian</span>
+                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7C7480]" viewBox="0 0 5 8" fill="none">
+                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
                             </svg>
                         </a>
 
                         {{-- PRESTASI SISWA --}}
                         <a href="#implementasi"
-                           class="flex h-[44px] w-full items-center gap-3
-                                  rounded-l-[8px] px-[14px] py-[10px]
-                                  text-[#4B444F] transition hover:bg-[#F3E8FF]">
-                            <svg class="h-[13.5px] w-[16.5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="1.8"
-                                 stroke-linecap="round" stroke-linejoin="round">
+                           class="flex h-[44px] w-full items-center gap-3 rounded-l-[8px]
+                                  px-[14px] py-[10px] text-[#4B444F]
+                                  transition hover:bg-[#F3E8FF]">
+                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7C7480]"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M8 4h8v5a4 4 0 0 1-8 0V4Z"/>
-                                <path d="M8 6H4v2a4 4 0 0 0 4 4"/>
-                                <path d="M16 6h4v2a4 4 0 0 1-4 4"/>
+                                <path d="M8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4"/>
                                 <path d="M12 13v5m-4 3h8"/>
                             </svg>
-                            <span class="flex-1 text-[14px] font-semibold leading-6">
-                                Prestasi Siswa
-                            </span>
-                            <svg class="h-2 w-[5px] shrink-0 text-[#7C7480]"
-                                 viewBox="0 0 5 8" fill="none">
-                                <path d="m1 1 3 3-3 3" stroke="currentColor"
-                                      stroke-width="1.3" stroke-linecap="round"/>
+                            <span class="flex-1 text-[14px] font-semibold leading-6">Prestasi Siswa</span>
+                            <svg class="mr-3 h-2 w-[5px] shrink-0 text-[#7C7480]" viewBox="0 0 5 8" fill="none">
+                                <path d="m1 1 3 3-3 3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
                             </svg>
                         </a>
                     </div>
                 </nav>
 
-                {{-- B. PILAR BUDAYA DAN POTENSI LOKAL --}}
+                {{-- B. PILAR BUDAYA DAN POTENSI LOKAL: MENGIKUTI DESAIN PROGRAM KEAHLIAN --}}
                 <section id="profil-sekolah"
                          class="relative min-h-[256.5px] w-full overflow-hidden
                                 rounded-[20px] border border-[#E9D5FF]/90
-                                bg-white px-4 pb-4 pt-7
+                                bg-white px-4 pb-4 pt-6
                                 shadow-[0_5px_14px_rgba(59,7,100,0.055)]">
 
                     <div class="flex items-center gap-3">
@@ -387,7 +458,9 @@
                                     rounded-[14px]"
                              style="background:linear-gradient(135deg,#FACC15,#EAB308);">
                             <svg class="h-[19px] w-[19px]"
-                                 viewBox="0 0 24 24" fill="#4A0E4E">
+                                 viewBox="0 0 24 24"
+                                 fill="#4A0E4E"
+                                 aria-hidden="true">
                                 <circle cx="12" cy="5" r="3.1"/>
                                 <circle cx="18.2" cy="9.5" r="3.1"/>
                                 <circle cx="15.8" cy="16.2" r="3.1"/>
@@ -401,14 +474,14 @@
                             <h2 class="text-[14px] font-extrabold leading-5 text-[#3B0764]">
                                 Pilar Budaya dan Potensi Lokal
                             </h2>
-                            <p class="mt-0.5 text-[10px] font-semibold leading-[15px] text-[#A855F7]">
+                            <p class="mt-0.5 text-[10px] font-bold leading-[15px] text-[#A855F7]">
                                 BUDAYA NUSANTARA &amp; KREATIVITAS DIGITAL
                             </p>
                         </div>
                     </div>
 
                     <div class="my-3 h-[2px] w-full"
-                         style="background:linear-gradient(90deg,#9333EA 0%,#FACC15 50%,rgba(250,204,21,0) 100%);">
+                         style="background:linear-gradient(90deg,#9333EA 0%,#C026D3 32%,#FACC15 65%,rgba(250,204,21,0) 100%);">
                     </div>
 
                     <p class="text-[12px] font-normal leading-[19.5px] text-[#475569]">
@@ -422,10 +495,9 @@
 
                     <div class="relative z-10 mt-3 flex items-center gap-2">
                         <svg class="h-[14px] w-[12px] shrink-0 text-[#C026D3]"
-                             viewBox="0 0 16 20" fill="none"
-                             stroke="currentColor" stroke-width="1.8">
-                            <path d="M8 1 14 3.5v6c0 4.5-2.5 7.2-6 9.5
-                                     -3.5-2.3-6-5-6-9.5v-6L8 1Z"/>
+                             viewBox="0 0 16 20" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M8 1 14 3.5v6c0 4.5-2.5 7.2-6 9.5-3.5-2.3-6-5-6-9.5v-6L8 1Z"/>
                         </svg>
                         <span class="text-[11px] font-bold leading-[16.5px] text-[#7E22CE]">
                             Berkarakter, Berbudaya, Unggul dalam IT
@@ -433,45 +505,40 @@
                     </div>
 
                     {{-- WATERMARK --}}
-                    <svg class="pointer-events-none absolute bottom-[-10px]
-                                right-[-8px] w-[85px] text-[#C026D3] opacity-[0.09]"
-                         viewBox="0 0 100 120" fill="none"
-                         stroke="currentColor" stroke-width="3">
-                        <path d="M50 3 90 26V74L50 97 10 74V26Z"/>
-                        <path d="M50 15 79 32V68L50 85 21 68V32Z"/>
-                        <path d="M50 29 68 40V61L50 72 32 61V40Z"/>
+                    <svg class="pointer-events-none absolute bottom-[-8px] right-[-8px]
+                                h-[145px] w-[104px] text-[#C026D3] opacity-[0.09]"
+                         viewBox="0 0 100 140" fill="none" stroke="currentColor" stroke-width="3">
+                        <path d="M50 4C65 21 80 29 91 40V82C91 106 72 124 50 136C28 124 9 106 9 82V40C20 29 35 21 50 4Z"/>
+                        <path d="M50 30C34 46 31 65 50 83C69 65 66 46 50 30Z"/>
+                        <path d="M50 47C42 57 42 69 50 77C58 69 58 57 50 47Z"/>
                     </svg>
                 </section>
 
-                {{-- C. IDENTITAS SATUAN --}}
-                <section
-                    class="min-h-[470px] w-full rounded-[20px]
-                           border border-[#E9D5FF]/80 bg-white
-                           px-4 pb-4 pt-7
-                           shadow-[0_5px_14px_rgba(59,7,100,0.055)]">
+                {{-- C. IDENTITAS SATUAN: DESAIN PROGRAM KEAHLIAN, DATA TETAP VISI & MISI --}}
+                <section class="min-h-[470px] w-full rounded-[20px]
+                                border border-[#E9D5FF]/80 bg-white
+                                px-4 pb-4 pt-7
+                                shadow-[0_5px_14px_rgba(59,7,100,0.055)]">
 
                     <div class="flex items-center justify-between gap-2">
                         <h2 class="flex items-center gap-2 text-[14px]
                                    font-extrabold leading-5 text-[#3B0764]">
                             <svg class="h-[17px] w-[17px] shrink-0 text-[#9333EA]"
-                                 viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor" stroke-width="1.8">
-                                <rect x="5" y="5" width="14" height="16" rx="2"/>
-                                <path d="M9 3h6v4H9zM9 12h6M9 16h6"/>
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <circle cx="9" cy="10" r="2"/>
+                                <path d="M5.7 16c.6-1.8 1.7-2.7 3.3-2.7s2.7.9 3.3 2.7M15 9h3M15 12h3M15 15h3"/>
                             </svg>
                             Identitas Satuan
                         </h2>
 
-                        {{-- AKREDITASI B --}}
-                        <span class="inline-flex h-[22.5px] w-[104.36px]
-                                     shrink-0 items-center justify-center gap-[6px]
-                                     rounded-[10px] border border-[#FACC15]
-                                     bg-[#FACC15]/20 px-2">
+                        {{-- DATA AKREDITASI TETAP B SESUAI FILE VISI & MISI --}}
+                        <span class="inline-flex h-[22.5px] shrink-0 items-center
+                                     justify-center gap-[6px] rounded-[10px]
+                                     border border-[#FACC15] bg-[#FACC15]/20 px-2">
                             <svg class="h-[11px] w-[11px] shrink-0 text-[#854D0E]"
                                  viewBox="0 0 24 24" fill="currentColor">
-                                <path d="m12 2 3.1 6.3 6.9 1-5 4.9
-                                         1.2 6.8-6.2-3.3-6.2 3.3L7 14.2
-                                         2 9.3l6.9-1L12 2Z"/>
+                                <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3L7 14.2 2 9.3l6.9-1L12 2Z"/>
                             </svg>
                             <span class="whitespace-nowrap text-[11px] font-extrabold leading-[16.5px] text-[#854D0E]">
                                 Akreditasi B
@@ -485,7 +552,6 @@
                                         items-center gap-2 rounded-[24px]
                                         border border-[#F3E8FF]/70
                                         bg-[#FAF5FF]/70 px-3 py-2.5">
-
                                 <span class="text-[12px] font-normal leading-[1.6] text-[#64748B]">
                                     {{ $item['label'] }}
                                 </span>
@@ -515,7 +581,8 @@
                 </section>
             </aside>
 
-            {{-- KOLOM KANAN --}}
+
+                        {{-- KOLOM KANAN --}}
             <div class="min-w-0 space-y-0">
 
                 {{-- 03. PEDOMAN UTAMA --}}
