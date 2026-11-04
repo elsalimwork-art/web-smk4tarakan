@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\BerandaPage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,7 +15,7 @@ Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
 Route::view('/makna-logo', 'makna-logo')->name('makna-logo');
 
-Route::view('/beranda', 'beranda')->name('beranda');
+Route::get('/', BerandaPage::class)->name('beranda');
 
 Route::view('/program-keahlian', 'program-keahlian')
     ->name('program-keahlian');

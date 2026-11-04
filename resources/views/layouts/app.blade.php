@@ -20,6 +20,14 @@
     </head>
 
     <body class="bg-[#F3F8FF] text-[#1b1b18] flex flex-col min-h-screen w-full">
-        @yield('content')
+        <x-navigation />
+
+        @hasSection('content')
+            @yield('content')
+        @else
+            {{ $slot ?? '' }}
+        @endif
+
+        <x-footer />
     </body>
 </html>
