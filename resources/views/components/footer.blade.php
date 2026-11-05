@@ -4,10 +4,11 @@
         $footerLinks = [
         ['label' => 'Beranda', 'url' => '/'],
         ['label' => 'Tentang Sekolah', 'url' => '/visi-misi'],
-        ['label' => 'Kompetensi Keahlian', 'url' => '/program-keahlian'],
-        ['label' => 'Pendaftaran SPMB', 'url' => '/spmb'],
+        ['label' => 'Manajemen', 'url' => '/manajemen'],
+        ['label' => 'Informasi SPMB', 'url' => '/spmb'],
         ['label' => 'Berita', 'url' => '/berita'],
         ['label' => 'Agenda', 'url' => '/agenda'],
+        ['label' => 'Kontak', 'url' => '/kontak'],
         ];
 
         $footerPrograms = [

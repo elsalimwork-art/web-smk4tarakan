@@ -8,41 +8,37 @@ use App\Livewire\NewsPage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Agenda;
+use App\Livewire\NewsDetailPage;
 
-// HALAMAN UTAMA
 Route::get('/', HomePage::class)->name('home');
 
-// SPMB
 Route::get('/spmb', SpmbPage::class)->name('spmb');
 
-// KONTAK
 Route::get('/kontak', ContactPage::class)->name('contact');
 
-// MANAJEMEN
+Route::get('/', ContactPage::class)->name('contact');
+
 Route::get('/manajemen', ManagementPage::class)->name('management');
+
 Route::get('/manajemen/pegawai/{id}', EmployeeDetailPage::class)
     ->whereNumber('id')
     ->name('employee-detail');
 
-    Route::get('/berita', NewsPage::class)
+Route::get('/berita', NewsPage::class)
     ->name('news');
+
+Route::get('/berita/detail/{slug}', NewsDetailPage::class)
+    ->where('slug', '[A-Za-z0-9\-]+')
+    ->name('news.detail');
+
 Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
-// MAKNA LOGO
 Route::view('/makna-logo', 'makna-logo')->name('makna-logo');
 
-// PROGRAM KEAHLIAN
 Route::view('/program-keahlian', 'program-keahlian')
     ->name('program-keahlian');
 
-// PROFIL SEKOLAH
 Route::view('/profil-sekolah', 'profil-sekolah')
     ->name('profil-sekolah');
 
-// BERITA
-Route::get('/berita', function () {
-    return view('berita');
-});
-
-//AGENDA
 Route::get('/agenda', Agenda::class)->name('agenda.index');
