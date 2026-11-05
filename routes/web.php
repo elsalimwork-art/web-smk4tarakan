@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\ContactPage;
+use App\Livewire\EmployeeDetailPage;
 use App\Livewire\HomePage;
 use App\Livewire\ManagementPage;
 use App\Livewire\SpmbPage;
@@ -18,8 +19,9 @@ Route::get('/kontak', ContactPage::class)->name('contact');
 
 // MANAJEMEN
 Route::get('/manajemen', ManagementPage::class)->name('management');
-
-// VISI & MISI
+Route::get('/manajemen/pegawai/{id}', EmployeeDetailPage::class)
+    ->whereNumber('id')
+    ->name('employee-detail');
 Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
 // MAKNA LOGO

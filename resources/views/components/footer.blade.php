@@ -1,5 +1,5 @@
 <div>
-    <footer class="relative w-full overflow-hidden border-t border-[#7E30E1]/50 bg-[#241039] text-[#F3F8FF]">
+    <footer class="relative w-full overflow-hidden border-t border-[#7E30E1]/50 bg-[#2B1745] font-[Plus_Jakarta_Sans,Arial,sans-serif] text-[#F3F8FF] antialiased">
         @php
         $footerLinks = [
         ['label' => 'Beranda', 'url' => '/'],
@@ -18,13 +18,11 @@
         ];
         @endphp
 
-        <div class="mx-auto w-full max-w-[1440px] px-5 py-12 sm:px-8 sm:py-14 lg:px-10 lg:py-16">
+        <div class="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
             {{-- FOOTER MAIN CONTENT --}}
-            <div class="grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-2 xl:grid-cols-[minmax(0,1.35fr)_minmax(150px,0.75fr)_minmax(0,1fr)_minmax(0,1fr)] xl:gap-x-12">
-                {{-- SCHOOL IDENTITY --}}
+            <div class="grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-9 xl:grid-cols-[minmax(0,1.35fr)_minmax(150px,0.75fr)_minmax(0,1fr)_minmax(0,1fr)] xl:gap-x-10">
                 <div class="min-w-0">
                     <div class="grid grid-cols-[68px_minmax(0,1fr)] items-start gap-x-4 gap-y-4 sm:grid-cols-[76px_minmax(0,1fr)] lg:grid-cols-[84px_minmax(0,1fr)]">
-                        {{-- SCHOOL LOGO --}}
                         <img
                             src="{{ asset('images/logo-smkn4.png') }}"
                             alt="Logo SMK Negeri 4 Tarakan"
@@ -35,7 +33,6 @@
                             lg:h-[84px] lg:w-[84px] lg:-translate-y-5"
                             loading="lazy">
 
-                        {{-- SCHOOL IDENTITY --}}
                         <a
                             href="{{ url('/') }}"
                             class="flex min-w-0 flex-col justify-center rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FDC003]">
@@ -49,12 +46,10 @@
                             </span>
                         </a>
 
-                        {{-- SCHOOL DESCRIPTION --}}
-                        <p class="min-w-0 text-[15px] leading-[1.8] text-[#C7B9D8] sm:text-base">
+                        <p class="min-w-0 text-sm leading-7 text-[#C7B9D8] sm:text-base">
                             Lembaga pendidikan kejuruan yang berfokus pada teknologi dan informasi. Berkomitmen membentuk lulusan kompeten, berbudi pekerti luhur, dan siap kerja di era transformasi digital.
                         </p>
 
-                        {{-- SOCIAL MEDIA --}}
                         <div class="flex min-w-0 flex-wrap items-center gap-2.5">
                             {{-- Facebook --}}
                             <a href="https://www.facebook.com/Smkn4tarakanofficial/"
@@ -101,15 +96,14 @@
                     </div>
                 </div>
 
-                {{-- IMPORTANT LINKS --}}
                 <div class="min-w-0">
-                    <h2 class="mb-5 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:text-[15px]">
+                    <h2 class="mb-4 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:mb-5 sm:text-base">
                         Tautan Penting
                     </h2>
-                    <ul class="space-y-2.5">
+                    <ul class="space-y-2">
                         @foreach ($footerLinks as $link)
                         <li>
-                            <a href="{{ url($link['url']) }}" class="inline-flex text-[15px] leading-6 text-[#C7B9D8] transition-colors hover:text-[#FDC003] focus:outline-none focus-visible:text-[#FDC003] sm:text-base">
+                            <a href="{{ url($link['url']) }}" class="inline-flex text-sm leading-7 text-[#C7B9D8] transition-colors hover:text-[#FDC003] focus:outline-none focus-visible:text-[#FDC003] sm:text-base">
                                 {{ $link['label'] }}
                             </a>
                         </li>
@@ -117,15 +111,14 @@
                     </ul>
                 </div>
 
-                {{-- STUDY PROGRAMS --}}
                 <div class="min-w-0">
-                    <h2 class="mb-5 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:text-[15px]">
+                    <h2 class="mb-4 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:mb-5 sm:text-base">
                         Program Keahlian
                     </h2>
-                    <ul class="space-y-2.5">
+                    <ul class="space-y-2">
                         @foreach ($footerPrograms as $program)
                         <li>
-                            <a href="{{ url('/program-keahlian') }}" class="inline-flex max-w-full text-[15px] leading-6 text-[#C7B9D8] transition-colors hover:text-[#FDC003] focus:outline-none focus-visible:text-[#FDC003] sm:text-base">
+                            <a href="{{ url('/program-keahlian') }}" class="inline-flex max-w-full text-sm leading-7 text-[#C7B9D8] transition-colors hover:text-[#FDC003] focus:outline-none focus-visible:text-[#FDC003] sm:text-base">
                                 {{ $program }}
                             </a>
                         </li>
@@ -133,12 +126,11 @@
                     </ul>
                 </div>
 
-                {{-- CONTACT INFORMATION --}}
                 <div class="min-w-0">
-                    <h2 class="mb-5 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:text-[15px]">
+                    <h2 class="mb-4 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:mb-5 sm:text-base">
                         Kontak &amp; Informasi
                     </h2>
-                    <address class="space-y-3 text-[15px] not-italic leading-[1.7] text-[#C7B9D8] sm:text-base">
+                    <address class="space-y-2.5 text-sm not-italic leading-7 text-[#C7B9D8] sm:text-base">
                         <p>
                             Jl. P. Diponegoro, Sebengkok, Kec. Tarakan Tengah, Kota Tarakan, Kalimantan Utara 77114
                         </p>
@@ -155,9 +147,8 @@
                 </div>
             </div>
 
-            {{-- FOOTER BOTTOM --}}
-            <div class="mt-10 border-t border-white/15 pt-6 sm:mt-12 sm:pt-7">
-                <div class="flex flex-col gap-3 text-[13px] leading-6 text-[#AFA0C1] sm:text-sm md:flex-row md:items-center md:justify-between">
+            <div class="mt-8 border-t border-white/15 pt-5 sm:mt-10 sm:pt-6">
+                <div class="flex flex-col gap-2 text-xs leading-6 text-[#AFA0C1] sm:gap-3 sm:text-sm md:flex-row md:items-center md:justify-between">
                     <p>
                         &copy; {{ date('Y') }} SMK Negeri 4 Tarakan <span class="px-1 text-[#FDC003]">•</span> Hak Cipta Dilindungi Undang-Undang.
                     </p>
