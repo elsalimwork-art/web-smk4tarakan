@@ -4,6 +4,7 @@ use App\Livewire\ContactPage;
 use App\Livewire\EmployeeDetailPage;
 use App\Livewire\HomePage;
 use App\Livewire\ManagementPage;
+use App\Livewire\NewsPage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Agenda;
@@ -22,6 +23,9 @@ Route::get('/manajemen', ManagementPage::class)->name('management');
 Route::get('/manajemen/pegawai/{id}', EmployeeDetailPage::class)
     ->whereNumber('id')
     ->name('employee-detail');
+
+    Route::get('/berita', NewsPage::class)
+    ->name('news');
 Route::view('/visi-misi', 'visi-misi')->name('visi-misi');
 
 // MAKNA LOGO
