@@ -40,17 +40,11 @@
                     <div class="mt-5 h-1.5 w-20 rounded-full bg-[#FDC003] sm:w-[88px]"></div>
 
                     <p class="mt-4 w-full max-w-none text-justify text-lg leading-[1.75] text-white/90 sm:mt-5 sm:text-xl lg:text-[22px]">
-                        Setiap tahun, SMKN 4 Tarakan menjadi saksi dari
-                        antusiasme yang luar biasa saat penerimaan peserta
-                        didik baru dimulai. Ribuan siswa bersemangat mengikuti
-                        proses pendaftaran, mencerminkan minat mereka dalam
-                        bidang kejuruan yang ditawarkan sekolah ini. Dengan
-                        proses yang transparan dan adil, calon siswa diberi
-                        kesempatan untuk menunjukkan potensi mereka. Para staf
-                        dan guru dengan penuh semangat menyambut generasi baru
-                        ini, siap memberikan pendidikan berkualitas dan
-                        mempersiapkan mereka untuk masa depan yang cerah
-                        di dunia kerja.
+                        SMK Negeri 4 Tarakan membuka kesempatan bagi generasi muda untuk mengembangkan potensi, keterampilan, dan kompetensi 
+                        melalui pendidikan vokasi yang berkualitas. Dengan pilihan 4 Konsentrasi Keahlian di bidang teknologi informasi, 
+                        kami berkomitmen menghadirkan pembelajaran yang relevan dengan perkembangan industri dan kebutuhan dunia kerja. 
+                        Melalui proses penerimaan murid baru yang transparan, objektif, dan berkeadilan, kami mengundang calon murid untuk 
+                        bergabung, berkarya, dan mempersiapkan diri menjadi generasi kompeten, kreatif, serta siap menghadapi tantangan masa depan.
                     </p>
 
                     {{-- INFORMATION BADGES --}}

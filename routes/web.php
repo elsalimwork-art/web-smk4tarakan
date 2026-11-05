@@ -8,6 +8,7 @@ use App\Livewire\NewsPage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Agenda;
+use App\Livewire\AgendaPage;
 use App\Livewire\NewsDetailPage;
 
 Route::get('/', HomePage::class)->name('home');
@@ -41,4 +42,4 @@ Route::view('/program-keahlian', 'program-keahlian')
 Route::view('/profil-sekolah', 'profil-sekolah')
     ->name('profil-sekolah');
 
-Route::get('/agenda', Agenda::class)->name('agenda.index');
+Route::get('/agenda', AgendaPage::class)->name('agenda');

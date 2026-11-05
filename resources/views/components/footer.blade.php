@@ -19,21 +19,15 @@
         ];
         @endphp
 
-        <div class="mx-auto w-full max-w-[1600px] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-14">
-            {{-- FOOTER MAIN CONTENT --}}
-            <div class="grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-9 xl:grid-cols-[minmax(0,1.35fr)_minmax(150px,0.75fr)_minmax(0,1fr)_minmax(0,1fr)] xl:gap-x-10">
+        <div class="mx-auto w-full max-w-[1600px] px-5 py-10 sm:px-7 sm:py-12 lg:px-10 lg:py-14">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 sm:gap-y-10 xl:grid-cols-[1.2fr_0.8fr_1fr_1.2fr] xl:gap-x-10 2xl:gap-x-12">
                 <div class="min-w-0">
-                    <div class="grid grid-cols-[68px_minmax(0,1fr)] items-start gap-x-4 gap-y-4 sm:grid-cols-[76px_minmax(0,1fr)] lg:grid-cols-[84px_minmax(0,1fr)]">
+                    <div class="flex min-w-0 items-center gap-4">
                         <img
                             src="{{ asset('images/logo-smkn4.png') }}"
                             alt="Logo SMK Negeri 4 Tarakan"
-                            class="relative row-span-3 -translate-y-4 self-start
-                            h-[68px] w-[68px] shrink-0 object-contain
-                            drop-shadow-[0_3px_8px_rgba(0,0,0,0.25)]
-                            sm:h-[76px] sm:w-[76px] sm:-translate-y-5
-                            lg:h-[84px] lg:w-[84px] lg:-translate-y-5"
+                            class="h-[68px] w-[68px] shrink-0 object-contain drop-shadow-[0_3px_8px_rgba(0,0,0,0.25)] sm:h-[76px] sm:w-[76px]"
                             loading="lazy">
-
                         <a
                             href="{{ url('/') }}"
                             class="flex min-w-0 flex-col justify-center rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FDC003]">
@@ -46,13 +40,11 @@
                                 NPSN: 70007255
                             </span>
                         </a>
-
-                        <p class="min-w-0 text-sm leading-7 text-[#C7B9D8] sm:text-base">
-                            Lembaga pendidikan kejuruan yang berfokus pada teknologi dan informasi. Berkomitmen membentuk lulusan kompeten, berbudi pekerti luhur, dan siap kerja di era transformasi digital.
-                        </p>
-
-                        <div class="flex min-w-0 flex-wrap items-center gap-2.5">
-                            {{-- Facebook --}}
+                    </div>
+                    <p class="mt-5 min-w-0 text-sm leading-7 text-[#C7B9D8] sm:text-base">
+                        Lembaga pendidikan kejuruan yang berfokus pada teknologi dan informasi. Berkomitmen membentuk lulusan kompeten, berbudi pekerti luhur, dan siap kerja di era transformasi digital.
+                    </p>
+                    <div class="mt-5 flex min-w-0 flex-wrap items-center gap-2.5">
                             <a href="https://www.facebook.com/Smkn4tarakanofficial/"
                                 aria-label="Facebook SMK Negeri 4 Tarakan"
                                 title="Facebook"
@@ -61,8 +53,6 @@
                                     <path d="M13.4 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.2v3.2H10V21h3.4Z" />
                                 </svg>
                             </a>
-
-                            {{-- Instagram --}}
                             <a href="https://www.instagram.com/officialsmkn4tarakan/"
                                 aria-label="Instagram SMK Negeri 4 Tarakan"
                                 title="Instagram"
@@ -73,8 +63,6 @@
                                     <circle cx="17.7" cy="6.5" r="1" class="fill-current stroke-none" />
                                 </svg>
                             </a>
-
-                            {{-- YouTube --}}
                             <a href="https://www.youtube.com/@smkn4tarakankaltara280"
                                 aria-label="YouTube SMK Negeri 4 Tarakan"
                                 title="YouTube"
@@ -83,8 +71,6 @@
                                     <path d="M23.2 7a3 3 0 0 0-2.1-2.1C19.2 4.4 12 4.4 12 4.4s-7.2 0-9.1.5A3 3 0 0 0 .8 7 31 31 0 0 0 .3 12a31 31 0 0 0 .5 5 3 3 0 0 0 2.1 2.1c1.9.5 9.1.5 9.1.5s7.2 0 9.1-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-5 31 31 0 0 0-.5-5ZM9.7 15.5v-7l6 3.5-6 3.5Z" />
                                 </svg>
                             </a>
-
-                            {{-- TikTok --}}
                             <a href="https://www.tiktok.com/@officialsmkn4trk?is_from_webapp=1&sender_device=pc"
                                 aria-label="TikTok SMK Negeri 4 Tarakan"
                                 title="TikTok"
@@ -94,7 +80,6 @@
                                 </svg>
                             </a>
                         </div>
-                    </div>
                 </div>
 
                 <div class="min-w-0">
@@ -131,30 +116,41 @@
                     <h2 class="mb-4 text-sm font-extrabold uppercase tracking-[0.08em] text-white sm:mb-5 sm:text-base">
                         Kontak &amp; Informasi
                     </h2>
-                    <address class="space-y-2.5 text-sm not-italic leading-7 text-[#C7B9D8] sm:text-base">
-                        <p>
+                    <address class="space-y-4 text-sm not-italic leading-6 text-[#C7B9D8] sm:text-base sm:leading-7">
+                        <p class="max-w-sm">
                             Jl. P. Diponegoro, Sebengkok, Kec. Tarakan Tengah, Kota Tarakan, Kalimantan Utara 77114
                         </p>
                         <p>
-                            <a href="tel:+625512034981" class="transition-colors hover:text-[#FDC003]">Telp. (0551) 2034981</a>
+                            <a href="mailto:smknegeri4tarakan@gmail.com" class="break-all transition-colors hover:text-[#FDC003]">smknegeri4tarakan@gmail.com</a>
                         </p>
-                        <p>
-                            <a href="mailto:info@smkn4tarakan.sch.id" class="break-all transition-colors hover:text-[#FDC003]">info@smkn4tarakan.sch.id</a>
-                        </p>
-                        <p>
-                            Senin - Jumat: 07.15 - 16.00 WITA
-                        </p>
+                        <div class="border-t border-white/10 pt-4">
+                            <h3 class="mb-3 text-xs font-extrabold uppercase tracking-[0.08em] text-white/90 sm:text-sm">
+                                Jam Pelayanan
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="min-w-0">
+                                    <p class="font-bold text-white">Senin–Kamis</p>
+                                    <p class="mt-0.5 text-[#C7B9D8]">07.15–16.00 WITA</p>
+                                </div>
+                                <div class="min-w-0">
+                                    <p class="font-bold text-white">Jumat</p>
+                                    <p class="mt-0.5 break-words text-[#C7B9D8]">07.15–11.30 dan 14.00–16.30 WITA</p>
+                                </div>
+                            </div>
+                        </div>
                     </address>
                 </div>
             </div>
-
             <div class="mt-8 border-t border-white/15 pt-5 sm:mt-10 sm:pt-6">
-                <div class="flex flex-col gap-2 text-xs leading-6 text-[#AFA0C1] sm:gap-3 sm:text-sm md:flex-row md:items-center md:justify-between">
-                    <p>
-                        &copy; {{ date('Y') }} SMK Negeri 4 Tarakan <span class="px-1 text-[#FDC003]">•</span> Hak Cipta Dilindungi Undang-Undang.
+                <div class="grid grid-cols-1 gap-2 text-xs leading-6 text-[#AFA0C1] sm:gap-3 sm:text-sm md:grid-cols-3 md:items-center">
+                    <p class="min-w-0">
+                        &copy; {{ date('Y') }} SMK Negeri 4 Tarakan <span class="px-1 text-[#FDC003]">•</span> All Rights Reserved.
                     </p>
-                    <p class="md:text-right">
-                        Tarakan, Kalimantan Utara, Indonesia
+                    <p class="min-w-0 md:text-center">
+                        Website developed by <a href="https://www.instagram.com/na_zzh/" target="_blank" rel="noopener noreferrer" title="Instagram @na_zzh" aria-label="Instagram @na_zzh - Nur Azizah, S.Kom." class="font-semibold text-[#F3F8FF] underline decoration-white/30 underline-offset-4 transition-colors hover:text-[#FDC003] hover:decoration-[#FDC003] focus:outline-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-[#FDC003]">Nur Azizah, S.Kom.</a>
+                    </p>
+                    <p class="min-w-0 md:text-right">
+                        Tarakan, North Kalimantan, Indonesia
                     </p>
                 </div>
             </div>

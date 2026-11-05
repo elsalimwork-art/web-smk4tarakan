@@ -8,6 +8,7 @@ class AgendaPage extends Component
 {
     public function render()
     {
-        return view('livewire.agenda-page');
+        return view('livewire.agenda-page')
+            ->layout('layouts.app');
     }
 }

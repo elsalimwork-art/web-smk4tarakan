@@ -7,12 +7,10 @@
         <section class="text-center">
             <h1 class="mt-0 text-3xl font-black leading-tight tracking-tight text-[#20132F] sm:text-4xl">
                 Lokasi dan Kontak Resmi
-
             </h1>
             <p class="mx-auto mt-3 max-w-[900px] text-lg leading-8 text-slate-600 sm:text-xl">
                 Silakan hubungi kami untuk informasi kurikulum,
                 pendaftaran, atau kunjungan sekolah
-
             </p>
         </section>
 
@@ -41,14 +39,15 @@
                         <h2 class="text-lg font-extrabold leading-7 text-[#20132F] sm:text-xl">
                             Jam Operasional Pelayanan
                         </h2>
-
-                        <div class="mt-[5px] space-y-[3px]">
-                            <p class="text-base leading-7 text-slate-600 sm:text-lg">
-                                Senin - Kamis : 07.15 - 16.00 WITA
-                            </p>
-                            <p class="text-base leading-7 text-slate-600 sm:text-lg">
-                                Jumat : 07.15 - 11.30 WITA dan 14.00 - 16.30
-                            </p>
+                        <div class="mt-2 divide-y divide-[#E7E0EF]">
+                            <div class="flex flex-col gap-1 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+                                <span class="text-sm font-semibold text-slate-600 sm:text-base">Senin - Kamis</span>
+                                <span class="text-right text-sm font-bold text-[#49108B] sm:text-base">07.15 – 16.00 WITA</span>
+                            </div>
+                            <div class="flex flex-col gap-1 py-2.5 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+                                <span class="text-sm font-semibold text-slate-600 sm:text-base">Jumat</span>
+                                <span class="text-right text-sm font-bold leading-6 text-[#49108B] sm:text-base">07.15 – 11.30 WITA<br>14.00 – 16.30 WITA</span>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -71,7 +70,6 @@
                             <circle cx="12" cy="10" r="2.5" />
                         </svg>
                     </div>
-
                     <div class="min-w-0 flex-1">
                         <h2 class="text-lg font-extrabold leading-7 text-[#20132F] sm:text-xl">
                             Alamat Sekolah
@@ -102,29 +100,18 @@
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.08 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.83.57 2.79.69A2 2 0 0 1 22 16.92Z" />
                         </svg>
                     </div>
-
                     <div class="min-w-0 flex-1">
                         <h2 class="text-lg font-extrabold leading-7 text-[#20132F] sm:text-xl">
                             Telepon / WhatsApp
                         </h2>
                         <p class="mt-[5px] flex flex-wrap items-center
-                                  gap-x-1.5 text-base leading-7 text-slate-600 sm:text-lg">
-                            <a href="tel:+625512031234"
-                                class="transition-colors duration-200 hover:text-[#7E30E1]">
-                                (0551) 2031234
-                            </a>
-
-                            <span>•</span>
-
+                                  text-base leading-7 text-slate-600 sm:text-lg">
                             <a href="https://wa.me/6281255447788"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="transition-colors duration-200 hover:text-[#7E30E1]">
                                 +62 812-5544-7788
                             </a>
-                        </p>
-                        <p class="mt-2 text-base font-semibold leading-7 text-[#7E30E1] sm:text-lg">
-                            Senin - Jumat: 07.30 - 16.00 WITA
                         </p>
                     </div>
                 </article>
@@ -147,20 +134,14 @@
                             <path d="m3.5 6 8.5 6.5L20.5 6" />
                         </svg>
                     </div>
-
                     <div class="min-w-0 flex-1">
                         <h2 class="text-lg font-extrabold leading-7 text-[#20132F] sm:text-xl">
                             Email
                         </h2>
-
-                        <div class="mt-[5px] space-y-[3px]">
-                            <a href="mailto:info@smkn4tarakan.sch.id"
+                        <div class="mt-[5px]">
+                            <a href="mailto:smknegeri4tarakan@gmail.com"
                                 class="block break-all text-base leading-7 text-slate-600 transition-colors duration-200 hover:text-[#7E30E1] sm:text-lg">
-                                info@smkn4tarakan.sch.id
-                            </a>
-                            <a href="mailto:smkn4tarakan.kaltara@gmail.com"
-                                class="block break-all text-base leading-7 text-slate-600 transition-colors duration-200 hover:text-[#7E30E1] sm:text-lg">
-                                smkn4tarakan.kaltara@gmail.com
+                                smknegeri4tarakan@gmail.com
                             </a>
                         </div>
                     </div>
