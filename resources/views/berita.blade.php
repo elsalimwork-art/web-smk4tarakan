@@ -801,8 +801,6 @@
                     <p>Informasi dan kegiatan SMK Negeri 4 Tarakan</p>
                 </div>
             </section>
-
-
             <!-- =========================================
                  GRID KARTU BERITA
             ========================================== -->
