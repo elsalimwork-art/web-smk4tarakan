@@ -9,7 +9,6 @@
 
     <title>Berita | SMK Negeri 4 Tarakan</title>
 
-    <!-- FONT PLUS JAKARTA SANS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -65,111 +64,111 @@
         }
 
         .b4-container {
-            width: min(1200px, calc(100% - 40px));
+            width: min(1500px, calc(100% - 60px));
             margin: auto;
         }
 
-
         /* =========================================
-           2. HEADER BERITA
+           2. HEADER / KOP BERITA
+           MODEL KOP MAKNA LOGO
         ========================================= */
 
         .b4-news-page {
-            padding: 42px 0 80px;
+            padding: 22px 0 80px;
             min-height: 100vh;
         }
 
         .b4-news-hero {
             position: relative;
+            isolation: isolate;
             overflow: hidden;
-            padding: 65px 60px;
-            border-radius: 28px;
+
+            width: 100%;
+            min-height: 220px;
+            padding: 36px 24px 32px;
+
+            border-radius: 18px;
+            border: 1px solid rgba(255,255,255,0.20);
+
             color: var(--b4-white);
+
             background: linear-gradient(
-                115deg,
+                90deg,
                 #2B1745 0%,
                 #49108B 50%,
                 #7E30E1 100%
             );
-            box-shadow: 0 15px 40px rgba(92, 24, 143, 0.18);
+
+            box-shadow: 0 12px 22px rgba(73,16,139,0.20);
         }
 
-        .b4-news-hero::before {
-            content: "";
+        /* ORNAMEN LINGKARAN KIRI */
+
+        .b4-ornament-left {
             position: absolute;
-            width: 270px;
-            height: 270px;
-            right: -65px;
-            top: -100px;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 50%;
+            z-index: -1;
+            top: -30px;
+            left: -49px;
+            width: 155px;
+            height: 220px;
+            opacity: .30;
+            pointer-events: none;
         }
 
-        .b4-news-hero::after {
-            content: "";
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            right: -25px;
-            top: -60px;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 50%;
-        }
+        /* CAHAYA KANAN */
 
         .b4-hero-decoration {
             position: absolute;
-            width: 230px;
-            height: 230px;
-            right: 180px;
-            bottom: -160px;
+            z-index: -1;
+            width: 256px;
+            height: 256px;
+            right: -64px;
+            top: -64px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.06);
+            background: rgba(253,192,3,.10);
+            filter: blur(45px);
+            pointer-events: none;
         }
+
+        /* KONTEN KOP */
 
         .b4-news-hero-content {
             position: relative;
             z-index: 2;
-            max-width: 720px;
+            max-width: 895px;
         }
 
-        .b4-hero-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            padding: 9px 17px;
-            margin-bottom: 22px;
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 50px;
-            background: rgba(255,255,255,0.1);
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .b4-hero-label svg {
-            width: 17px;
-            height: 17px;
-            color: var(--b4-yellow);
-        }
+        /* JUDUL KOP */
 
         .b4-news-hero h1 {
-            font-size: clamp(30px, 4vw, 46px);
-            line-height: 1.2;
+            max-width: 895px;
+            margin: 0;
+
+            color: #ffffff;
+            font-size: 30px;
             font-weight: 800;
-            letter-spacing: -1.5px;
-            margin-bottom: 18px;
+            line-height: 1.15;
+            letter-spacing: -1.2px;
         }
 
-        .b4-news-hero p {
-            max-width: 610px;
-            color: rgba(255,255,255,0.85);
-            font-size: 15px;
-            line-height: 1.9;
+        /* DESKRIPSI KOP */
+
+        .b4-news-hero-content > p {
+            max-width: 790px;
+            margin-top: 12px;
+
+            color: rgba(255,255,255,0.90);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 24px;
         }
+
+        /* BADGE IDENTITAS SEKOLAH */
 
         .b4-school-info {
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
             margin-top: 25px;
         }
@@ -177,31 +176,58 @@
         .b4-school-info span {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 9px 13px;
-            border: 1px solid rgba(255,255,255,0.2);
+            gap: 7px;
+
+            height: 30px;
+            padding: 0 12px;
+
+            border: 1px solid rgba(255,255,255,0.20);
             border-radius: 50px;
-            background: rgba(255,255,255,0.1);
+
+            background: rgba(255,255,255,0.10);
+
+            color: rgba(255,255,255,0.95);
             font-size: 11px;
             font-weight: 600;
+            line-height: 1;
+            white-space: nowrap;
+
+            backdrop-filter: blur(5px);
         }
 
-        .b4-school-info i {
-            color: #ffd166;
-            font-style: normal;
-            font-size: 14px;
+        .b4-school-info svg {
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
         }
+
+        .b4-school-info .b4-badge-yellow {
+            color: #FDC003;
+        }
+
+        .b4-school-info .b4-badge-blue {
+            color: #67D7F5;
+        }
+
+        /* ORNAMEN DAYAK KANAN */
 
         .b4-hero-icon {
             position: absolute;
-            right: 65px;
+            z-index: 1;
+            right: 25px;
             top: 50%;
-            transform: translateY(-50%);
-            width: 175px;
-            height: 175px;
-            color: rgba(255,255,255,0.19);
-        }
 
+            display: none;
+
+            width: auto;
+            height: 255px;
+
+            object-fit: contain;
+            opacity: 0.32;
+
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
 
         /* =========================================
            3. JUDUL DAFTAR BERITA
@@ -213,6 +239,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 15px;
+
             margin: 48px 0 25px;
         }
 
@@ -232,14 +259,16 @@
             display: inline-flex;
             align-items: center;
             gap: 9px;
+
             padding: 11px 17px;
             border-radius: 50px;
+
             color: var(--b4-purple);
             background: #f0e5fa;
+
             font-size: 12px;
             font-weight: 700;
         }
-
 
         /* =========================================
            4. GRID KARTU BERITA
@@ -254,12 +283,16 @@
         .b4-news-card {
             display: flex;
             flex-direction: column;
+
             overflow: hidden;
             min-width: 0;
+
             background: var(--b4-white);
             border: 1px solid #eee5f5;
             border-radius: var(--b4-radius);
+
             box-shadow: 0 5px 20px rgba(53,22,79,0.04);
+
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -290,15 +323,20 @@
             position: absolute;
             bottom: 13px;
             left: 13px;
+
             display: inline-flex;
             align-items: center;
             gap: 8px;
+
             padding: 8px 12px;
             border-radius: 8px;
+
             color: white;
             background: rgba(25,20,45,0.75);
+
             font-size: 10px;
             font-weight: 600;
+
             backdrop-filter: blur(5px);
         }
 
@@ -307,7 +345,6 @@
             height: 15px;
             color: #ffd166;
         }
-
 
         /* =========================================
            5. ISI KARTU BERITA
@@ -323,11 +360,15 @@
         .b4-news-category {
             display: inline-block;
             align-self: flex-start;
+
             padding: 6px 12px;
             margin-bottom: 13px;
+
             border-radius: 50px;
+
             color: var(--b4-purple);
             background: #f0e5fa;
+
             font-size: 10px;
             font-weight: 700;
         }
@@ -350,6 +391,7 @@
             overflow: hidden;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
+
             color: var(--b4-muted);
             font-size: 12px;
             line-height: 1.8;
@@ -361,8 +403,10 @@
             align-items: center;
             justify-content: space-between;
             gap: 10px;
+
             margin-top: auto;
             padding-top: 16px;
+
             border-top: 1px solid var(--b4-line);
         }
 
@@ -370,9 +414,11 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
+
             color: var(--b4-purple);
             font-size: 12px;
             font-weight: 800;
+
             transition: gap 0.2s ease, color 0.2s ease;
         }
 
@@ -386,7 +432,6 @@
             height: 16px;
         }
 
-
         /* =========================================
            6. FOOTER
         ========================================= */
@@ -394,7 +439,9 @@
         .b4-news-footer-page {
             margin-top: 55px;
             padding: 23px;
+
             border-top: 1px solid var(--b4-line);
+
             text-align: center;
             color: var(--b4-muted);
             font-size: 11px;
@@ -404,72 +451,75 @@
             color: var(--b4-purple);
         }
 
-
         /* =========================================
            7. RESPONSIVE TABLET
         ========================================= */
 
-        @media (max-width: 1050px) {
-            .b4-news-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .b4-hero-icon {
-                right: 30px;
-                width: 135px;
-                height: 135px;
-            }
-
-            .b4-news-hero-content {
-                max-width: 75%;
-            }
-        }
-
-
-        /* =========================================
-           8. RESPONSIVE HP
-        ========================================= */
-
-        @media (max-width: 760px) {
-            .b4-news-page {
-                padding: 25px 0 55px;
-            }
+        @media (min-width: 640px) {
 
             .b4-news-hero {
-                padding: 42px 27px;
-                border-radius: 22px;
+                padding: 36px 32px 32px;
             }
 
             .b4-news-hero-content {
-                max-width: 100%;
-            }
-
-            .b4-hero-icon {
-                display: none;
+                max-width: calc(100% - 170px);
             }
 
             .b4-news-hero h1 {
-                font-size: 32px;
+                font-size: 38px;
             }
 
-            .b4-news-hero p {
-                font-size: 13px;
+            .b4-news-hero-content > p {
+                font-size: 14px;
             }
 
-            .b4-school-info {
-                gap: 8px;
+            .b4-hero-icon {
+                display: block;
+            }
+        }
+
+        @media (max-width: 1050px) {
+
+            .b4-container {
+                width: min(100% - 40px, 1200px);
             }
 
-            .b4-school-info span {
-                font-size: 10px;
+            .b4-news-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* =========================================
+           8. RESPONSIVE DESKTOP BESAR
+        ========================================= */
+
+        @media (min-width: 1200px) {
+
+            .b4-news-hero {
+                height: 258px;
+                min-height: 258px;
+                padding: 42px 40px 0;
             }
 
-            .b4-news-heading {
-                margin-top: 35px;
+            .b4-news-hero h1 {
+                font-size: 48px;
+                line-height: 48px;
+                white-space: nowrap;
             }
 
-            .b4-news-heading h2 {
-                font-size: 21px;
+            .b4-news-hero-content > p {
+                font-size: 15px;
+            }
+        }
+
+        /* =========================================
+           9. RESPONSIVE HP
+        ========================================= */
+
+        @media (max-width: 760px) {
+
+            .b4-news-page {
+                padding: 25px 0 55px;
             }
 
             .b4-news-grid {
@@ -492,11 +542,54 @@
             .b4-news-description {
                 font-size: 11px;
             }
+
+            .b4-news-heading {
+                margin-top: 35px;
+            }
+
+            .b4-news-heading h2 {
+                font-size: 21px;
+            }
         }
 
+        @media (max-width: 639px) {
+
+            .b4-news-hero {
+                min-height: 220px;
+                padding: 36px 24px 32px;
+            }
+
+            .b4-news-hero-content {
+                max-width: 100%;
+            }
+
+            .b4-hero-icon {
+                display: none;
+            }
+
+            .b4-news-hero h1 {
+                font-size: 30px;
+                letter-spacing: -1.2px;
+            }
+
+            .b4-news-hero-content > p {
+                font-size: 13px;
+                line-height: 24px;
+            }
+
+            .b4-school-info {
+                gap: 8px;
+            }
+        }
+
+        /* =========================================
+           10. RESPONSIVE LAYAR KECIL
+        ========================================= */
+
         @media (max-width: 480px) {
+
             .b4-container {
-                width: min(100% - 28px, 1200px);
+                width: calc(100% - 28px);
             }
 
             .b4-news-grid {
@@ -513,11 +606,11 @@
             }
 
             .b4-news-hero h1 {
-                font-size: 28px;
+                font-size: 29px;
             }
 
             .b4-school-info span {
-                font-size: 9px;
+                font-size: 10px;
             }
 
             .b4-news-heading {
@@ -525,7 +618,12 @@
             }
         }
 
+        /* =========================================
+           11. PENGATURAN ANIMASI
+        ========================================= */
+
         @media (prefers-reduced-motion: reduce) {
+
             *,
             *::before,
             *::after {
@@ -536,7 +634,6 @@
 
     </style>
 </head>
-
 
 <body>
 
@@ -569,54 +666,120 @@
         ];
     @endphp
 
-
-    <!-- =========================================
-         HEADER / BANNER BERITA
-    ========================================== -->
-
     <main class="b4-news-page">
+
         <div class="b4-container">
 
-            <section class="b4-news-hero">
+            <!-- =========================================
+                 HEADER / KOP BERITA
+                 MODEL KOP MAKNA LOGO
+            ========================================== -->
 
+            <header class="b4-news-hero">
+
+                {{-- ORNAMEN LINGKARAN KIRI --}}
+                <svg
+                    class="b4-ornament-left"
+                    viewBox="0 0 155 220"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <circle cx="53" cy="61" r="91"
+                        stroke="#FDC003" stroke-width="3"/>
+
+                    <circle cx="53" cy="61" r="67"
+                        stroke="#FDC003" stroke-width="3"/>
+
+                    <circle cx="53" cy="61" r="8.5"
+                        fill="#FDC003"/>
+
+                    <path
+                        d="M-12 79C30 79 69 101 87 151"
+                        stroke="#FDC003"
+                        stroke-width="3"
+                    />
+                </svg>
+
+                {{-- CAHAYA KANAN --}}
                 <div class="b4-hero-decoration"></div>
 
+                {{-- ORNAMEN DAYAK KANAN --}}
+                <img
+                    src="{{ asset('images/ornamen_dayak_kop_bersih.png') }}"
+                    alt=""
+                    aria-hidden="true"
+                    class="b4-hero-icon"
+                />
+
+                {{-- KONTEN KOP --}}
                 <div class="b4-news-hero-content">
 
-                    <div class="b4-hero-label">
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h11l5 5v9a2 2 0 01-2 2z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17 20v-8H7v8M7 4v4h8"/>
-                        </svg>
-                        PUSAT INFORMASI SEKOLAH
-                    </div>
-
-                    <h1>Pusat Informasi & Berita</h1>
+                    <h1>
+                        Berita SMK Negeri 4 Tarakan
+                    </h1>
 
                     <p>
-                        Temukan informasi terbaru seputar kegiatan sekolah,
-                        prestasi siswa, pengumuman, dan berbagai perkembangan
-                        SMK Negeri 4 Tarakan.
+                        Pusat informasi terbaru mengenai kegiatan, prestasi,
+                        pengumuman, dan berbagai perkembangan SMK Negeri 4 Tarakan.
                     </p>
 
+                    {{-- BADGE IDENTITAS SEKOLAH --}}
                     <div class="b4-school-info">
 
+                        {{-- NPSN --}}
                         <span>
-                            <i>✦</i>
+                            <svg
+                                class="b4-badge-yellow"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path d="M12 2.8 14.2 4l2.5-.4 1.2 2.3 2.5 1-.2 2.6 1.4 2.2-1.4 2.2.2 2.6-2.5 1-1.2 2.3-2.5-.4-2.2 1.2-2.2-1.2-2.5.4-1.2-2.3-2.5-1 .2-2.6L2.4 12l1.4-2.2-.2-2.6 2.5-1 1.2-2.3 2.5.4L12 2.8Z"/>
+                                <path d="m9 12 2 2 4-4"/>
+                            </svg>
+
                             NPSN: 70007255
                         </span>
 
+                        {{-- STATUS SEKOLAH --}}
                         <span>
-                            <i>♧</i>
+                            <svg
+                                class="b4-badge-yellow"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="8" r="5.5"/>
+                                <path d="m9 7.7 2 2 4-4"/>
+                                <path d="m8.5 12.5-1 8 4.5-2.5 4.5 2.5-1-8"/>
+                            </svg>
+
                             Sekolah Menengah Kejuruan
                         </span>
 
+                        {{-- PROGRAM KEAHLIAN --}}
                         <span>
-                            <i>▣</i>
+                            <svg
+                                class="b4-badge-blue"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect x="2.5" y="4" width="13.5" height="11" rx="1.5"/>
+                                <path d="M6.5 19.5h5.5m-2.75-4.5v4.5"/>
+                                <rect x="17.5" y="7.5" width="4" height="9" rx="1"/>
+                                <path d="M19 14.2h1"/>
+                            </svg>
+
                             PPLG · TKJ · DKV · Animasi
                         </span>
 
@@ -624,23 +787,7 @@
 
                 </div>
 
-                <!-- IKON DEKORASI -->
-                <svg class="b4-hero-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 100 100"
-                    stroke="currentColor" stroke-width="1.5">
-
-                    <path d="M50 5L88 28V72L50 95L12 72V28L50 5Z"/>
-                    <path d="M50 16L78 33V67L50 84L22 67V33L50 16Z"/>
-                    <circle cx="50" cy="35" r="8"/>
-                    <circle cx="28" cy="48" r="5"/>
-                    <circle cx="72" cy="48" r="5"/>
-                    <path d="M50 43C35 48 35 65 50 76C65 65 65 48 50 43Z"/>
-                    <path d="M33 48L43 43M67 48L57 43"/>
-
-                </svg>
-
-            </section>
+            </header>
 
 
             <!-- =========================================
@@ -653,12 +800,6 @@
                     <h2>Berita Terbaru</h2>
                     <p>Informasi dan kegiatan SMK Negeri 4 Tarakan</p>
                 </div>
-
-                <div class="b4-news-heading-label">
-                    <span>▣</span>
-                    Informasi Sekolah
-                </div>
-
             </section>
 
 
@@ -670,10 +811,9 @@
 
                 @foreach ($berita as $item)
 
-                    <article class="b4-news-card"
-                        wire:key="berita-{{ $loop->index }}">
+                    <article class="b4-news-card">
 
-                        <!-- GAMBAR BERITA -->
+                        {{-- GAMBAR BERITA --}}
                         <div class="b4-news-image">
 
                             <img
@@ -682,15 +822,22 @@
                                 onerror="this.onerror=null;this.src='{{ asset('images/beranda/gedung-sekolah.png') }}';"
                             >
 
-                            <!-- TANGGAL -->
+                            {{-- TANGGAL --}}
                             <div class="b4-news-date">
 
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round"
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                >
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path
+                                        stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 011-1h14a1 1 0 011 1v14H4V6a1 1 0 011-1z"/>
+                                        d="M16 3v4M8 3v4M3 10h18"
+                                    />
                                 </svg>
 
                                 {{ $item['tanggal'] }}
@@ -700,7 +847,7 @@
                         </div>
 
 
-                        <!-- KONTEN BERITA -->
+                        {{-- KONTEN BERITA --}}
                         <div class="b4-news-content">
 
                             <span class="b4-news-category">
@@ -719,18 +866,23 @@
 
                                 <a
                                     href="{{ url('/berita/' . $item['slug']) }}"
-                                    class="b4-read-more">
-
+                                    class="b4-read-more"
+                                >
                                     Baca Selengkapnya
 
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round"
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
                                             stroke-linejoin="round"
-                                            d="M5 12h14m-6-6l6 6-6 6"/>
+                                            d="M5 12h14m-6-6l6 6-6 6"
+                                        />
                                     </svg>
-
                                 </a>
 
                             </div>
@@ -749,14 +901,17 @@
             ========================================== -->
 
             <footer class="b4-news-footer-page">
+
                 <p>
                     © {{ date('Y') }}
                     <strong>SMK Negeri 4 Tarakan</strong>.
                     Semua Hak Dilindungi.
                 </p>
+
             </footer>
 
         </div>
+
     </main>
 
 </body>

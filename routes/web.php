@@ -5,6 +5,7 @@ use App\Livewire\HomePage;
 use App\Livewire\ManagementPage;
 use App\Livewire\SpmbPage;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Agenda;
 
 // HALAMAN UTAMA
 Route::get('/', HomePage::class)->name('home');
@@ -33,5 +34,9 @@ Route::view('/profil-sekolah', 'profil-sekolah')
     ->name('profil-sekolah');
 
 // BERITA
-Route::view('/berita', 'berita')
-    ->name('berita');
+Route::get('/berita', function () {
+    return view('berita');
+});
+
+//AGENDA
+Route::get('/agenda', Agenda::class)->name('agenda.index');
