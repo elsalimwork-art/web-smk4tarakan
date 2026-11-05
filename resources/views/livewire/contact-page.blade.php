@@ -44,10 +44,10 @@
 
                         <div class="mt-[5px] space-y-[3px]">
                             <p class="text-base leading-7 text-slate-600 sm:text-lg">
-                                Senin - Kamis : 07.15 - 15.30 WITA
+                                Senin - Kamis : 07.15 - 16.00 WITA
                             </p>
                             <p class="text-base leading-7 text-slate-600 sm:text-lg">
-                                Jumat : 07.15 - 11.30 WITA
+                                Jumat : 07.15 - 11.30 WITA dan 14.00 - 16.30
                             </p>
                         </div>
                     </div>
