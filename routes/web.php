@@ -16,7 +16,7 @@ Route::get('/spmb', SpmbPage::class)->name('spmb');
 
 Route::get('/kontak', ContactPage::class)->name('contact');
 
-Route::get('/', ContactPage::class)->name('contact');
+Route::get('/', HomePage::class)->name('beranda');
 
 Route::get('/manajemen', ManagementPage::class)->name('management');
 
