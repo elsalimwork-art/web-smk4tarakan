@@ -43,3 +43,10 @@ Route::view('/profil-sekolah', 'profil-sekolah')
     ->name('profil-sekolah');
 
 Route::get('/agenda', AgendaPage::class)->name('agenda');
+
+Route::view('/prestasi-siswa', 'prestasi-siswa')
+    ->name('prestasi-siswa');
+
+Route::get('/prestasi-siswa/detail/{slug}', function (string $slug) {
+    return view('prestasi-siswa');
+})->name('prestasi-siswa.detail');

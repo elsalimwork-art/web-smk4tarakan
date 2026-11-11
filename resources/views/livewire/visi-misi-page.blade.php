@@ -338,7 +338,7 @@
                             class="flex h-[44px] w-full items-center gap-3
                                    rounded-l-[8px] px-[14px] py-[10px]
                                    text-[#49108B] transition hover:bg-[#F7F3FC]">
-                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7C7480]" viewBox="0 0 24 24" fill="none"
+                            <svg class="h-[16px] w-[17px] shrink-0 text-[#7E30E1]" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                                 stroke-linejoin="round">
                                 <path d="M12 3 14.5 8l6 .8-4.4 4.2 1.1 6-5.2-2.9-5.2 2.9 1.1-6-4.4-4.2 6-.8L12 3Z" />
